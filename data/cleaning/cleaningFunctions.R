@@ -4,29 +4,37 @@
 
 library(tidyverse)
 
-# creating lines to test things
-# these will ultimately be commented out
-
-b11 <- b1[1:10,]
-b22 <- b2[1:10,]
-
-
 # df compare function ####
 
 dfCompare <- function(b11, b22, discrepancy = "1;1", outputFile){
-  for(i in 1:nrow(b11)){
+  si <- str_extract(discrepancy, "^[[:digit:]]*(?=;)")
+  sj <- str_extract(discrepancy, "(?<=;)[[:digit:]]*$")
+  first <- T
+  sheetlines <- lapply(1:max(b1$sheet), FUN = function(x){
+    return(b1$line[b1$sheet %in% x])
+    })
+  for(i in si:nrow(b11)){
     for(j in which(!b11[i,] == b22[i,])){
+      if(first & j < sj & i == si){
+        break()
+      }
+      else if(first & j == sj & i == si){
+        first <- F
+      }
       g <- T
       while(g){
-        correct <- readline(prompt = cat(b11[!b11 == b22][j], " or ", b22[!b11 == b22][j],"\n", sep = ""))
-        if(correct == "q")
-          stop(paste0("You should start the program at discrepancy ", i, ";", j))
+        cat("sheet ", b1$sheet[i], )
+        correct <- readline(prompt = cat(b11[i][!b11[i] == b22[i]][j], " or ", b22[i][!b11[i] == b22[i]][j],"\n", sep = ""))
+        if(correct == "q"){
+          write(paste0("You should restart the program at discrepancy ", i, ";", j), file = outputFile, append = T)
+          stop(paste0("You should restart the program at discrepancy ", i, ";", j))
+        }
         else if (correct == 1){
-          write(paste0("sameB[", i,",", j, "] <- b1[", i,",", j, "]  #", i,";",j), file = outputFile, append = T)
+          write(paste0("sameB[", i,",", j, "] <- b1[", i,",", j, "]  #", i,";",j, b11[i][!b11[i] == b22[i]][j], " or ", b22[i][!b11[i] == b22[i]][j]), file = outputFile, append = T)
           g <- F
         }
         else if (correct == 2){
-          write(paste0("sameB[", i,",", j, "] <- b2[", i,",", j, "]  #", i,";",j), file = outputFile, append = T)
+          write(paste0("sameB[", i,",", j, "] <- b2[", i,",", j, "]  #", i,";",j, b11[i][!b11[i] == b22[i]][j], " or ", b22[i][!b11[i] == b22[i]][j]), file = outputFile, append = T)
           g <- F
         }
         else
@@ -36,9 +44,7 @@ dfCompare <- function(b11, b22, discrepancy = "1;1", outputFile){
   }
 }
 
-sameB <- b11
-dfCompare(b11, b22, outputFile = "data/cleaning/cleaningLines.R")
-
+dfCompare(b1, b2, discrepancy = "6;4" ,outputFile = "data/cleaning/testing.R")
 
 
 

@@ -28,7 +28,7 @@ b2$line <- 1:nrow(b2)
 colnames(b2)
 colnames(b1)
 
-sum(is.na(b2$data.entry.notes)) # there are no data entry notes in sheet 2
+sum(!is.na(b2$data.entry.notes)) # there are no data entry notes in sheet 2
 
 b1$data.entry.notes[!b1$data.entry.notes %in% ""] # nothing useful here
 
@@ -160,12 +160,59 @@ rando <- sample(1:nrow(b1), 10)
 b1$lfCount[rando] - b2$lfCount[rando] # this wont always give 10 0's, but it almost always should!
 # it gave me 69/70 0's, so I think it's all set!
 
+rm(i, ns, rando, uDifs, lookSheet)
+
+# grammar and syntax
+# before we get into the meat and potatoes, their are many small things that can be corrected
+# for instance changing the whole thing to uppercase will save us a lot of time
+
+b1[,sapply(b1, class) == "character"] <- sapply(b1[,sapply(b1, class) == "character"], FUN = toupper)
+b2[,sapply(b2, class) == "character"] <- sapply(b2[,sapply(b2, class) == "character"], FUN = toupper)
+
+# then the other big thing will be cleaning up the collector column
+# I think I'll be lazy and just correct for all commas, semicolons, colons, or slashes
+
+b1$collector <- gsub("(;|/|:|,| )", "", b1$collector)
+b2$collector <- gsub("(;|/|:|,| )", "", b2$collector)
+
+table(b1$collector)
+table(b2$collector)
+
+# okay, now that the things I know about are out of the way, I'm just going to run through each column
+# and see if there's anything egregious that can be fixed now
+
+colnames(b1)
+# skipping sheet
+
+table(b1$date)
+table(b2$date)
+
+table(b1$recorder)
+table(b2$recorder)
+
+table(b1$transect)
+table(b2$transect) # let's just nix those T's right here
+
+b1$transect <- gsub("T", "", b1$transect)
+b2$transect <- gsub("T", "", b2$transect)
+
+# there's also that one "7129" in b2
+
+b2$transect <- gsub("^7", "", b2$transect)
+
+table(b1$treeSpecies)
+table(b2$treeSpecies)
+
+table(b1$branchNum)
+table(b2$branchNum) # lol why are there so many 0's
+
+# the rest are not going to have patterned errors, so I'm calling it there
 
 # comparing ####
 
 # the moment we've all been waiting for!
-# will be done at a later date Michael signing off
 
+source("data/cleaning/cleaningFunctions.R")
 
 
 
