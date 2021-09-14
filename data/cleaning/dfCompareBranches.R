@@ -229,7 +229,11 @@ dfCompare(b1, b2, discrepancy = "361;12" ,outputFile = "data/cleaning/combineDFs
 # taking a break
 # You should restart the program at discrepancy 1390;5
 
-
+dfCompare(b1, b2, discrepancy = "1390;5" ,outputFile = "data/cleaning/combineDFs.R")
+# leaving to fix something manually
+dfCompare(b1, b2, discrepancy = "1590;10" ,outputFile = "data/cleaning/combineDFs.R")
+# some sheets are missing from scans so I'm done for the day
+# You should restart the program at discrepancy 1821;8
 
 
 
