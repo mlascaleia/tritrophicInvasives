@@ -219,9 +219,9 @@ b2$catNumMin[b1$catNumMax %in% "-"] <- ""
 
 source("data/cleaning/cleaningFunctions.R")
 
-# starting first compare 9/14/21 11:25 AM
+# starting first compare 9/14/21 11:43 AM
 
-dfCompare(b1, b2, discrepancy = "7;3" ,outputFile = "data/cleaning/testing.R")
+dfCompare(b1, b2, discrepancy = "1;1" ,outputFile = "data/cleaning/combineDFs.R")
 
 
 
