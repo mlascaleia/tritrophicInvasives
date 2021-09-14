@@ -206,6 +206,11 @@ table(b2$treeSpecies)
 table(b1$branchNum)
 table(b2$branchNum) # lol why are there so many 0's
 
+b1$catNumMin[b1$catNumMin %in% "-"] <- ""
+b2$catNumMin[b1$catNumMin %in% "-"] <- ""
+b1$catNumMin[b1$catNumMax %in% "-"] <- ""
+b2$catNumMin[b1$catNumMax %in% "-"] <- ""
+
 # the rest are not going to have patterned errors, so I'm calling it there
 
 # comparing ####
@@ -214,7 +219,9 @@ table(b2$branchNum) # lol why are there so many 0's
 
 source("data/cleaning/cleaningFunctions.R")
 
+# starting first compare 9/14/21 11:25 AM
 
+dfCompare(b1, b2, discrepancy = "7;3" ,outputFile = "data/cleaning/testing.R")
 
 
 
