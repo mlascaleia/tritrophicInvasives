@@ -221,23 +221,23 @@ source("data/cleaning/cleaningFunctions.R")
 
 # starting first compare 9/14/21 11:43 AM
 
-dfCompare(b1, b2, discrepancy = "1;1" ,outputFile = "data/cleaning/combineDFs.R")
-# stopped at 20;12, which was done by hand. Restarting at 21;1
-dfCompare(b1, b2, discrepancy = "21;1" ,outputFile = "data/cleaning/combineDFs.R")
-# I messed up have to go change something. Will restart at 361;12
-dfCompare(b1, b2, discrepancy = "361;12" ,outputFile = "data/cleaning/combineDFs.R")
-# taking a break
-# You should restart the program at discrepancy 1390;5
+# dfCompare(b1, b2, discrepancy = "1;1" ,outputFile = "data/cleaning/combineDFs.R")
+# # stopped at 20;12, which was done by hand. Restarting at 21;1
+# dfCompare(b1, b2, discrepancy = "21;1" ,outputFile = "data/cleaning/combineDFs.R")
+# # I messed up have to go change something. Will restart at 361;12
+# dfCompare(b1, b2, discrepancy = "361;12" ,outputFile = "data/cleaning/combineDFs.R")
+# # taking a break
+# # You should restart the program at discrepancy 1390;5
+# 
+# dfCompare(b1, b2, discrepancy = "1390;5" ,outputFile = "data/cleaning/combineDFs.R")
+# # leaving to fix something manually
+# dfCompare(b1, b2, discrepancy = "1590;10" ,outputFile = "data/cleaning/combineDFs.R")
+# # some sheets are missing from scans so I'm done for the day
 
-dfCompare(b1, b2, discrepancy = "1390;5" ,outputFile = "data/cleaning/combineDFs.R")
-# leaving to fix something manually
-dfCompare(b1, b2, discrepancy = "1590;10" ,outputFile = "data/cleaning/combineDFs.R")
-# some sheets are missing from scans so I'm done for the day
 # You should restart the program at discrepancy 1821;8
+# dfCompare(b1, b2, discrepancy = "1821;8", outputFile = "data/cleaning/combineDFs.R")
 
-
-
-
-
+dfCompare(b1, b2, discrepancy = "1964;6", outputFile = "data/cleaning/combineDFs.R")
+# all done!
 
 

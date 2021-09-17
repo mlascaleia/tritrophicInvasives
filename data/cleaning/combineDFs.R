@@ -462,3 +462,288 @@ sameB[1761,12] <- b2[1761,12]  # 1761;12 A; EGGS not A
 sameB[1779,11] <- b1[1779,11]  # 1779;11 105 not 103
 sameB[1789,12] <- b1[1789,12]  # 1789;12 A not 
 # You should restart the program at discrepancy 1821;8
+sameB[1821,8] <- b2[1821,8]  # 1821;8 1 not 2
+sameB[1822,8] <- b2[1822,8]  # 1822;8 1 not 2
+sameB[1905,12] <- b1[1905,12]  # 1905;12 A 25% SUN LEAF not A; 25% SUN LEAF
+sameB[1906,12] <- b1[1906,12]  # 1906;12 EGGS FOUND not EGGS
+sameB[1909,9] <- b1[1909,9]  # 1909;9 K4190 not K4140
+sameB[1909,10] <- b1[1909,10]  # 1909;10 K4190 not K4140
+sameB[1915,12] <- b1[1915,12]  # 1915;12 A END OF DAY not A; END OF DAY
+sameB[1916,4] <- b2[1916,4]  # 1916;4 PDML not MLPD
+sameB[1916,12] <- b2[1916,12]  # 1916;12 A not A END OF DAY
+sameB[1917,4] <- b2[1917,4]  # 1917;4 PDML not MLPD
+sameB[1918,4] <- b2[1918,4]  # 1918;4 PDML not MLPD
+sameB[1919,4] <- b2[1919,4]  # 1919;4 PDML not MLPD
+sameB[1920,4] <- b2[1920,4]  # 1920;4 PDML not MLPD
+sameB[1921,4] <- b2[1921,4]  # 1921;4 PDML not MLPD
+sameB[1922,4] <- b2[1922,4]  # 1922;4 PDML not MLPD
+sameB[1923,4] <- b2[1923,4]  # 1923;4 PDML not MLPD
+sameB[1923,9] <- b2[1923,9]  # 1923;9 K4325 not K4324
+sameB[1924,4] <- b2[1924,4]  # 1924;4 PDML not MLPD
+sameB[1925,4] <- b2[1925,4]  # 1925;4 PDML not MLPD
+sameB[1926,4] <- b2[1926,4]  # 1926;4 PDML not MLPD
+sameB[1927,4] <- b2[1927,4]  # 1927;4 PDML not MLPD
+sameB[1928,4] <- b2[1928,4]  # 1928;4 PDML not MLPD
+sameB[1929,4] <- b2[1929,4]  # 1929;4 PDML not MLPD
+sameB[1930,4] <- b2[1930,4]  # 1930;4 PDML not MLPD
+sameB[1931,4] <- b2[1931,4]  # 1931;4 PDML not MLPD
+sameB[1932,4] <- b2[1932,4]  # 1932;4 PDML not MLPD
+sameB[1933,4] <- b2[1933,4]  # 1933;4 PDML not MLPD
+sameB[1934,4] <- b2[1934,4]  # 1934;4 PDML not MLPD
+sameB[1935,4] <- b2[1935,4]  # 1935;4 PDML not MLPD
+sameB[1936,4] <- b2[1936,4]  # 1936;4 PDML not MLPD
+sameB[1937,4] <- b2[1937,4]  # 1937;4 PDML not MLPD
+sameB[1938,4] <- b2[1938,4]  # 1938;4 PDML not MLPD
+sameB[1949,6] <- b1[1949,6]  # 1949;6 FRAXX not FRAAX
+sameB[1950,6] <- b1[1950,6]  # 1950;6 FRAXX not FRAAX
+sameB[1951,6] <- b1[1951,6]  # 1951;6 FRAXX not FRAAX
+sameB[1952,6] <- b1[1952,6]  # 1952;6 FRAXX not FRAAX
+sameB[1953,6] <- b1[1953,6]  # 1953;6 FRAXX not FRAAX
+sameB[1954,6] <- b1[1954,6]  # 1954;6 FRAXX not FRAAX
+sameB[1955,6] <- b1[1955,6]  # 1955;6 FRAXX not FRAAX
+sameB[1956,6] <- b1[1956,6]  # 1956;6 FRAXX not FRAAX
+sameB[1962,11] <- 350  # 1962;11 350 not 35 or 360; done manually
+# You should restart the program at discrepancy 1964;6
+sameB[1964,6] <- b1[1964,6]  # 1964;6 FRAXX not FRAAX
+sameB[1965,6] <- b1[1965,6]  # 1965;6 FRAXX not FRAAX
+sameB[1966,6] <- b1[1966,6]  # 1966;6 FRAXX not FRAAX
+sameB[1972,9] <- b2[1972,9]  # 1972;9 - not K4312
+sameB[1972,10] <- b2[1972,10]  # 1972;10 - not K4312
+sameB[1973,10] <- b2[1973,10]  # 1973;10 K4312 not -
+sameB[1978,9] <- b2[1978,9]  # 1978;9 - not K4314
+sameB[1978,10] <- b2[1978,10]  # 1978;10 - not K4316
+sameB[1979,9] <- b2[1979,9]  # 1979;9 K4314 not K4317
+sameB[1979,10] <- b2[1979,10]  # 1979;10 K4316 not K43
+sameB[1980,10] <- b2[1980,10]  # 1980;10 K43 not -
+sameB[1981,10] <- b1[1981,10]  # 1981;10 - not K4166
+sameB[1982,9] <- b1[1982,9]  # 1982;9 K4166 not -
+sameB[1982,10] <- b1[1982,10]  # 1982;10 K4166 not -
+sameB[1986,2] <- b1[1986,2]  # 1986;2 707 not 710
+sameB[1988,10] <- b2[1988,10]  # 1988;10 K4281 not K4280
+sameB[2009,3] <- b2[2009,3]  # 2009;3 KD not AO
+sameB[2009,4] <- b2[2009,4]  # 2009;4 AO not KD
+sameB[2009,5] <- b2[2009,5]  # 2009;5 211 not 210
+sameB[2010,3] <- b2[2010,3]  # 2010;3 KD not AO
+sameB[2010,4] <- b2[2010,4]  # 2010;4 AO not KD
+sameB[2010,5] <- b2[2010,5]  # 2010;5 211 not 210
+sameB[2011,3] <- b2[2011,3]  # 2011;3 KD not AO
+sameB[2011,4] <- b2[2011,4]  # 2011;4 AO not KD
+sameB[2011,5] <- b2[2011,5]  # 2011;5 211 not 210
+sameB[2012,3] <- b2[2012,3]  # 2012;3 KD not AO
+sameB[2012,4] <- b2[2012,4]  # 2012;4 AO not KD
+sameB[2012,5] <- b2[2012,5]  # 2012;5 211 not 210
+sameB[2013,3] <- b2[2013,3]  # 2013;3 KD not AO
+sameB[2013,4] <- b2[2013,4]  # 2013;4 AO not KD
+sameB[2013,5] <- b2[2013,5]  # 2013;5 211 not 210
+sameB[2014,3] <- b2[2014,3]  # 2014;3 KD not AO
+sameB[2014,4] <- b2[2014,4]  # 2014;4 AO not KD
+sameB[2014,5] <- b2[2014,5]  # 2014;5 211 not 210
+sameB[2014,11] <- b2[2014,11]  # 2014;11 75 not 70
+sameB[2022,5] <- b1[2022,5]  # 2022;5 212 not 
+sameB[2023,5] <- b1[2023,5]  # 2023;5 212 not 
+sameB[2024,5] <- b1[2024,5]  # 2024;5 212 not 
+sameB[2025,5] <- b1[2025,5]  # 2025;5 212 not 
+sameB[2026,5] <- b1[2026,5]  # 2026;5 212 not 
+sameB[2027,5] <- b1[2027,5]  # 2027;5 212 not 
+sameB[2028,5] <- b1[2028,5]  # 2028;5 212 not 
+sameB[2029,5] <- b1[2029,5]  # 2029;5 212 not 
+sameB[2030,5] <- b1[2030,5]  # 2030;5 212 not 
+sameB[2031,5] <- b1[2031,5]  # 2031;5 212 not 
+sameB[2032,5] <- b1[2032,5]  # 2032;5 212 not 
+sameB[2033,5] <- b1[2033,5]  # 2033;5 212 not 
+sameB[2034,5] <- b1[2034,5]  # 2034;5 212 not 
+sameB[2035,5] <- b1[2035,5]  # 2035;5 212 not 
+sameB[2036,5] <- b1[2036,5]  # 2036;5 212 not 
+sameB[2037,5] <- b1[2037,5]  # 2037;5 212 not 
+sameB[2038,5] <- b1[2038,5]  # 2038;5 212 not 
+sameB[2039,5] <- b1[2039,5]  # 2039;5 212 not 
+sameB[2040,5] <- b1[2040,5]  # 2040;5 212 not 
+sameB[2041,5] <- b1[2041,5]  # 2041;5 212 not 
+sameB[2042,5] <- b1[2042,5]  # 2042;5 212 not 
+sameB[2043,5] <- b1[2043,5]  # 2043;5 212 not 
+sameB[2044,5] <- b1[2044,5]  # 2044;5 212 not 
+sameB[2045,5] <- b1[2045,5]  # 2045;5 212 not 
+sameB[2045,12] <- b1[2045,12]  # 2045;12 FOUND ON GRAPE LEAF TOOK TO FEED PRUSE not FOUND ON GRAPE LEAF; TOOK TO FEED PRUSE
+sameB[2046,5] <- b1[2046,5]  # 2046;5 212 not 
+sameB[2047,5] <- b1[2047,5]  # 2047;5 212 not 
+sameB[2077,10] <- b2[2077,10]  # 2077;10 K4448 not K4447
+sameB[2120,11] <- b1[2120,11]  # 2120;11 50 not 40
+sameB[2153,2] <- b1[2153,2]  # 2153;2 721 not 722
+sameB[2153,4] <- b1[2153,4]  # 2153;4 PD not HW
+sameB[2153,5] <- b1[2153,5]  # 2153;5 220 not 221
+sameB[2153,6] <- b1[2153,6]  # 2153;6 LONMO not BERTH
+sameB[2154,2] <- b1[2154,2]  # 2154;2 721 not 722
+sameB[2154,4] <- b1[2154,4]  # 2154;4 PD not HW
+sameB[2154,5] <- b1[2154,5]  # 2154;5 220 not 221
+sameB[2154,6] <- b1[2154,6]  # 2154;6 EUOAL not BERTH
+sameB[2155,2] <- b1[2155,2]  # 2155;2 721 not 722
+sameB[2155,4] <- b1[2155,4]  # 2155;4 PD not HW
+sameB[2155,5] <- b1[2155,5]  # 2155;5 220 not 221
+sameB[2155,6] <- b1[2155,6]  # 2155;6 BERTH not VIBDI
+sameB[2156,6] <- b1[2156,6]  # 2156;6 BERTH not VIBDI
+sameB[2157,6] <- b1[2157,6]  # 2157;6 BERTH not VIBDI
+sameB[2182,11] <- b2[2182,11]  # 2182;11 70 not 75
+sameB[2190,9] <- b1[2190,9]  # 2190;9 K4559 not 
+sameB[2190,10] <- b1[2190,10]  # 2190;10 K4560 not 
+sameB[2191,9] <- b1[2191,9]  # 2191;9 K4562 not K4559
+sameB[2191,10] <- b1[2191,10]  # 2191;10 K4562 not K4560
+sameB[2191,12] <- b2[2191,12]  # 2191;12 NUMBER ORDER HERE IS CORRECT not NUMBR ORDER HERE IS CORRECT
+sameB[2192,9] <- b1[2192,9]  # 2192;9 K4561 not K4562
+sameB[2192,10] <- b1[2192,10]  # 2192;10 K4561 not K4562
+sameB[2192,12] <- b2[2192,12]  # 2192;12 NUMBER ORDER HERE IS CORRECT not NUMBR ORDER HERE IS CORRECT
+sameB[2195,9] <- b1[2195,9]  # 2195;9 K4563 not K4561
+sameB[2195,10] <- b1[2195,10]  # 2195;10 K4563 not K4561
+sameB[2198,9] <- b1[2198,9]  # 2198;9 K4564 not K4563
+sameB[2198,10] <- b1[2198,10]  # 2198;10 K4564 not K4563
+sameB[2201,9] <- b1[2201,9]  # 2201;9 K4565 not K4564
+sameB[2201,10] <- b1[2201,10]  # 2201;10 K4565 not K4564
+sameB[2247,9] <- b1[2247,9]  # 2247;9 K4410 not 
+sameB[2247,10] <- b1[2247,10]  # 2247;10 K4410 not 
+sameB[2252,9] <- b1[2252,9]  # 2252;9 K4466 not 
+sameB[2252,10] <- b1[2252,10]  # 2252;10 K4466 not 
+sameB[2257,9] <- b1[2257,9]  # 2257;9 K4528 not 
+sameB[2257,10] <- b1[2257,10]  # 2257;10 K4528 not 
+sameB[2258,9] <- b1[2258,9]  # 2258;9 K4529 not 
+sameB[2258,10] <- b1[2258,10]  # 2258;10 K4529 not 
+sameB[2260,9] <- b1[2260,9]  # 2260;9 K4530 not 
+sameB[2260,10] <- b1[2260,10]  # 2260;10 K4530 not 
+sameB[2265,9] <- b1[2265,9]  # 2265;9 K4531 not 
+sameB[2265,10] <- b1[2265,10]  # 2265;10 K4531 not 
+sameB[2266,9] <- b1[2266,9]  # 2266;9 K4532 not 
+sameB[2266,10] <- b1[2266,10]  # 2266;10 K4533 not 
+sameB[2267,9] <- b1[2267,9]  # 2267;9 K4534 not 
+sameB[2267,10] <- b1[2267,10]  # 2267;10 K4534 not 
+sameB[2274,9] <- b1[2274,9]  # 2274;9 K4535 not 
+sameB[2274,10] <- b1[2274,10]  # 2274;10 K4536 not 
+sameB[2275,9] <- b1[2275,9]  # 2275;9 K4537 not 
+sameB[2275,10] <- b1[2275,10]  # 2275;10 K4538 not 
+sameB[2312,6] <- b2[2312,6]  # 2312;6 VIBDI not VIBDI 
+sameB[2331,12] <- b2[2331,12]  # 2331;12  not A
+sameB[2340,5] <- b1[2340,5]  # 2340;5 224 not 229
+sameB[2341,5] <- b1[2341,5]  # 2341;5 224 not 229
+sameB[2342,5] <- b1[2342,5]  # 2342;5 224 not 229
+sameB[2343,5] <- b1[2343,5]  # 2343;5 224 not 229
+sameB[2344,5] <- b1[2344,5]  # 2344;5 224 not 229
+sameB[2344,12] <- b1[2344,12]  # 2344;12  not EGGS ON RUBPH
+sameB[2345,12] <- b1[2345,12]  # 2345;12 EGGS ON RUBPH not 
+sameB[2353,12] <- b1[2353,12]  # 2353;12 A; BLACKRASPBERRY? not A; BLACK RASPBERRY?
+sameB[2365,10] <- b1[2365,10]  # 2365;10 K5000 not K4500
+sameB[2393,11] <- b1[2393,11]  # 2393;11 25 not 225
+sameB[2406,12] <- b2[2406,12]  # 2406;12  not A
+sameB[2409,12] <- b2[2409,12]  # 2409;12 A not 
+sameB[2420,9] <- b2[2420,9]  # 2420;9 - not 
+sameB[2420,10] <- b2[2420,10]  # 2420;10 - not 
+sameB[2426,3] <- b2[2426,3]  # 2426;3 PD not ML
+sameB[2426,4] <- b2[2426,4]  # 2426;4 HWDR not HW
+sameB[2427,3] <- b2[2427,3]  # 2427;3 PD not ML
+sameB[2427,4] <- b2[2427,4]  # 2427;4 HWDR not HW
+sameB[2428,3] <- b2[2428,3]  # 2428;3 PD not ML
+sameB[2428,4] <- b2[2428,4]  # 2428;4 HWDR not HW
+sameB[2429,3] <- b2[2429,3]  # 2429;3 PD not ML
+sameB[2429,4] <- b2[2429,4]  # 2429;4 HWDR not HW
+sameB[2429,6] <- b2[2429,6]  # 2429;6 VIBSI not VIBSI 
+sameB[2430,3] <- b2[2430,3]  # 2430;3 PD not ML
+sameB[2430,4] <- b2[2430,4]  # 2430;4 HWDR not HW
+sameB[2431,3] <- b2[2431,3]  # 2431;3 PD not ML
+sameB[2431,4] <- b2[2431,4]  # 2431;4 HWDR not HW
+sameB[2432,3] <- b2[2432,3]  # 2432;3 PD not ML
+sameB[2432,4] <- b2[2432,4]  # 2432;4 HWDR not HW
+sameB[2433,3] <- b2[2433,3]  # 2433;3 PD not ML
+sameB[2433,4] <- b2[2433,4]  # 2433;4 HWDR not HW
+sameB[2434,3] <- b2[2434,3]  # 2434;3 PD not ML
+sameB[2434,4] <- b2[2434,4]  # 2434;4 HWDR not HW
+sameB[2435,3] <- b2[2435,3]  # 2435;3 PD not ML
+sameB[2435,4] <- b2[2435,4]  # 2435;4 HWDR not HW
+sameB[2435,9] <- b2[2435,9]  # 2435;9 K4627 not K44627
+sameB[2436,3] <- b2[2436,3]  # 2436;3 PD not ML
+sameB[2436,4] <- b2[2436,4]  # 2436;4 HWDR not HW
+sameB[2437,3] <- b2[2437,3]  # 2437;3 PD not ML
+sameB[2437,4] <- b2[2437,4]  # 2437;4 HWDR not HW
+sameB[2438,3] <- b2[2438,3]  # 2438;3 PD not ML
+sameB[2438,4] <- b2[2438,4]  # 2438;4 HWDR not HW
+sameB[2439,3] <- b2[2439,3]  # 2439;3 PD not ML
+sameB[2439,4] <- b2[2439,4]  # 2439;4 HWDR not HW
+sameB[2440,3] <- b2[2440,3]  # 2440;3 PD not ML
+sameB[2440,4] <- b2[2440,4]  # 2440;4 HWDR not HW
+sameB[2441,3] <- b2[2441,3]  # 2441;3 PD not ML
+sameB[2441,4] <- b2[2441,4]  # 2441;4 HWDR not HW
+sameB[2442,3] <- b2[2442,3]  # 2442;3 PD not ML
+sameB[2442,4] <- b2[2442,4]  # 2442;4 HWDR not HW
+sameB[2443,3] <- b2[2443,3]  # 2443;3 PD not ML
+sameB[2443,4] <- b2[2443,4]  # 2443;4 HWDR not HW
+sameB[2446,4] <- b2[2446,4]  # 2446;4 MLHW not MLHWDR
+sameB[2447,4] <- b2[2447,4]  # 2447;4 DR not MLHWDR
+sameB[2448,4] <- b2[2448,4]  # 2448;4 DR not MLHWDR
+sameB[2449,4] <- b2[2449,4]  # 2449;4 DR not MLHWDR
+sameB[2450,4] <- b2[2450,4]  # 2450;4 DR not MLHWDR
+sameB[2451,4] <- b2[2451,4]  # 2451;4 DR not MLHWDR
+sameB[2452,4] <- b2[2452,4]  # 2452;4 DR not MLHWDR
+sameB[2453,4] <- b2[2453,4]  # 2453;4 DR not MLHWDR
+sameB[2454,4] <- b2[2454,4]  # 2454;4 DR not MLHWDR
+sameB[2455,4] <- b2[2455,4]  # 2455;4 DR not MLHWDR
+sameB[2456,4] <- b2[2456,4]  # 2456;4 DR not MLHWDR
+sameB[2457,4] <- b2[2457,4]  # 2457;4 DR not MLHWDR
+sameB[2458,4] <- b2[2458,4]  # 2458;4 DR not MLHWDR
+sameB[2459,4] <- b2[2459,4]  # 2459;4 DR not MLHWDR
+sameB[2460,4] <- b2[2460,4]  # 2460;4 DR not MLHWDR
+sameB[2461,4] <- b2[2461,4]  # 2461;4 DR not MLHWDR
+sameB[2462,4] <- b2[2462,4]  # 2462;4 DR not MLHWDR
+sameB[2463,4] <- b2[2463,4]  # 2463;4 DR not MLHWDR
+sameB[2464,4] <- b2[2464,4]  # 2464;4 DR not MLHWDR
+sameB[2465,4] <- b2[2465,4]  # 2465;4 DR not MLHWDR
+sameB[2466,4] <- b2[2466,4]  # 2466;4 DR not MLHWDR
+sameB[2467,4] <- b2[2467,4]  # 2467;4 DR not MLHWDR
+sameB[2468,4] <- b2[2468,4]  # 2468;4 DR not MLHWDR
+sameB[2469,4] <- b2[2469,4]  # 2469;4 DR not MLHWDR
+sameB[2470,4] <- b2[2470,4]  # 2470;4 DR not MLHWDR
+sameB[2471,4] <- b2[2471,4]  # 2471;4 DR not MLHWDR
+sameB[2472,4] <- b2[2472,4]  # 2472;4 DR not MLHWDR
+sameB[2473,4] <- b2[2473,4]  # 2473;4 DR not MLHWDR
+sameB[2474,4] <- b2[2474,4]  # 2474;4 DR not MLHWDR
+sameB[2475,4] <- b2[2475,4]  # 2475;4 DR not MLHWDR
+sameB[2476,4] <- b2[2476,4]  # 2476;4 DR not MLHWDR
+sameB[2479,12] <- b1[2479,12]  # 2479;12  not A
+sameB[2481,12] <- b2[2481,12]  # 2481;12 WEIRD(SMALL FRUITS, WEIRD LEAVES) not WEIRD(SMALL FRUITS; WEIRD LEAVES)
+sameB[2484,4] <- b1[2484,4]  # 2484;4 MLHWDR not HWDRML
+sameB[2485,4] <- b1[2485,4]  # 2485;4 MLHWDR not HWDRML
+sameB[2486,4] <- b1[2486,4]  # 2486;4 MLHWDR not HWDRML
+sameB[2487,4] <- b1[2487,4]  # 2487;4 MLHWDR not HWDRML
+sameB[2488,4] <- b1[2488,4]  # 2488;4 MLHWDR not HWDRML
+sameB[2489,4] <- b1[2489,4]  # 2489;4 MLHWDR not HWDRML
+sameB[2490,4] <- b1[2490,4]  # 2490;4 MLHWDR not HWDRML
+sameB[2491,4] <- b1[2491,4]  # 2491;4 MLHWDR not HWDRML
+sameB[2492,4] <- b1[2492,4]  # 2492;4 MLHWDR not HWDRML
+sameB[2493,4] <- b1[2493,4]  # 2493;4 MLHWDR not HWDRML
+sameB[2494,4] <- b1[2494,4]  # 2494;4 MLHWDR not HWDRML
+sameB[2495,4] <- b1[2495,4]  # 2495;4 MLHWDR not HWDRML
+sameB[2496,4] <- b1[2496,4]  # 2496;4 MLHWDR not HWDRML
+sameB[2497,4] <- b1[2497,4]  # 2497;4 MLHWDR not HWDRML
+sameB[2498,4] <- b1[2498,4]  # 2498;4 MLHWDR not HWDRML
+sameB[2499,4] <- b1[2499,4]  # 2499;4 MLHWDR not HWDRML
+sameB[2500,4] <- b1[2500,4]  # 2500;4 MLHWDR not HWDRML
+sameB[2501,4] <- b1[2501,4]  # 2501;4 MLHWDR not HWDRML
+sameB[2501,11] <- b1[2501,11]  # 2501;11 25 not 30
+sameB[2502,4] <- b1[2502,4]  # 2502;4 MLHWDR not HWDRML
+sameB[2503,4] <- b1[2503,4]  # 2503;4 MLHWDR not HWDRML
+sameB[2504,2] <- b1[2504,2]  # 2504;2 728 not 727
+sameB[2504,5] <- b1[2504,5]  # 2504;5 230 not 229
+sameB[2505,2] <- b1[2505,2]  # 2505;2 728 not 727
+sameB[2505,5] <- b1[2505,5]  # 2505;5 230 not 229
+sameB[2506,2] <- b1[2506,2]  # 2506;2 728 not 727
+sameB[2506,5] <- b1[2506,5]  # 2506;5 230 not 229
+sameB[2507,2] <- b1[2507,2]  # 2507;2 728 not 727
+sameB[2507,5] <- b1[2507,5]  # 2507;5 230 not 229
+sameB[2508,2] <- b1[2508,2]  # 2508;2 728 not 727
+sameB[2508,5] <- b1[2508,5]  # 2508;5 230 not 229
+sameB[2509,2] <- b1[2509,2]  # 2509;2 728 not 727
+sameB[2509,5] <- b1[2509,5]  # 2509;5 230 not 229
+sameB[2558,7] <- b2[2558,7]  # 2558;7 2 not 1
+sameB[2559,7] <- b2[2559,7]  # 2559;7 1 not 2
+sameB[2561,7] <- b2[2561,7]  # 2561;7 2 not 1
+sameB[2562,7] <- b2[2562,7]  # 2562;7 1 not 2
+sameB[2573,10] <- b2[2573,10]  # 2573;10 K4695 not K9645
+sameB[2592,6] <- b2[2592,6]  # 2592;6 ROSMU not ROSUMU
+sameB[2595,12] <- b1[2595,12]  # 2595;12 A not 
+sameB[2596,6] <- b2[2596,6]  # 2596;6 VIBSI not VIBLSI
+sameB[2597,12] <- b1[2597,12]  # 2597;12 A not 
+sameB[2613,9] <- b2[2613,9]  # 2613;9 K4724 not K4725
