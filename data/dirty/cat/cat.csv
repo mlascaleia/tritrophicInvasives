@@ -1,0 +1,2672 @@
+date,recorder,identifier,catNum,catSpecies,treeSpecies,"
+notes",fate,fateDate,changeID,frass,emerged,photograph,rearingNotes,barcode,recorded in first wave
+601,SB,SB;KD;PD,J2001,LITHXX,MALXX,,d,627,,607,,,,,Y
+601,SB,SB;KD;PD,J2002,MELACA,MALXX,,D,607,,Y,,,,728,Y
+601,SB,SB;KD;PD,J2003,NOCTXX,MALXX,,dead,614,,607,,,,727,Y
+601,SB,SB;KD;PD,J2004,LITHXX,AMELA,,dead,630,,609,,,,,Y
+601,KD,SB;PD,J2005,OTHRXX,VIBAC,,dead,611,ORTHRU,N,,,,728,Y
+601,KD,SB;PD,J2006,LAMBFI,VIBAC,,dead,607,,N,,,,,Y
+601,KD,SB;PD,J2007,LITHXX,MALXX,,dead,609,,Y,,,,,Y
+601,KD,SB;PD,J2008,EUPSXX,MALXX,,dead,618,,607,,,,,Y
+601,KD,SB;PD,J2009,ORTHRU,MALXX,,P,617,,Y,,,,,Y
+601,KD,SB;PD,J2010,ORTHXX,VIBAC,,PP,622,,Y,,,FAILED PUPATION,,Y
+601,KD,SB;PD,J2011,MICROX,VIBAC,,P,607,,,622,,,,Y
+601,KD,SB;PD,J2012,LITHXX,MALXX,,D,613,,Y,,,,,Y
+601,KD,SB;PD,J2013,LITHXX,MALXX,,D,610,,N,,,MAY HAVE HAD FRASS BEFORE BUT MAYBE NOT,,Y
+601,KD,SB;PD,J2014,LITHXX,MALXX,,D,609,,Y,,,,,Y
+601,KD,SB;PD,J2015,LAMBFI,MALXX,,d,607,,y,,,,,Y
+601,KD,SB;PD,J2016,EUPSXX,VIBDI,,d,618,,607,,,,,Y
+601,KD,SB;PD,J2017,MICROX,MICROX,,p,607,,,,,,,Y
+,,,J2018,,,,,,,,,,,,
+,,,J2019,,,,,,,,,,,,
+,,,J2020,,,,,,,,,,,,
+,,,J2021,,,,,,,,,,,,
+,,,J2022,,,,,,,,,,,,
+,,,J2023,,,,,,,,,,,,
+,,,J2024,,,,,,,,,,,,
+,,,J2025,,,,,,,,,,,,
+,,,J2026,,,,,,,,,,,,
+,,,J2027,,,,,,,,,,,,
+,,,J2028,,,,,,,,,,,,
+,,,J2029,,,,,,,,,,,,
+,,,J2030,,,,,,,,,,,,
+,,,J2031,,,,,,,,,,,,
+602,PD,AO;PD,J2032,EUPSXX,CRAXX,,D,613,,,,,MAYBE TOIDED BUT NOT,,Y
+602,PD,AO;PD,J2033,ENNOSU,MALXX,,p,630,,609,y,,,,Y
+602,PD,AO;PD,J2034,LITHXX,PRUSE,,P,819,,609,118,,LPP 623,,Y
+602,PD,AO;PD,J2035,LITHXX,MALXX,,LPP,607,,N,,,FAILED PP 819,,Y
+602,PD,AO;PD,J2036,CROCNO,MALXX,,dead,609,,n,,,,,Y
+602,PD,AO;PD,J2037,CROCNO,MALXX,,dead,616,,,,,,,Y
+602,PD,AO;PD,J2038,MICROX,ROSNU,,P,715,,,,,,,Y
+602,PD,AO;PD,J2039,MICROX,ROSNU,,P,614,,607,702,,,,Y
+602,PD,AO;PD,J2040,ENNOSU,MALXX,,P,609,,Y,,,,,Y
+602,PD,AO;PD,J2041,NEMARE,ROSNU,,P,613,,607,Y,,,,Y
+602,PD,AO;PD,J2042,MICROX,ROSNU,,T,622,,N,622,,TOIDED BEFORE 622; PP607,,Y
+,,,J2043,,,,,,,,,,,,
+,,,J2044,,,,,,,,,,,,
+,,,J2045,,,,,,,,,,,,
+,,,J2046,,,,,,,,,,,,
+,,,J2047,,,,,,,,,,,,
+,,,J2048,,,,,,,,,,,,
+,,,J2049,,,,,,,,,,,,
+,,,J2050,,,,,,,,,,,,
+,,,J2051,,,,,,,,,,,,
+,,,J2052,,,,,,,,,,,,
+,,,J2053,,,,,,,,,,,,
+,,,J2054,,,,,,,,,,,,
+,,,J2055,,,,,,,,,,,,
+,,,J2056,,,,,,,,,,,,
+,,,J2057,,,,,,,,,,,,
+,,,J2058,,,,,,,,,,,,
+,,,J2059,,,,,,,,,,,,
+,,,J2060,,,,,,,,,,,,
+,,,J2061,,,,,,,,,,,,
+,,,J2062,,,,,,,,,,,,
+601,RP,DR,J2063,LYMADI,MALXX,,p,706,,609,728,,,,Y
+601,RP,DR,J2064,IRIDEP,MALXX,ID UNSURE,d,609,,609,,,,,Y
+601,RP,DR,J2065,NOCTXX,MALXX,,D,607,LITHXX,y,,,unsure re-id,,Y
+601,RP,DR,J2066,LITHXX,MALXX,,dead,616,,607,,,,,Y
+601,RP,DR,J2067,IRIDEP,MALXX,,dead,610,NOT IRIDEP,y,,1,may be same as j2509; photographed,,Y
+601,RP,DR,J2068,ORTHRU,MALXX,,D,603,,708,,,,728,Y
+601,RP,DR,J2069,LITHXX,MALXX,,d,627,,604,,,,,Y
+601,RP,DR,J2070,ORTHRU,FRAXX,NOT ASH; IN REARING ROOM,P,624,,608,,,host was sasparilla not ash; caterpillar was collected and fed VIBDI or anything,,Y
+601,RP,DR,J2071,LITHXX,MALXX,,d,621,,607,,,,,Y
+601,RP,DR,J2072,MICROX,VIBAC,,T,702,,,702,,P610,,Y
+601,RP,DR,J2073,ORTHRU,MALXX,,D,614,,608,,,,728,Y
+601,RP,DR,J2074,ORTHXX,MALXX,,P,622,,Y,,,,,Y
+601,RP,DR,J2075,LITHXX,MALXX,,d,618,,616,,,,,Y
+601,RP,DR,J2076,ORTHXX,CRAXX,,p,819,,609,,,,,Y
+601,RP,DR,J2077,CORYME,BERTH,,d,607,,n,,,,,Y
+,,,J2078,,,,,,,,,,,,
+,,,J2079,,,,,,,,,,,,
+,,,J2080,,,,,,,,,,,,
+,,,J2081,,,,,,,,,,,,
+,,,J2082,,,,,,,,,,,,
+,,,J2083,,,,,,,,,,,,
+,,,J2084,,,,,,,,,,,,
+,,,J2085,,,,,,,,,,,,
+,,,J2086,,,,,,,,,,,,
+,,,J2087,,,,,,,,,,,,
+,,,J2088,,,,,,,,,,,,
+,,,J2089,,,,,,,,,,,,
+,,,J2090,,,,,,,,,,,,
+,,,J2091,,,,,,,,,,,,
+,,,J2092,,,,,,,,,,,,
+,,,J2093,,,,,,,,,,,,
+602,GA,GM; KD,J2094,MICROX,FRAXX,,d,706,,608,,,,,Y
+602,GA,GM; KD,J2095,CROCNO,MALXX,,P,802,,Y,,,,,Y
+602,GA,GM; KD,J2096,LITHXX,LITHXX,,D,609,,Y,,,,,Y
+602,GA,GM; KD,J2097,LITHXX,MALXX,,d,623,,607,,,,,Y
+602,GA,GM; KD,J2098,MICROX,VIBLE,,p,614,,607,622,,,,Y
+602,GA,GM; KD,J2099,ACHADI,VIBLE,PHOTOGRAPH,P,622,,Y,,1,,,Y
+602,GA,GM; KD,J2100,NEMARE,FRAAM,,P,622,,607,708,,,,Y
+602,GA,GM; KD,J2101,MICROX,PRUSE,PHOTOGRAPH,P,607,,,620,,,,Y
+602,GA,GM; KD,J2102,ACHADI,ROSMU,PHOTOGRAPH,P,613,,,,1,P DATE IS PP DATE,,Y
+602,GA,GM; KD,J2103,EUPIXX,LIGVU,PHOTOGRAPH,P,618,,Y,,1,,,Y
+602,GA,GM; KD,J2104,LITHXX,ROSMU,,P,819,,607,118,,LPP 707,,Y
+,,,J2105,,,,,,,,,,,,
+,,,J2106,,,,,,,,,,,,
+,,,J2107,,,,,,,,,,,,
+,,,J2108,,,,,,,,,,,,
+,,,J2109,,,,,,,,,,,,
+,,,J2110,,,,,,,,,,,,
+,,,J2111,,,,,,,,,,,,
+,,,J2112,,,,,,,,,,,,
+,,,J2113,,,,,,,,,,,,
+,,,J2114,,,,,,,,,,,,
+,,,J2115,,,,,,,,,,,,
+,,,J2116,,,,,,,,,,,,
+,,,J2117,,,,,,,,,,,,
+,,,J2118,,,,,,,,,,,,
+,,,J2119,,,,,,,,,,,,
+,,,J2120,,,,,,,,,,,,
+,,,J2121,,,,,,,,,,,,
+,,,J2122,,,,,,,,,,,,
+,,,J2123,,,,,,,,,,,,
+,,,J2124,,,,,,,,,,,,
+602,HW,ML,J2125,EUPSXX,BERTH,,dead,627,,607,,,,,Y
+602,HW,RP,J2126,LITHXX,MALXX,,dead,718,,610,,,,,Y
+602,HW,ML,J2127,ENNOSU,MALXX,,dead,611,,609,,,vomit,,Y
+602,HW,RP,J2128,NEMARE,MALXX,,dead,607,,607,,,,,Y
+602,HW,RP,J2129,MICROX,MALXX,,P,607,,,Y,,,,Y
+602,HW,ML,J2130,ENNOSU,MALXX,,T,613,,,,,,,Y
+602,HW,ML,J2131,EUPIXX,MALXX,,d,607,,607,,,,,Y
+602,HW,RP,J2132,NOCTXX,MALXX,,d,623,lithxx,y,,,re-id unsure,,Y
+602,HW,RP,J2133,ENNOSU,MALXX,,D,607,,,,,,,Y
+602,HW,ML,J2134,ZALEXX,MALXX,,D,621,CROCNO,,,,,,Y
+602,HW,RP,J2135,ORTHXX,ROSMU,,P,702,,Y,,,,,Y
+602,HW,ML,J2136,EUPSXX,ROSMU,,LPP,Y,,613,,,LPP FAILED 819; LPP DATE UNKN,,Y
+602,HW,ML,J2137,CROCNO,ROSMU,,T,714,,609,,,PP ON 714 AS WELL,,Y
+602,HW,RP,J2138,EUPSXX,RUBXX,,T,608,,614,,,,,Y
+602,HW,ML,J2139,GEOMXX,LIGVU,,D,604,,,,1,,,Y
+602,HW,RP,J2140,MICROX,MALXX,,pp,609,,,,,failed pupation 622,,Y
+,,,J2141,,,,,,,,,,,,
+,,,J2142,,,,,,,,,,,,
+,,,J2143,,,,,,,,,,,,
+,,,J2144,,,,,,,,,,,,
+,,,J2145,,,,,,,,,,,,
+,,,J2146,,,,,,,,,,,,
+,,,J2147,,,,,,,,,,,,
+,,,J2148,,,,,,,,,,,,
+,,,J2149,,,,,,,,,,,,
+,,,J2150,,,,,,,,,,,,
+,,,J2151,,,,,,,,,,,,
+,,,J2152,,,,,,,,,,,,
+,,,J2153,,,,,,,,,,,,
+,,,J2154,,,,,,,,,,,,
+,,,J2155,,,,,,,,,,,,
+603,ML,ML,J2156,MICROX,RUBAL,,P,614,,607,702,,,,Y
+603,ML,ML,J2157,MICROX,RUBAL,,P,607,,,702,,,,Y
+603,ML,ML,J2158,MICROX,RUBAL,,D,715,,609,,,crossed out p610,,Y
+603,PD,ML,J2159,MICROX,RUBAL,BHGB,P,607,,,622,,,,Y
+603,PD,ML,J2160,MICROX,RUBAL,GREEN FUZZY,t,609,,,,,,,Y
+603,PD,ML,J2161,MICROX,RUBAL,GREEN FUZZY,t,609,,,,,,,Y
+603,PD,ML,J2162,ORTHRU,VIBDI,,T,622,,607,,,PP613,,Y
+603,PD,ML,J2163,ACHADI,PRUSE,,P,622,,Y,,,,,Y
+603,PD,ML,J2164,ZALEXX,PRUSE,PHOTO,D,609,,607,,1,,728,Y
+603,PD,ML,J2165,ZALEXX,PRUSE,PHOTO,D,621,,609,,1,,727,Y
+603,PD,ML,J2166,ORTHRU,PRUSE,,P,622,,Y,,,,,Y
+603,PD,ML,J2167,IRIDEP,PRUSE,PHOTO,p,617,,609,708,,,,Y
+603,PD,ML,J2168,IRIDEP,PRUSE,,P,622,,Y,,,,,Y
+603,PD,ML,J2169,ORTHRU,PRUSE,,P,622,ORTHXX,,,,,,Y
+603,PD,ML,J2170,LITHXX,PRUSE,,P,819,,608,,,LPP 623,,Y
+603,PD,ML,J2171,ACHADI,PRUSE,PHOTO; ID UNSURE,P,622,,Y,,1,,,Y
+603,PD,ML,J2172,ORTHRU,PRUSE,,P,623,,Y,,,P DATE IS P DATE,,Y
+603,PD,ML,J2173,MELACA,PRUSE,,P,607,,,,,,,Y
+603,PD,ML,J2174,MELACA,PRUSE,,d,614,,608,,,,,Y
+603,PD,ML,J2175,EUPSXX,PRUSE,,P,819,,609,,,LPP IS UNKN,,Y
+603,ML,PD,J2176,LITHXX,AMECA,,d,607,,607,,,,,Y
+603,ML,PD,J2177,EUPSXX,AMECA,,D,611,,Y,,,,,Y
+603,ML,PD,J2178,ENNOSU,AMECA,HOST AND ID UNSURE,p,712,,609,714,,,,Y
+603,ML,PD,J2179,EUPSXX,AMECA,,D,613,,Y,,,,,Y
+,,,J2180,,,,,,,,,,,,
+,,,J2181,,,,,,,,,,,,
+,,,J2182,,,,,,,,,,,,
+,,,J2183,,,,,,,,,,,,
+,,,J2184,,,,,,,,,,,,
+,,,J2185,,,,,,,,,,,,
+,,,J2186,,,,,,,,,,,,
+603,GA,KD; RG,J2187,ZALEXX,BERTH,,D,607,,N,,,,727,Y
+,,,J2188,,,,,,,,,,,,
+,,,J2189,,,,,,,,,,,,
+,,,J2190,,,,,,,,,,,,
+,,,J2191,,,,,,,,,,,,
+,,,J2192,,,,,,,,,,,,
+,,,J2193,,,,,,,,,,,,
+,,,J2194,,,,,,,,,,,,
+,,,J2195,,,,,,,,,,,,
+,,,J2196,,,,,,,,,,,,
+,,,J2197,,,,,,,,,,,,
+,,,J2198,,,,,,,,,,,,
+,,,J2199,,,,,,,,,,,,
+,,,J2200,,,,,,,,,,,,
+,,,J2201,,,,,,,,,,,,
+,,,J2202,,,,,,,,,,,,
+,,,J2203,,,,,,,,,,,,
+,,,J2204,,,,,,,,,,,,
+,,,J2205,,,,,,,,,,,,
+,,,J2206,,,,,,,,,,,,
+,,,J2207,,,,,,,,,,,,
+,,,J2208,,,,,,,,,,,,
+,,,J2209,,,,,,,,,,,,
+,,,J2210,,,,,,,,,,,,
+,,,J2211,,,,,,,,,,,,
+,,,J2212,,,,,,,,,,,,
+,,,J2213,,,,,,,,,,,,
+,,,J2214,,,,,,,,,,,,
+,,,J2215,,,,,,,,,,,,
+,,,J2216,,,,,,,,,,,,
+,,,J2217,,,,,,,,,,,,
+603,RP,PD,J2218,AMPHPY,BERTH,,d,609,lithxx,,,,,,Y
+603,RP,PD,J2219,ZALEXX,BERTH,,D,607,,N,,,FUNGUS,,Y
+603,RP,PD,J2220,MIROX,BERTH,ORANGE HEAD;GREEN BODY,D,609,,N,,,,,Y
+603,RP,PD,J2221,MICROX,BERTH,,D,903,,614,,,,,
+,,,J2222,,,,,,,,,,,,
+,,,J2223,,,,,,,,,,,,
+,,,J2224,,,,,,,,,,,,
+,,,J2225,,,,,,,,,,,,
+,,,J2226,,,,,,,,,,,,
+,,,J2227,,,,,,,,,,,,
+,,,J2228,,,,,,,,,,,,
+,,,J2229,,,,,,,,,,,,
+,,,J2230,,,,,,,,,,,,
+,,,J2231,,,,,,,,,,,,
+,,,J2232,,,,,,,,,,,,
+,,,J2233,,,,,,,,,,,,
+,,,J2234,,,,,,,,,,,,
+,,,J2235,,,,,,,,,,,,
+,,,J2236,,,,,,,,,,,,
+,,,J2237,,,,,,,,,,,,
+,,,J2238,,,,,,,,,,,,
+,,,J2239,,,,,,,,,,,,
+,,,J2240,,,,,,,,,,,,
+,,,J2241,,,,,,,,,,,,
+,,,J2242,,,,,,,,,,,,
+,,,J2243,,,,,,,,,,,,
+,,,J2244,,,,,,,,,,,,
+,,,J2245,,,,,,,,,,,,
+,,,J2246,,,,,,,,,,,,
+,,,J2247,,,,,,,,,,,,
+,,,J2248,,,,,,,,,,,,
+604,ML,ML,J2249,CORYME,BERTH,,d,618,,607,,,,,Y
+604,ML,ML,J2250,MICROX,VIBLE,BHTB,T,614,,,,,,,Y
+604,ML,ML,J2251,LAMBFI,VIBLE,,dead,613,,y,,,,,Y
+604,ML,ML,J2252,ENNOSU,VIBLE,S; maybe PHIGST,P,613,IRIDEP,,622,1,,,Y
+604,ML,ML,J2253,CROCNO,BERTH,,d,726,,,,,,,Y
+604,ML,ML,J2254,EUPSXX,ROSMU,,P,819,,608,,,LPP 714,,Y
+604,ML,ML,J2255,MICROX,LONMO,BHGB,p,614,,607,624,,choirostoneura roseana,,Y
+604,ML,ML,J2256,MICROX,ROSMU,,P,608,,,622,,,,Y
+604,ML,ML,J2257,MICROX,BERTH,Black pattern,t,708,,,,,,,Y
+604,ML,ML,J2258,MICROX,BERTH,Black pattern,p,unk,,,,,was called dead on 608 but a fully emerged moth was found at some point,,Y
+604,ML,ML,J2259,CROCNO,EUOAL,,D,611,,Y,,,,,Y
+604,ML,ML,J2260,MELACA,EUOAL,,D,613,EUPIXX,,,,,,Y
+604,ML,ML,J2261,MICROX,VIBAC,Black head tan body,P,607,,,621,,,,Y
+604,ML,ML,J2262,MICROX,VIBAC,Black on black,P,607,,,622,,,,Y
+604,ML,ML,J2263,ORTHRU,VIBAC,,P,617,,Y,,,,,Y
+604,ML,ML,J2264,MICROX,FRAAM,,T,622,,,,,P608,,Y
+604,ML,ML,J2265,MICROX,FRAAM,BHGB,,,,,,,,,
+604,ML,ML,J2266,MELACA,FRAAM,,p,627,,607,,,p date is pp date; was before 722,,Y
+604,ML,ML,J2267,ORTHRU,FRAAM,,P,616,,Y,,,,,Y
+604,ML,ML,J2268,MICROX,FRAAM,BHGB,T,614,,Y,702,,,,Y
+604,ML,ML,J2269,PROCLI,FRAAM,S; ID unsure,P,630,EUTRCL,Y,,1,P DATE IS PP DATE,,Y
+604,ML,ML,J2270,ORTHRU,FRAAM,,P,613,,Y,,,,,Y
+604,ML,ML,J2271,MICROX,FRAAM,BHGB,T,614,,607,622,,,,Y
+604,ML,ML,J2272,AMPHPY,FRAAM,ID Very unsure,P,622,,,,,,,Y
+604,ML,ML,J2273,MICROX,FRAAM,,t,621,,607,,,pp failed; toid failed,,Y
+604,ML,ML,J2274,MICROX,FRAAM,,P,614,,607,624,,,,Y
+604,GA,RP;PD,J2275,ORTHRU,BERTH,,PP ,702,NOT ORTHRU,607,,,FAILED PUPATION 819; ID UNSURE,,Y
+604,GA,RP;PD,J2276,ORTHRU,VIBDI,,,,,,,,,,
+,,,J2277,,,,,,,,,,,,
+,,,J2278,,,,,,,,,,,,
+,,,J2279,,,,,,,,,,,,
+604,HW,ML,J2280,CROCNO,BERTH,,d,802,,607,,,,,Y
+604,HW,ML,J2281,MELACA,BERTH,,d,806,,607,,,,,Y
+604,HW,ML,J2282,UNKNXX,BERTH,NOT GEO;SMALL,MIA,624,MICROX,Y,,,ID UNSURE,,Y
+604,HW,ML,J2283,MICROCX,BERTH,,p,607,,,622,,,,Y
+,,,J2284,,,,,,,,,,,,
+,,,J2285,,,,,,,,,,,,
+,,,J2286,,,,,,,,,,,,
+,,,J2287,,,,,,,,,,,,
+,,,J2288,,,,,,,,,,,,
+,,,J2289,,,,,,,,,,,,
+,,,J2290,,,,,,,,,,,,
+,,,J2291,,,,,,,,,,,,
+,,,J2292,,,,,,,,,,,,
+,,,J2293,,,,,,,,,,,,
+,,,J2294,,,,,,,,,,,,
+,,,J2295,,,,,,,,,,,,
+,,,J2296,,,,,,,,,,,,
+,,,J2297,,,,,,,,,,,,
+,,,J2298,,,,,,,,,,,,
+,,,J2299,,,,,,,,,,,,
+,,,J2300,,,,,,,,,,,,
+,,,J2301,,,,,,,,,,,,
+,,,J2302,,,,,,,,,,,,
+,,,J2303,,,,,,,,,,,,
+,,,J2304,,,,,,,,,,,,
+,,,J2305,,,,,,,,,,,,
+,,,J2306,,,,,,,,,,,,
+,,,J2307,,,,,,,,,,,,
+,,,J2308,,,,,,,,,,,,
+,,,J2309,,,,,,,,,,,,
+,,,J2310,,,,,,,,,,,,
+607,AH,DR,J2311,MELACA,VIBAC,,t,613,,,,,,,Y
+607,AH,ML,J2312,MICROX,VIBAC,,D,712,,614,,,,,Y
+607,AH,ML,J2313,MICROX,AMEXX,DOA; maybe parasatoid,D,608,,,,,,,Y
+607,AH,ML,J2314,UNKXX,AMEXX,,D,608,,,,,,,Y
+607,AH,DR,J2315,MICROX,VIBAC,,T,705,,,705,,PP608,,Y
+607,KD,DR,J2316,SAWFLX,ROSMU,,p,617,,,,,,,Y
+607,DR,DR,J2317,LITHXX,VIBDI,,P,819,,613,118,,LPP DATE UNKN,,Y
+607,DR,DR,J2318,EUPSXX,VIBDI,,T,615,,613,,,might be dead 614,,Y
+607,DR,KD,J2319,ORTHRU,VIBDI,,PP,615,,Y,,,FAILED PUPATION,,Y
+607,DR,KD,J2320,MICROX,FRAAM,,t,621,,,,,,,Y
+607,DR,KD,J2321,MELACA,FRAAM,,p,627,,612,,,,,Y
+607,DR,KD,J2322,MELACA,RUBAL,,p,630,,613,,,p date is pp,,Y
+607,DR,KD,J2323,EUPSXX,ROSMU,,LPP,714,,613,,,,,Y
+607,DR,KD,J2324,NOCTXX,ROSMU,,P,725,LITHXX,Y,,,,,Y
+607,DR,KD,J2325,SAWFLX,ROSMU,,ELIM,,,,,,,,Y
+607,DR,KD,J2326,LITHXX,ROSMU,Actively observed eating,P,819,,613,118,,LPP 627,,Y
+607,AH,ML,J2327,GEOMXX,VIBDI,S; fed with flowers & leaves,P,608,NEMARE,,622,1,,,Y
+,,,J2328,,,,,,,,,,,,
+,,,J2329,,,,,,,,,,,,
+,,,J2330,,,,,,,,,,,,
+,,,J2331,,,,,,,,,,,,
+,,,J2332,,,,,,,,,,,,
+,,,J2333,,,,,,,,,,,,
+,,,J2334,,,,,,,,,,,,
+,,,J2335,,,,,,,,,,,,
+,,,J2336,,,,,,,,,,,,
+,,,J2337,,,,,,,,,,,,
+,,,J2338,,,,,,,,,,,,
+,,,J2339,,,,,,,,,,,,
+,,,J2340,,,,,,,,,,,,
+,,,J2341,,,,,,,,,,,,
+607,HW,PD,J2342,CROCNO,ROSMU,TAKE PHOTO,P,729,,Y,,,,,Y
+607,HW,PD,J2343,GEOMXX,ROSMU,,p,620,EUPIMI,617,,1,,,Y
+607,HW,PD,J2344,CROCNO,ROSMU,PUPAL,P,726,,Y,,,,,Y
+607,HW,PD,J2345,MICROX,VIBAC,STRANGE?,P,608,,,614,,,,Y
+607,HW,ML,J2346,EPIMHO,BERTH,,P,618,CORYME,609,705,,,,Y
+607,HW,PD,J2347,MICROX,VIBAC,,P,614,,614,702,,,,Y
+607,HW,PD,J2348,MICROX,VIBAC,,PP,608,,,,,FAILED PUPATION,,Y
+607,HW,PD,J2349,MICROX,VIBAC,,T,,,,Y,,P614; TOID DATE UNK,,Y
+607,HW,PD,J2350,MICROX,VIBAC,,P,608,,,620,,,,Y
+607,HW,PD,J2351,MICROX,VIBAC,,D,617,,,,,,,Y
+607,HW,PD,J2352,CROCNO,VIBAC,,P,716,,Y,,,,,Y
+607,PD,ML,J2353,LITHXX,VIBPL,CELOR,P,819,,613,,,LPP 615,,Y
+607,PD,HW;PD,J2354,ORTHXX,VIBPL,,D,623,,613,,,LOOKS TOIDED,728,Y
+607,PD,ML,J2355,ENNOSU,VIBPL,,d,618,,,,,host unsure,,Y
+607,PD,HW;PD,J2356,MICROX,VIBPL,,T,614,,Y,702,,,,Y
+607,PD,ML,J2357,PHIGTI,VIBPL,,t,613,,n,,,,,Y
+607,KD,PD,J2358,PHIGTI,VIBDI,,P,615,,Y,,,P DATE IS PP DATE,,Y
+607,KD,PD,J2359,MICROX,VIBDI,,d,614,,,,,,,Y
+607,KD,PD,J2360,MICROX,VIBDI,,p,unk,,614,702,,,,Y
+,,,J2361,,,,,,,,,,,,
+,,,J2362,,,,,,,,,,,,
+,,,J2363,,,,,,,,,,,,
+,,,J2364,,,,,,,,,,,,
+,,,J2365,,,,,,,,,,,,
+,,,J2366,,,,,,,,,,,,
+,,,J2367,,,,,,,,,,,,
+,,,J2368,,,,,,,,,,,,
+,,,J2369,,,,,,,,,,,,
+,,,J2370,,,,,,,,,,,,
+,,,J2371,,,,,,,,,,,,
+,,,J2372,,,,,,,,,,,,
+608,-5485,-5434,J2373,LITHXX,FRAXX,,P,819,,613,,,LPP 707,,Y
+608,-2342,-8234,J2374,HIMEFI,PRUSE,ON DEAD LEAF,P,616,,,,,,,Y
+608,AH,PD,J2375,LAMBFI,BERTH,,AWOL,616,,,,,,,Y
+608,AH,SB,J2376,MICROX,FRAXX,,T,614,,Y,702,,,,Y
+608,AH,SB,J2377,LAMBFI,BERTH,,D,702,EUPIMI,Y,,,ID UNSURE,728,Y
+,,,J2378,,,,,,,,,,,,
+,,,J2379,,,,,,,,,,,,
+,,,J2380,,,,,,,,,,,,
+,,,J2381,,,,,,,,,,,,
+,,,J2382,,,,,,,,,,,,
+,,,J2383,,,,,,,,,,,,
+,,,J2384,,,,,,,,,,,,
+,,,J2385,,,,,,,,,,,,
+,,,J2386,,,,,,,,,,,,
+,,,J2387,,,,,,,,,,,,
+,,,J2388,,,,,,,,,,,,
+,,,J2389,,,,,,,,,,,,
+,,,J2390,,,,,,,,,,,,
+,,,J2391,,,,,,,,,,,,
+,,,J2392,,,,,,,,,,,,
+,,,J2393,,,,,,,,,,,,
+,,,J2394,,,,,,,,,,,,
+,,,J2395,,,,,,,,,,,,
+,,,J2396,,,,,,,,,,,,
+,,,J2397,,,,,,,,,,,,
+,,,J2398,,,,,,,,,,,,
+,,,J2399,,,,,,,,,,,,
+,,,J2400,,,,,,,,,,,,
+,,,J2401,,,,,,,,,,,,
+,,,J2402,,,,,,,,,,,,
+,,,J2403,,,,,,,,,,,,
+608,RP,AO,J2404,ORTHRU,BERTH,,PP,730,ACHADI,Y,,,FAILED PUPATION,,Y
+608,RP,AO,J2405,ORTHRU,BERTH,,P,702,,Y,,,,,Y
+608,RP,AO,J2406,MICROX,FRAAM,,T,622,,,,,caterpillar survived and pupated 617; toid was notcied later but likely emerged before pupation,,Y
+608,RP,AO,J2407,MICROX,BERTH,,p,702,,614,706,,Olethreutinae,,Y
+608,RP,AO,J2408,ORTHRU,BERTH,,P,726,ORTHHI,Y,,,,,Y
+608,RP,AO,J2409,MICROX,FRAAM,,T,614,,614,702,,,,Y
+608,RP,AO,J2410,CROCNO,VIBLE,,P,712,,Y,,,,,Y
+608,RP,AO,J2411,EUPSXX,FRAAM,,PP,704,,Y,,,FAILED PUPATION,,Y
+608,RP,AO,J2412,MICROX,VIBAC,,D,608,,,,,DOA,,Y
+,,,J2413,,,,,,,,,,,,
+,,,J2414,,,,,,,,,,,,
+,,,J2415,,,,,,,,,,,,
+,,,J2416,,,,,,,,,,,,
+,,,J2417,,,,,,,,,,,,
+,,,J2418,,,,,,,,,,,,
+,,,J2419,,,,,,,,,,,,
+,,,J2420,,,,,,,,,,,,
+,,,J2421,,,,,,,,,,,,
+,,,J2422,,,,,,,,,,,,
+,,,J2423,,,,,,,,,,,,
+,,,J2424,,,,,,,,,,,,
+,,,J2425,,,,,,,,,,,,
+,,,J2426,,,,,,,,,,,,
+,,,J2427,,,,,,,,,,,,
+,,,J2428,,,,,,,,,,,,
+,,,J2429,,,,,,,,,,,,
+,,,J2430,,,,,,,,,,,,
+,,,J2431,,,,,,,,,,,,
+,,,J2432,,,,,,,,,,,,
+,,,J2433,,,,,,,,,,,,
+,,,J2434,,,,,,,,,,,,
+608,PD,PD;GM,J2435,LAMBFI,BERTH,,D,618,,,,,,,Y
+608,PD,PD;GM,J2436,CLADAT,BERTH,,p,613,,,,,,,Y
+608,PD,PD;GM,J2437,CROCNO,BERTH,,d,802,,613,,,,,Y
+608,PD,PD;GM,J2438,LAMBFI,BERTH,,k,615,,,,,squished,,Y
+608,PD,PD;GM,J2439,EUPISW,BERTH,,,,,,,,,,
+608,PD,PD;GM,J2440,MICROX,FRAAM,,T,UNK,,,Y,,P617; TOID DATE AND EMERGED UNK,,Y
+608,PD,PD;GM,J2441,UNKNXX,FRAAM,DEAD,d,608,,n,,,,,Y
+608,PD,PD;GM,J2442,LAMBFI,MALXX,,D,616,,Y,,,,,Y
+608,PD,PD;GM,J2443,LAMBFI,MALXX,,d,616,,,,,,,Y
+608,PD,PD;GM,J2444,MICROX,VIBDI,,p,614,,,624,,,,Y
+,,,J2445,,,,,,,,,,,,
+,,,J2446,,,,,,,,,,,,
+,,,J2447,,,,,,,,,,,,
+,,,J2448,,,,,,,,,,,,
+,,,J2449,,,,,,,,,,,,
+,,,J2450,,,,,,,,,,,,
+,,,J2451,,,,,,,,,,,,
+,,,J2452,,,,,,,,,,,,
+,,,J2453,,,,,,,,,,,,
+,,,J2454,,,,,,,,,,,,
+,,,J2455,,,,,,,,,,,,
+,,,J2456,,,,,,,,,,,,
+,,,J2457,,,,,,,,,,,,
+,,,J2458,,,,,,,,,,,,
+,,,J2459,,,,,,,,,,,,
+,,,J2460,,,,,,,,,,,,
+,,,J2461,,,,,,,,,,,,
+,,,J2462,,,,,,,,,,,,
+,,,J2463,,,,,,,,,,,,
+,,,J2464,,,,,,,,,,,,
+,,,J2465,,,,,,,,,,,,
+,,,J2466,,,,,,,,,,,,
+,,,J2467,,,,,,,,,,,,
+,,,J2468,,,,,,,,,,,,
+,,,J2469,,,,,,,,,,,,
+,,,J2470,,,,,,,,,,,,
+,,,J2471,,,,,,,,,,,,
+,,,J2472,,,,,,,,,,,,
+,,,J2473,,,,,,,,,,,,
+,,,J2474,,,,,,,,,,,,
+,,,J2475,,,,,,,,,,,,
+,,,J2476,,,,,,,,,,,,
+,,,J2477,,,,,,,,,,,,
+,,,J2478,,,,,,,,,,,,
+,,,J2479,,,,,,,,,,,,
+,,,J2480,,,,,,,,,,,,
+,,,J2481,,,,,,,,,,,,
+,,,J2482,,,,,,,,,,,,
+,,,J2483,,,,,,,,,,,,
+,,,J2484,,,,,,,,,,,,
+,,,J2485,,,,,,,,,,,,
+,,,J2486,,,,,,,,,,,,
+,,,J2487,,,,,,,,,,,,
+,,,J2488,,,,,,,,,,,,
+,,,J2489,,,,,,,,,,,,
+,,,J2490,,,,,,,,,,,,
+,,,J2491,,,,,,,,,,,,
+,,,J2492,,,,,,,,,,,,
+,,,J2493,,,,,,,,,,,,
+,,,J2494,,,,,,,,,,,,
+,,,J2495,,,,,,,,,,,,
+,,,J2496,,,,,,,,,,,,
+609,PD,RP,J2497,MICROX,FRAAM,,T,614,,614,702,,,,Y
+609,PD,RP,J2498,MICROX,VIBAC,FILLED WITH PARASITOIDS,T,609,,N,Y,,,,Y
+609,PD,RP,J2499,MICROX,ROSMU,DIED WITH PARASITOIDS,T,609,,,702,,,,Y
+609,PD,RP,J2500,LITHXX,FRAAM,,T,622,,610,,,,,Y
+609,PD,RP,J2501,EUPISW,VIBAC,CLADARA-ESQUE;S,P,614,,,,,,,Y
+609,PD,RP,J2502,EUPIXX,BERTH,,D,621,,,,,,728,Y
+609,PD,RP,J2503,GEOMXX,VIBAC,NON DESCRIPT GREEN,P,701,MESORU,616,,,,,Y
+609,PD,RP,J2504,MICROX,VIBAC,PUPATED,P,614,,N,,,,,Y
+609,PD,RP,J2505,MICROX,VIBAC,,T,706,,614,706,,P621,,Y
+609,PD,RP,J2506,ORTHRU,BERTH,,D,624,,616,,,,728,Y
+609,PD,RP,J2507,NEMARE,BERTH,,d,714,,610,,,,,Y
+609,PD,RP,J2508,MICROX,RUBXX,,pp,802,,619,,,d819,,Y
+609,PD,RP,J2509,GEOMXX,RUBXX,,dead,614,,maybe,,1,same as j2067?,,Y
+609,PD,RP,J2510,MICROX,ROSMU,,d,617,,,,,,,Y
+609,PD,RP,J2511,ORTHRU,ROSMU,,P,702,ORTHHI,Y,,,P DATE IS PP DATE,,Y
+609,PD,RP,J2512,MELACA,ROSMU,,p,705,trical,,,,,,Y
+609,PD,RP,J2513,LITHXX,BERTH,,d,613,,,,,,,Y
+,,,J2514,,,,,,,,,,,,
+,,,J2515,,,,,,,,,,,,
+,,,J2516,,,,,,,,,,,,
+,,,J2517,,,,,,,,,,,,
+,,,J2518,,,,,,,,,,,,
+,,,J2519,,,,,,,,,,,,
+,,,J2520,,,,,,,,,,,,
+,,,J2521,,,,,,,,,,,,
+,,,J2522,,,,,,,,,,,,
+,,,J2523,,,,,,,,,,,,
+,,,J2524,,,,,,,,,,,,
+,,,J2525,,,,,,,,,,,,
+,,,J2526,,,,,,,,,,,,
+,,,J2527,,,,,,,,,,,,
+609,AO,HW,J2528,CROCNO,FRAAM,,P,723,,Y,,,,,Y
+609,AO,HW,J2529,EUPISW,VIBAC,,P,613,,Y,,,P DATE IS PP DATE,,Y
+609,AO,HW,J2530,MICROX,FRAAM,S,t,614,,y,,,,,Y
+609,AO,HW,J2531,MICROX,FRAAM,,T,702,,,702,,P609,,Y
+609,AO,HW,J2532,UNKNXX,VIBAC,DEAD WITH STUFF ON IT,T,708,,Y,,,D617,,Y
+609,AO,HW,J2533,MICROX,VIBAC,,P,614,,614,702,,,,Y
+609,AO,HW,J2534,MICROX,VIBAC,PUPA,P,609,,N,621,,CAUGHT AS PUPA,,Y
+609,AO,HW,J2535,MICROX,VIBAC,,MIA,617,,610,,,,,Y
+609,AO,HW,J2536,ORTHRU,VIBAC,,P,617,,Y,,,,,Y
+609,AO,HW,J2537,MICROX,VIBAC,,P,621,,,702,,,,Y
+609,AO,HW,J2538,ORTHRU,VIBAC,,P,630,,Y,,,,,Y
+609,AO,HW,J2539,MICROX,VIBAC,,D,616,,,,,,728,Y
+609,AO,HW,J2540,MICROX,VIBAC,FROM SAME PLANT AS J2536,mia,617,,610,,,,,Y
+609,AO,HW,J2541,LITHAN,VIBAC,,LPP,613,,,,,,,Y
+609,AO,HW,J2542,ORTHRU,VIBAC,,D,613,,610,,,,728,Y
+609,AO,HW,J2543,EUPISW,VIBAC,,t,611,,,,,was alive;now dead,,Y
+609,AO,HW,J2544,MICROX,LIGVU,,P,727,,614,817,,,,Y
+609,AO,HW,J2545,MICROX,RUBXX,,t,622,,,,,caterpillar also pupated,,Y
+609,AO,HW,J2546,CROCNO,RUBXX,,t,617,,,617,,toid escaped; emerge date unsure,,Y
+609,AO,HW,J2547,ORTHRU,RUBXX,,P,809,ORTHHI,,,,THIS CATEPILLAR DID GE ON VIBAC AND RETIRED ON RUBXX,,Y
+609,AO,HW,J2548,MELACA,RUBXX,,d,627,,610,,,,,Y
+609,AO,HW,J2549,LITHXX,PRUSE,,P,819,,610,108,,LPP 702,,Y
+609,AO,HW,J2550,HIMEFI,PRUSE,,P,616,,Y,,,P DATE SOMETIME AFTER 616,,Y
+609,AO,HW,J2551,MELACA,PRUSE,,P,623,ENNOSU,,,,,,Y
+609,AO,HW,J2552,ORTHRU,PRUSE,,P,621,ORTHHI,,,,P DATE IS PP DATE,,Y
+,,,J2553,,,,,,,,,,,,
+,,,J2554,,,,,,,,,,,,
+,,,J2555,,,,,,,,,,,,
+,,,J2556,,,,,,,,,,,,
+,,,J2557,,,,,,,,,,,,
+,,,J2558,,,,,,,,,,,,
+610,DR,ML,J2559,CROCNO,VIBDI,,P,809,,Y,,,,,Y
+610,DR,ML,J2560,MICROX,VIBPL,,mia,621,,624,,,,,Y
+610,DR,ML,J2561,MELACA,VIBPL,HOST UNSURE,t,616,,Y,,,,,Y
+610,DR,ML,J2562,ORTHRU,BERTH,,T,615,,,702,,,,Y
+610,DR,ML,J2563,EUPSXX,BERTH,,d,802,,,,,date is wrong on cup,,Y
+610,DR,ML,J2564,SAWFLX,BERTH,,p,617,,,,,,,Y
+610,DR,ML,J2565,GEOMXX,ROSMU,S,P,708,,Y,,,,,Y
+610,DR,ML,J2566,EUPSXX,PRUSE,S,T,614,,,702,,TOID WAS LIKELY EARLIER,,Y
+610,DR,DR,J2567,SAWFLX,AMEXX,,ELIM,,,,,,,,Y
+610,DR,DR,J2568,ORTHRU,CRAXX,,P,622,,Y,,,,,Y
+,,,J2569,,,,,,,,,,,,
+,,,J2570,,,,,,,,,,,,
+,,,J2571,,,,,,,,,,,,
+,,,J2572,,,,,,,,,,,,
+,,,J2573,,,,,,,,,,,,
+,,,J2574,,,,,,,,,,,,
+,,,J2575,,,,,,,,,,,,
+,,,J2576,,,,,,,,,,,,
+,,,J2577,,,,,,,,,,,,
+,,,J2578,,,,,,,,,,,,
+,,,J2579,,,,,,,,,,,,
+,,,J2580,,,,,,,,,,,,
+,,,J2581,,,,,,,,,,,,
+,,,J2582,,,,,,,,,,,,
+,,,J2583,,,,,,,,,,,,
+,,,J2584,,,,,,,,,,,,
+,,,J2585,,,,,,,,,,,,
+,,,J2586,,,,,,,,,,,,
+,,,J2587,,,,,,,,,,,,
+,,,J2588,,,,,,,,,,,,
+,,,J2589,,,,,,,,,,,,
+611,PD,HW;PD;GM,J2590,CROCNO,VIBDI,,P,719,,Y,,,,,Y
+611,PD,HW;PD;GM,J2591,HIMEFI,MALXX,,P,618,,,,,,,Y
+611,PD,HW;PD;GM,J2592,UNKNXX,MALXX,PUPA,p,614,,,,,,,Y
+611,PD,HW;PD;GM,J2593,HIMEFI,PRUSE,,P,615,,,,,P DATE IS PP DATE,,Y
+611,PD,HW;PD;GM,J2594,CROCNO,FRAAM,,P,804,,Y,,,,,Y
+611,PD,HW;PD;GM,J2595,EUPIXX,VIBDI,,D,621,EUPISW,616,,,,728,Y
+611,PD,HW;PD;GM,J2596,ZALEXX,VIBDI,,P,806,CROCNO,Y,,,,,Y
+611,PD,HW;PD;GM,J2597,CROCNO,CRAXX,,d,620,,y,,,,,Y
+611,PD,HW;PD;GM,J2598,MICROX,MALXX,,p,621,,614,y,,,,Y
+611,PD,HW;PD;GM,J2599,ZALEXX,MALXX,,p,816,crocno,617,,,,,Y
+611,PD,HW;PD;GM,J2600,MICROX,VIBDI,FLOWERS,D,712,,,,,flowers,,Y
+611,PD,HW;PD;GM,J2601,MICROX,VIBDI,,mia,621,,614,,,,,Y
+611,PD,HW;PD;GM,J2602,MICROX,VIBDI,,d,624,,,,,,,Y
+611,PD,HW;PD;GM,J2603,MELACA,VIBDI,,P,617,,,,,,,Y
+611,PD,HW;PD;GM,J2604,MICROX,RUBXX,,D,816,,614,,,,,Y
+611,PD,HW;PD;GM,J2605,MICROX,VIBDI,,d,614,,,,,,,Y
+611,PD,HW;PD;GM,J2606,MICROX,VIBDI,,p,715,,,804,,,,Y
+611,PD,HW;PD;GM,J2607,MICROX,RUBXX,,p,702,,614,y,,,,Y
+611,PD,HW;PD;GM,J2608,MICROX,VIBDI,,k,616,,,,,ejected,,Y
+611,PD,HW;PD;GM,J2609,MELACA,RUBXX,,P,705,MESORU,616,,1,,,Y
+611,PD,HW;PD;GM,J2610,MICROX,RUBXX,,p,722,,614,804,,,,Y
+611,PD,HW;PD;GM,J2611,MICROX,RUBXX,,P,616,,614,702,,,,Y
+611,PD,HW;PD;GM,J2612,MICROX,VIBAC,,,,,,,,,,
+611,PD,HW;PD;GM,J2613,MICROX,VIBAC,,P,611,,,622,,,,Y
+611,PD,HW;PD;GM,J2614,MICROX,RUBXX,,p,621,,614,708,,,,Y
+611,PD,HW;PD;GM,J2615,UNKNXX,RUBXX,PUPA,P,614,PTEROX,,Y,,,,Y
+611,PD,HW;PD;GM,J2616,MELACA,RUBXX,,P,702,,616,,1,,,Y
+611,PD,HW;PD;GM,J2617,MELACA,RUBXX,,p,702,,612,,1,,,Y
+611,PD,HW;PD;GM,J2618,MICROX,FRAAM,,T,614,,,702,,,,Y
+611,PD,HW;PD;GM,J2619,MICROX,RUBXX,POSSIBLY CRUSHED,K,617,,,,,possibly crushed still moving,,Y
+611,PD,HW;PD;GM,J2620,MICROX,RUBXX,,p,621,,617,,,,,Y
+611,ML,ML,J2621,MICROX,CRAXX,PP,p,614,,,,,,,Y
+611,ML,ML,J2622,MICROX,VIBLE,,P,617,,,702,,,,Y
+611,ML,ML,J2623,LITHXX,VIBLE,,P,819,,616,,,"LPP IS UNKN, DIED AND MOLDED AFTER?!",,Y
+611,ML,ML,J2624,MICROX,VIBDE,,LPP,616,,614,,,,,Y
+611,ML,ML,J2625,MICROX,VIBDE,,LPP,614,,614,,,,,Y
+611,ML,ML,J2626,MICROX,VIBDE,,LPP,617,,614,,,,,Y
+611,ML,ML,J2627,MICROX,VIBDE,,LPP,616,,614,,,,,Y
+611,ML,ML,J2628,MICROX,VIBDE,,D,614,,,,,,,Y
+611,ML,ML,J2629,MICROX,VIBDE,,LPP,614,,,,,,,Y
+611,ML,ML,J2630,MICROX,VIBDE,,D,617,,,,,,,Y
+611,ML,ML,J2631,ORTHRU,VIBDE,,P,623,,,,,P DATE IS PP DATE,,Y
+611,ML,ML,J2632,MICROX,VIBDE,,LPP,614,,614,,,,,Y
+611,ML,ML,J2633,MICROX,VIBDE,,LPP,614,,,,,,,Y
+,,,J2634,,,,,,,,,,,,
+,,,J2635,,,,,,,,,,,,
+,,,J2636,,,,,,,,,,,,
+,,,J2637,,,,,,,,,,,,
+,,,J2638,,,,,,,,,,,,
+,,,J2639,,,,,,,,,,,,
+,,,J2640,,,,,,,,,,,,
+,,,J2641,,,,,,,,,,,,
+,,,J2642,,,,,,,,,,,,
+,,,J2643,,,,,,,,,,,,
+,,,J2644,,,,,,,,,,,,
+,,,J2645,,,,,,,,,,,,
+,,,J2646,,,,,,,,,,,,
+,,,J2647,,,,,,,,,,,,
+,,,J2648,,,,,,,,,,,,
+,,,J2649,,,,,,,,,,,,
+,,,J2650,,,,,,,,,,,,
+,,,J2651,,,,,,,,,,,,
+615,ML,ML;PD;DR,J2652,MICROX,LONMO,,p,622,,,702,,,,Y
+615,ML,ML;PD;DR,J2653,ORTHXX,VIBLE,,P,623,,,,,,,Y
+615,ML,ML;PD;DR,J2654,NEMARE,VIBLE,,P,615,,,622,,,,Y
+615,ML,ML;PD;DR,J2655,MICROX,VIBDE,,LPP,616,,,,,,,Y
+615,ML,ML;PD;DR,J2656,XALEXX,VIBDE,,P,712,,,,,,,Y
+615,ML,ML;PD;DR,J2657,UNKNXX,LONMO,,P,722,PALTAN,,804,,pupated before 722; was weighed on 722,,Y
+615,ML,ML;PD;DR,J2658,LITHXX,VIBDE,,P,819,,,108,,LPP DATE UNKNOWN,,Y
+615,ML,ML;PD;DR,J2659,HIMEFI,FRAAM,,P,622,,,,,,,Y
+615,ML,ML;PD;DR,J2660,ORTHRU,VIBAC,,t,630,,,,1,,,Y
+615,ML,ML;PD;DR,J2661,EUPIXX,VIBAC,,P,618,,,,,,,Y
+615,ML,ML;PD;DR,J2662,MICROX,RUBXX,,T,702,,,702,,PP616,,Y
+615,ML,ML;PD;DR,J2663,UNKNXX,RUBXX,,P,615,PTEROX,,622,,,,Y
+615,ML,ML;PD;DR,J2664,MICROX,RUBXX,,PP,706,,,,,DIED 729,,Y
+615,ML,ML;PD;DR,J2665,MICROX,RUBXX,,D,621,,616,,,,,Y
+,,,J2666,,,,,,,,,,,,
+615,ML,ML;PD;DR,J2667,MICROX,CRAXX,,D,624,,616,,,P621 T?,,Y
+615,ML,ML;PD;DR,J2668,UNKNXX,RUBXX,,P,615,,,622,,,,Y
+615,ML,ML;PD;DR,J2669,MINEXX,AMEXX,,d,624,,,,,,,Y
+615,ML,ML;PD;DR,J2670,MINEXX,AMEXX,,p,615,,,,,,,Y
+615,ML,ML;PD;DR,J2671,MICROX,VIBAC,,P,616,,,702,,,,Y
+615,ML,ML;PD;DR,J2672,MICROX,VIBAC,,P,621,,,702,,,,Y
+615,ML,ML;PD;DR,J2673,MICROX,VIBAC,,P,611,,,702,,,,Y
+615,ML,ML;PD;DR,J2674,MICROX,RUBXX,,pp,624,,621,,,mia712,,Y
+615,ML,ML;PD;DR,J2675,MELACA,PRUSE,,d,622,,,,,,,Y
+615,ML,ML;PD;DR,J2676,NOCTXX,PRUSE,,P,820,PALTAN,,118,1,,,
+615,ML,ML;PD;DR,J2677,MELACA,PRUSE,,d,628,,,,,,,Y
+615,ML,ML;PD;DR,J2678,ENNOSU,FRAAM,,P,623,,,,,P DATE IS PP DATE,,Y
+615,ML,ML;PD;DR,J2679,ORTHXX,ROSMU,,t,712,,,,,pp 712,,Y
+615,ML,ML;PD;DR,J2680,ORTHRU,VIBPL,,D,630,,,,,,728,Y
+615,ML,ML;PD;DR,J2681,PROCLI,VIBPL,,P,729,EUTRCL,,,,,,Y
+615,ML,ML;PD;DR,J2682,EUPIMI,LIGVU,,D,712,,,,1,,,Y
+615,ML,ML;PD;DR,J2683,ORTHRU,LIGVU,,P,704,,,,,P DATE IS PP DATE,,Y
+,,,J2684,,,,,,,,,,,,
+,,,J2685,,,,,,,,,,,,
+,,,J2686,,,,,,,,,,,,
+,,,J2687,,,,,,,,,,,,
+,,,J2688,,,,,,,,,,,,
+,,,J2689,,,,,,,,,,,,
+,,,J2690,,,,,,,,,,,,
+,,,J2691,,,,,,,,,,,,
+,,,J2692,,,,,,,,,,,,
+,,,J2693,,,,,,,,,,,,
+,,,J2694,,,,,,,,,,,,
+,,,J2695,,,,,,,,,,,,
+,,,J2696,,,,,,,,,,,,
+,,,J2697,,,,,,,,,,,,
+,,,J2698,,,,,,,,,,,,
+,,,J2699,,,,,,,,,,,,
+,,,J2700,,,,,,,,,,,,
+,,,J2701,,,,,,,,,,,,
+,,,J2702,,,,,,,,,,,,
+,,,J2703,,,,,,,,,,,,
+,,,J2704,,,,,,,,,,,,
+,,,J2705,,,,,,,,,,,,
+,,,J2706,,,,,,,,,,,,
+,,,J2707,,,,,,,,,,,,
+,,,J2708,,,,,,,,,,,,
+,,,J2709,,,,,,,,,,,,
+,,,J2710,,,,,,,,,,,,
+,,,J2711,,,,,,,,,,,,
+,,,J2712,,,,,,,,,,,,
+,,,J2713,,,,,,,,,,,,
+616,KD,PD,J2714,MICROX,LIGVU,,P,722,SMICRO,621,,,,,Y
+616,KD,AO,J2715,ORTHRU,ROSMU,,T,617,,,,,,,Y
+616,KD,AO,J2716,MELACA,LIGVU,,P,716,,Y,,,,,Y
+616,KD,AO,J2717,EUPIMI,ROSMU,,d,620,,n,,,,,Y
+616,KD,AO,J2718,EUPIMI,ROSMU,,T,625,,,702,,SAUSAGE V2,,Y
+616,KD,AO,J2719,ORTHRU,ROSMU,,T,623,,,Y,,,,Y
+616,KD,AO,J2720,ORTHRU,ROSMU,,P,726,ORTHHI,,,,,,Y
+616,KD,AO,J2721,SAWFLX,ROSMU,,ELIM,,,,,,,,Y
+616,KD,AO,J2722,UNIDXX,ROSMU,PUPA,p,616,eNNosu,n,702,,,,Y
+616,KD,AO,J2723,MELACA,MALXX,IF NO FRASS ON APPLE; SPERPU,p,,,,,,"cat data sheet says found on ROSMU, but branch and tape says malxx; p date unkown but was before 722",,Y
+616,KD,AO,J2724,MICROX,RUBXX,HAIRY,t,621,,,,,,,Y
+616,KD,AO,J2725,MICROX,RUBXX,,t,621,,,,,,,Y
+616,KD,AO,J2726,MICROX,RUBXX,,d,722,,,,,,,Y
+616,KD,AO,J2727,MELACA,RUBXX,,T,622,,Y,Y,,COULD BE NOT MELACA,,Y
+616,KD,AO,J2728,CROCNO,RUBXX,,T,623,,,702,,SAUSAGE,,Y
+,,,J2729,,,,,,,,,,,,
+,,,J2730,,,,,,,,,,,,
+,,,J2731,,,,,,,,,,,,
+,,,J2732,,,,,,,,,,,,
+,,,J2733,,,,,,,,,,,,
+,,,J2734,,,,,,,,,,,,
+,,,J2735,,,,,,,,,,,,
+,,,J2736,,,,,,,,,,,,
+,,,J2737,,,,,,,,,,,,
+,,,J2738,,,,,,,,,,,,
+,,,J2739,,,,,,,,,,,,
+,,,J2740,,,,,,,,,,,,
+,,,J2741,,,,,,,,,,,,
+,,,J2742,,,,,,,,,,,,
+,,,J2743,,,,,,,,,,,,
+,,,J2744,,,,,,,,,,,,
+616,HW,HW,J2745,MICROX,BERTH,ON AO'S GLASSES; MOST LIKELY ON BERTH,D,715,,,,,maybe t;no toid asof 818,,Y
+616,HW,ML,J2746,MORRCO,VIBLE,,P,816,,,,,PUPAL DATE IS PREPUPAL DATE,,
+616,HW,HW,J2747,MICROX,RUBXX,SO MUCH FRASS,t,817,,,817,,pupated 624,,Y
+616,HW,AO,J2748,MELACA,RUBXX,,P,702,MESORU,,,,,,Y
+616,HW,HW,J2749,LITHXX,FRAXX,,P,819,,,118,,LPP UNKN,,Y
+616,HW,AO,J2750,MELACA,FRAXX,,P,622,,N,,,,,Y
+616,RP,HW,J2751,MICROX,ROSMU,,D,621,,708,,,,,Y
+616,RP,HW,J2752,CROCNO,ROSMU,P 802,T,823,,,,,,,Y
+616,RP,HW,J2753,SAWFLX,ROSMU,5 SAWFLIES IN ONE VILE,ELIM,,,,,,,,Y
+616,HW,ML,J2754,MELACA,ROSMU,MICHAEL HAS DOUBTS,D,705,,Y,,1,,,Y
+616,HW,ML,J2755,ZALEXX,ROSMU,,p,623,,620,708,,,,Y
+616,HW,HW,J2756,MORRCO,RUBXX,,P,926,,,,,,,
+616,HW,RP,J2757,ORTHRU,RUBXX,,T,623,,,702,,,,Y
+616,HW,RP,J2758,LITHXX,RUBXX,,AWOL,705,,,,,,,Y
+616,HW,HW,J2759,LITHXX,ROSMU,,P,819,,N,118,,LPP 620,,Y
+616,HW,HW,J2760,SAWFLX,,WITH EGGS OF SAME KIND,ELIM,,,,,,,,Y
+616,HW,HW,J2761,MELACA,ASH 1,FELL FROM TREE TO TARP,P,622,,620,,,,,Y
+,,,J2762,,,,,,,,,,,,
+,,,J2763,,,,,,,,,,,,
+,,,J2764,,,,,,,,,,,,
+,,,J2765,,,,,,,,,,,,
+,,,J2766,,,,,,,,,,,,
+,,,J2767,,,,,,,,,,,,
+,,,J2768,,,,,,,,,,,,
+,,,J2769,,,,,,,,,,,,
+,,,J2770,,,,,,,,,,,,
+,,,J2771,,,,,,,,,,,,
+,,,J2772,,,,,,,,,,,,
+,,,J2773,,,,,,,,,,,,
+,,,J2774,,,,,,,,,,,,
+,,,J2775,,,,,,,,,,,,
+617,ML,ML,J2776,MICROX,VIBAC,PUPA,P,621,,,702,,,,Y
+617,ML,ML,J2777,MICROX,VIBAC,PUPA,P,617,,,622,,,,Y
+617,ML,ML,J2778,MICROX,VIBAC,PTOID,T,624,,,702,,,,Y
+617,ML,ML,J2779,MICROX,VIBAC,,P,621,,,702,,,,Y
+617,ML,ML,J2780,MICROX,VIBAC,PTOID,mia,621,,,,,,,Y
+617,ML,ML,J2781,MELACA,VIBAC,,d,628,,,,,,,Y
+617,ML,ML,J2782,MICROX,BERTH,,d,621,,,,,body has been lost,,Y
+617,PD,ML,J2783,NOCTXX,LONMO,PUPA,P,617,,,,,,,Y
+617,PD,ML,J2784,ORTHRU,LONMO,,P,712,ORTHHI,,,,,,Y
+617,PD,ML,J2785,MICROX,LONMO,,T,702,,,702,,,,Y
+617,PD,ML,J2786,MORRCO,LONMO,,mia,629,,,,,marked dead 702,,Y
+617,PD,ML,J2787,MICROX,LONMO,,p,702,,621,y,,,,Y
+617,PD,ML,J2788,ZALEXX,ROSMU,,pp,806,ZALELU,,,,d819,,Y
+,,,J2789,,,,,,,,,,,,
+,,,J2790,,,,,,,,,,,,
+,,,J2791,,,,,,,,,,,,
+,,,J2792,,,,,,,,,,,,
+,,,J2793,,,,,,,,,,,,
+,,,J2794,,,,,,,,,,,,
+,,,J2795,,,,,,,,,,,,
+,,,J2796,,,,,,,,,,,,
+,,,J2797,,,,,,,,,,,,
+,,,J2798,,,,,,,,,,,,
+,,,J2799,,,,,,,,,,,,
+,,,J2800,,,,,,,,,,,,
+,,,J2801,,,,,,,,,,,,
+,,,J2802,,,,,,,,,,,,
+,,,J2803,,,,,,,,,,,,
+,,,J2804,,,,,,,,,,,,
+,,,J2805,,,,,,,,,,,,
+,,,J2806,,,,,,,,,,,,
+617,PD,KD,J2807,MELACA,VIBAC,,p,630,,,,,,,Y
+617,PD,KD,J2808,MICROX,VIBAC,PUPA,P,622,,,702,,,,Y
+617,PD,KD,J2809,MICROX,VIBAC,PUPA,T,702,,,702,,P617,,Y
+617,PD,KD,J2810,MICROX,VIBAC,PUPA,T,702,,,702,,P621,,Y
+617,PD,KD,J2811,MICROX,PRUSE,,p,624,,621,719,,,,Y
+617,PD,KD,J2812,ORTHRU,PRUSE,,P,712,ORTHHI,,,,,,Y
+617,PD,KD,J2813,ORTHRU,ROSMU,,P,726,,,,,,,Y
+617,PD,KD,J2814,LITHXX,ROSMU,,pp,726,,,,,D819,,Y
+617,PD,KD,J2815,MELACA,ROSMU,,P,702,EUPIXX,,,,,,Y
+617,PD,KD,J2816,EUPIXX,ROSMU,,mia,,,,,,awol but may have been pupal;this cup sux,,Y
+617,PD,KD,J2817,ORTHRU,ROSMU,,P,729,ORTHHI,,,,,,Y
+617,PD,KD,J2818,MICROX,PRUSE,,P,624,,,,,,,Y
+617,PD,KD,J2819,HIMEFI,MALXX,,d,627,,y,,,,,Y
+617,PD,KD,J2820,MELACA,PRUSE,,p,628,,,,,p date is pupa date; actual date before 722,,Y
+617,PD,KD,J2821,EPIMHO,PRUSE,,,,,,,,,,
+617,PD,KD,J2822,CORYME,PRUSE,,D,629,,,,,,,Y
+,,,J2823,,,,,,,,,,,,
+,,,J2824,,,,,,,,,,,,
+,,,J2825,,,,,,,,,,,,
+,,,J2826,,,,,,,,,,,,
+,,,J2827,,,,,,,,,,,,
+,,,J2828,,,,,,,,,,,,
+,,,J2829,,,,,,,,,,,,
+,,,J2830,,,,,,,,,,,,
+,,,J2831,,,,,,,,,,,,
+,,,J2832,,,,,,,,,,,,
+,,,J2833,,,,,,,,,,,,
+,,,J2834,,,,,,,,,,,,
+,,,J2835,,,,,,,,,,,,
+,,,J2836,,,,,,,,,,,,
+,,,J2837,,,,,,,,,,,,
+618,KD,HW,J2838,MICROX,FRAAM,,d,621,,,,,,,Y
+618,KD,HW,J2839,GEOMXX,RUBXX,,P,624,mesoru,,708,1,,,Y
+618,KD,HW,J2840,GEOMXX,RUBXX,,p,624,mesoru,,708,,,,Y
+618,KD,HW,J2841,ORTHRU,ROSMU,,P,707,,Y,,,,,Y
+618,KD,HW,J2842,CROCNO,ROSMU,,P,727,,,,,,,Y
+618,KD,HW,J2843,ECTRCR,ROSMU,,P,719,,,,1,,,Y
+618,HW,ML,J2844,MELACA,RUBXX,,d,728,mesoru,,,1,,,Y
+618,HW,PD,J2845,MICROX,VIBDI,,d,624,,,,,,,Y
+618,HW,PD,J2846,MELACA,VIBDI,,P,624,,,,,,,Y
+618,HW,PD,J2847,MICROX,VIBDI,,D,624,,,,,,,Y
+618,HW,PD,J2848,ORTHRU,VIBDI,,t,719,ORTHHI,,,1,pp712,,Y
+,,,J2849,,,,,,,,,,,,
+,,,J2850,,,,,,,,,,,,
+,,,J2851,,,,,,,,,,,,
+,,,J2852,,,,,,,,,,,,
+,,,J2853,,,,,,,,,,,,
+,,,J2854,,,,,,,,,,,,
+,,,J2855,,,,,,,,,,,,
+,,,J2856,,,,,,,,,,,,
+,,,J2857,,,,,,,,,,,,
+,,,J2858,,,,,,,,,,,,
+,,,J2859,,,,,,,,,,,,
+,,,J2860,,,,,,,,,,,,
+,,,J2861,,,,,,,,,,,,
+,,,J2862,,,,,,,,,,,,
+,,,J2863,,,,,,,,,,,,
+,,,J2864,,,,,,,,,,,,
+,,,J2865,,,,,,,,,,,,
+,,,J2866,,,,,,,,,,,,
+,,,J2867,,,,,,,,,,,,
+,,,J2868,,,,,,,,,,,,
+618,PD,RP;GM,J2869,MICROX,ROSMU,,p,624,,,706,,,,Y
+618,PD,RP;GM,J2870,EUPIMI,ROSMU,,P,622,,,701,,ESCAPED BUT WAS CAUGHT,,Y
+618,PD,RP;GM,J2871,CROCNO,ROSMU,,P,820,,,,,,,
+618,PD,RP;GM,J2872,EUPIMI,ROSMU,,p,622,,,701,,,,Y
+618,PD,RP;GM,J2873,ORTHRU,ROSMU,,D,627,Y,,,,,728,Y
+618,RP,PD;GM,J2874,EUPIMI,ROSMU,,P,627,,627,708,,,,Y
+618,RP,PD;GM,J2875,EUTRCL,PRUSE,,P,802,,,,1,,,Y
+618,RP,PD;GM,J2876,ZALEXX,PRUSE,,p,622,,,y,,,,Y
+618,RP,PD;GM,J2877,LITHXX,ROSMU,,P,806,,,,,,,Y
+618,RP,PD;GM,J2878,NOCTXX,ROSMU,,P,809,ACHADI,Y,,1,,,Y
+618,RP,PD;GM,J2879,EUPIMI,ROSMU,VERY TINY,d,629,,708,,,,,Y
+618,ML,ML,J2880,EUTRCL,ROSMU,,P,729,,,,,,,Y
+,,,J2881,,,,,,,,,,,,
+,,,J2882,,,,,,,,,,,,
+,,,J2883,,,,,,,,,,,,
+,,,J2884,,,,,,,,,,,,
+,,,J2885,,,,,,,,,,,,
+,,,J2886,,,,,,,,,,,,
+,,,J2887,,,,,,,,,,,,
+,,,J2888,,,,,,,,,,,,
+,,,J2889,,,,,,,,,,,,
+,,,J2890,,,,,,,,,,,,
+,,,J2891,,,,,,,,,,,,
+,,,J2892,,,,,,,,,,,,
+,,,J2893,,,,,,,,,,,,
+,,,J2894,,,,,,,,,,,,
+,,,J2895,,,,,,,,,,,,
+,,,J2896,,,,,,,,,,,,
+,,,J2897,,,,,,,,,,,,
+,,,J2898,,,,,,,,,,,,
+,,,J2899,,,,,,,,,,,,
+621,SB,PD,J2900,GEOMXX,MALXX,,D,629,,708,,,,728,Y
+621,SB,PD,J2901,LITHXX,LIGOB,,P,809,,,,1,,,Y
+621,SB,PD,J2902,CLADAT,LIGOB,,D,712,,,,1,TOID? BUT NO TOID,,Y
+621,SB,PD,J2903,EUPIMI,LIGOB,,P,624,,,,,,,Y
+621,SB,PD,J2904,CROCNO,LIGOB,,P,908,,,,,,,
+621,SB,PD,J2905,ORTHRU,VIBLE,,P,624,,,,,P DATE IS PP DATE,,Y
+621,SB,PD,J2906,MICROX,VIBLE,,D,624,,,,,,,Y
+621,SB,PD,J2907,ZALEXX,VIBLE,,D,627,,,,,,728,Y
+621,SB,PD,J2908,ZALEXX,VIBLE,,D,629,,Y,,,,727,Y
+621,SB,PD,J2909,MORRCO,VIBLE,,D,903,,,,,FAILED PUPATION,,
+621,SB,PD,J2910,EUPIXX,MALXX,,D,627,,,,,,728,Y
+621,SB,PD,J2911,UNKNXX,MALXX,,D,627,,,,,,728,Y
+621,SB,PD,J2912,LITHXX,RUBXX,,P,726,ORTHHI,,,,,,Y
+621,SB,PD,J2913,EUPIXX,RUBXX,,d,701,,y,,,potentially mia,,Y
+621,SB,PD,J2914,CROCNO,BERTH,,P,628,coryme,,712,,,,Y
+621,SB,PD,J2915,LITHXX,LIGOB,,T,623,,,,,,,Y
+621,SB,PD,J2916,EUPIXX,BERTH,,D,629,,Y,,,,728,Y
+621,SB,PD,J2917,PROCLI,BERTH,,d,628,,,,,,,Y
+621,SB,PD,J2918,GEOMXX,MALXX,HIT OFF TARP,k,621,,,,,,,Y
+621,SB,PD,J2919,HIMEFI,MALXX,,D,627,,Y,,,,,Y
+621,SB,PD,J2920,MICROX,MALXX,,p,706,,,708,,,,Y
+621,SB,PD,J2921,CROCNO,ROSMU,,P,729,,,,,,,Y
+,,,J2922,,,,,,,,,,,,
+,,,J2923,,,,,,,,,,,,
+,,,J2924,,,,,,,,,,,,
+,,,J2925,,,,,,,,,,,,
+,,,J2926,,,,,,,,,,,,
+,,,J2927,,,,,,,,,,,,
+,,,J2928,,,,,,,,,,,,
+,,,J2929,,,,,,,,,,,,
+,,,J2930,,,,,,,,,,,,
+621,HW,HW,J2931,SAWFLX,ROSMU,,,,,,,,,,
+621,HW,ML,J2932,ORTHHI,LONMO,,P,627,,,,,P DATE IS PP DATE,,Y
+621,HW,RP,J2933,PHIGTI,VIBLE,,P,705,EUTRCL,,,,P DATE IS PP DATE,,Y
+621,HW,RP,J2934,MELACA,VIBLE,,p,629,,,,,,,Y
+621,HW,PD,J2935,EUPIXX,MALXX,,D,718,,,,,,728,Y
+621,HW,ML,J2936,ZALEXX,MALXX,,D,622,,,,,,728,Y
+621,HW,RP,J2937,ZALEXX,MALXX,,D,627,,,,,,728,Y
+621,RP,ML,J2938,CROCNO,ROSMU,,T,706,,,,,FAILED TOID,,Y
+621,RP,ML,J2939,CROCNO,ROSMU,,d,623,CORYME,n,,,likely from berth; change if no frass; was not changed,,Y
+621,HW,HW,J2940,EUPIMI,MALXX,,d,629,,y,,,,,Y
+621,HW,RP,J2941,GEOMXX,ROSMU,DOA;S,d,621,iridep,,,1,,,Y
+621,HW,ML,J2942,CROCNO,ROSMU,,P,830,MORRLA,,,,,,
+,,,J2943,,,,,,,,,,,,
+,,,J2944,,,,,,,,,,,,
+,,,J2945,,,,,,,,,,,,
+,,,J2946,,,,,,,,,,,,
+,,,J2947,,,,,,,,,,,,
+,,,J2948,,,,,,,,,,,,
+,,,J2949,,,,,,,,,,,,
+,,,J2950,,,,,,,,,,,,
+,,,J2951,,,,,,,,,,,,
+,,,J2952,,,,,,,,,,,,
+,,,J2953,,,,,,,,,,,,
+,,,J2954,,,,,,,,,,,,
+,,,J2955,,,,,,,,,,,,
+,,,J2956,,,,,,,,,,,,
+,,,J2957,,,,,,,,,,,,
+,,,J2958,,,,,,,,,,,,
+,,,J2959,,,,,,,,,,,,
+,,,J2960,,,,,,,,,,,,
+,,,J2961,,,,,,,,,,,,
+622,GM,KD;GM,J2962,LITHXX,BERTH,,D,627,,N,,,,,Y
+622,GM,KD;GM,J2963,CROCNO,BERTH,,d,815,,,,,,,Y
+622,GM,KD;GM,J2964,UNIDXX,BERTH,,p,622,,n,,,,,Y
+622,GM,KD;GM,J2965,UNIDXX,BERTH,POSSIBLY PTOID PUPA,d,622,,n,,,,,Y
+622,GM,KD;GM,J2966,CORYME,BERTH,DEAD,P,712,,,721,,NOT DEAD,,Y
+,,,J2967,,,,,,,,,,,,
+,,,J2968,,,,,,,,,,,,
+,,,J2969,,,,,,,,,,,,
+,,,J2970,,,,,,,,,,,,
+,,,J2971,,,,,,,,,,,,
+,,,J2972,,,,,,,,,,,,
+,,,J2973,,,,,,,,,,,,
+,,,J2974,,,,,,,,,,,,
+,,,J2975,,,,,,,,,,,,
+,,,J2976,,,,,,,,,,,,
+,,,J2977,,,,,,,,,,,,
+,,,J2978,,,,,,,,,,,,
+,,,J2979,,,,,,,,,,,,
+,,,J2980,,,,,,,,,,,,
+,,,J2981,,,,,,,,,,,,
+,,,J2982,,,,,,,,,,,,
+,,,J2983,,,,,,,,,,,,
+,,,J2984,,,,,,,,,,,,
+,,,J2985,,,,,,,,,,,,
+,,,J2986,,,,,,,,,,,,
+,,,J2987,,,,,,,,,,,,
+,,,J2988,,,,,,,,,,,,
+,,,J2989,,,,,,,,,,,,
+,,,J2990,,,,,,,,,,,,
+,,,J2991,,,,,,,,,,,,
+,,,J2992,,,,,,,,,,,,
+621,DR,ML,J2993,ZALEXX,ROSMU,,d,809,,,,3,,,Y
+,,,J2994,,,,,,,,,,,,
+,,,J2995,,,,,,,,,,,,
+,,,J2996,,,,,,,,,,,,
+,,,J2997,,,,,,,,,,,,
+,,,J2998,,,,,,,,,,,,
+,,,J2999,,,,,,,,,,,,
+,,,J3000,,,,,,,,,,,,
+,,,J3001,,,,,,,,,,,,
+,,,J3002,,,,,,,,,,,,
+,,,J3003,,,,,,,,,,,,
+,,,J3004,,,,,,,,,,,,
+,,,J3005,,,,,,,,,,,,
+,,,J3006,,,,,,,,,,,,
+,,,J3007,,,,,,,,,,,,
+,,,J3008,,,,,,,,,,,,
+,,,J3009,,,,,,,,,,,,
+,,,J3010,,,,,,,,,,,,
+,,,J3011,,,,,,,,,,,,
+,,,J3012,,,,,,,,,,,,
+,,,J3013,,,,,,,,,,,,
+,,,J3014,,,,,,,,,,,,
+,,,J3015,,,,,,,,,,,,
+,,,J3016,,,,,,,,,,,,
+,,,J3017,,,,,,,,,,,,
+,,,J3018,,,,,,,,,,,,
+,,,J3019,,,,,,,,,,,,
+,,,J3020,,,,,,,,,,,,
+,,,J3021,,,,,,,,,,,,
+,,,J3022,,,,,,,,,,,,
+,,,J3023,,,,,,,,,,,,
+622,ML,ML;RP,J3024,CROCNO,FRAAM,,D,913,MORRLA,,,,WAS GIVEN AND ATE LIGOB 823-825 ACCIDENTALLY,,
+622,ML,ML;RP,J3025,CORYME,BERTH,,P,627,,,712,,P DATE IS PP,,Y
+622,ML,ML;RP,J3026,MICROX,BERTH,DEAD IN FIELD,D,622,,,,,DIF,,Y
+622,ML,ML;RP,J3027,MICROX,ROSMU,,T,624,,,708,,,,Y
+622,ML,ML;RP,J3028,NOCTXX,ROSMU,,D,629,,Y,,,,728,Y
+622,ML,ML;RP,J3029,CORYME,BERTH,,p,630,,,,,,,Y
+622,ML,ML;RP,J3030,CORYME,BERTH,,P,712,,,721,,,,Y
+622,ML,ML;RP,J3031,LITHXX,BERTH,,T,628,,,,,,,Y
+622,ML,ML;RP,J3032,UNIDXX,BERTH,,p,622,,,,,,,Y
+622,ML,ML;RP,J3033,CORYME,BERTH,,d,628,,y,,,,,Y
+622,ML,ML;RP,J3034,CORYME,BERTH,,p,,,,721,,pupal date unk,,Y
+622,ML,ML;RP,J3035,CORYME,BERTH,,P,,,,718,,PUPAL DATE UNK,,Y
+622,ML,ML;RP,J3036,MICROX,VIBDI,,T,719,,,719,,P702,,Y
+622,ML,ML;RP,J3037,PAPIGL,FRAAM,,P,806,,,,1,,,Y
+,,,J3038,,,,,,,,,,,,
+,,,J3039,,,,,,,,,,,,
+,,,J3040,,,,,,,,,,,,
+,,,J3041,,,,,,,,,,,,
+,,,J3042,,,,,,,,,,,,
+,,,J3043,,,,,,,,,,,,
+,,,J3044,,,,,,,,,,,,
+,,,J3045,,,,,,,,,,,,
+,,,J3046,,,,,,,,,,,,
+,,,J3047,,,,,,,,,,,,
+,,,J3048,,,,,,,,,,,,
+,,,J3049,,,,,,,,,,,,
+,,,J3050,,,,,,,,,,,,
+,,,J3051,,,,,,,,,,,,
+,,,J3052,,,,,,,,,,,,
+,,,J3053,,,,,,,,,,,,
+,,,J3054,,,,,,,,,,,,
+630,HW,DR,J3055,CROCNO,BERTH,,D,702,,N,,,LIKELY MORRLA,,Y
+630,HW,DR,J3056,IRIDEP,BERTH,,d,705,geomxx,n,,,,,Y
+630,HW,DR,J3057,EUPIXX,BERTH,PHOTOGRAPH,d,710,,,,1,,,Y
+630,HW,DR,J3058,UNIDXX,BERTH,,T,708,,,708,,P630,,Y
+630,HW,DR,J3059,MICROX,VIBSI,,T,712,,Y,722,,,,Y
+630,HW,DR,J3060,MICROX,VIBSI,,T,715,,,818,,,,Y
+,,,J3061,,,,,,,,,,,,
+,,,J3062,,,,,,,,,,,,
+,,,J3063,,,,,,,,,,,,
+,,,J3064,,,,,,,,,,,,
+,,,J3065,,,,,,,,,,,,
+,,,J3066,,,,,,,,,,,,
+,,,J3067,,,,,,,,,,,,
+,,,J3068,,,,,,,,,,,,
+,,,J3069,,,,,,,,,,,,
+,,,J3070,,,,,,,,,,,,
+,,,J3071,,,,,,,,,,,,
+,,,J3072,,,,,,,,,,,,
+,,,J3073,,,,,,,,,,,,
+,,,J3074,,,,,,,,,,,,
+,,,J3075,,,,,,,,,,,,
+,,,J3076,,,,,,,,,,,,
+,,,J3077,,,,,,,,,,,,
+,,,J3078,,,,,,,,,,,,
+,,,J3079,,,,,,,,,,,,
+,,,J3080,,,,,,,,,,,,
+,,,J3081,,,,,,,,,,,,
+,,,J3082,,,,,,,,,,,,
+,,,J3083,,,,,,,,,,,,
+,,,J3084,,,,,,,,,,,,
+,,,J3085,,,,,,,,,,,,
+,,,J3086,,,,,,,,,,,,
+,,,J3087,,,,,,,,,,,,
+,,,J3088,,,,,,,,,,,,
+,,,J3089,,,,,,,,,,,,
+,,,J3090,,,,,,,,,,,,
+,,,J3091,,,,,,,,,,,,
+,,,J3092,,,,,,,,,,,,
+,,,J3093,,,,,,,,,,,,
+,,,J3094,,,,,,,,,,,,
+,,,J3095,,,,,,,,,,,,
+,,,J3096,,,,,,,,,,,,
+,,,J3097,,,,,,,,,,,,
+,,,J3098,,,,,,,,,,,,
+,,,J3099,,,,,,,,,,,,
+,,,J3100,,,,,,,,,,,,
+,,,J3101,,,,,,,,,,,,
+,,,J3102,,,,,,,,,,,,
+,,,J3103,,,,,,,,,,,,
+,,,J3104,,,,,,,,,,,,
+,,,J3105,,,,,,,,,,,,
+,,,J3106,,,,,,,,,,,,
+,,,J3107,,,,,,,,,,,,
+,,,J3108,,,,,,,,,,,,
+,,,J3109,,,,,,,,,,,,
+,,,J3110,,,,,,,,,,,,
+,,,J3111,,,,,,,,,,,,
+,,,J3112,,,,,,,,,,,,
+,,,J3113,,,,,,,,,,,,
+,,,J3114,,,,,,,,,,,,
+,,,J3115,,,,,,,,,,,,
+,,,J3116,,,,,,,,,,,,
+623,PD,GM,J3117,LITHXX,ROSMU,IDK where it is,t,623,,,,,toid on arrival,,Y
+623,PD,GM,J3118,MELACA,MALXX,,p,712,lomove,628,,,,,Y
+623,PD,GM,J3119,MICROX,MALXX,,d,712,,,,,,,Y
+623,PD,GM,J3120,MICROX,MALXX,,d,712,,,,,,,Y
+623,PD,GM,J3121,MELACA,MALXX,,D,806,LOMOVE,,,,,,Y
+623,PD,GM,J3122,GEOMRU,RUBXX,,p,706,TRICAL,,y,,,,Y
+623,PD,GM,J3123,GEOMRU,RUBXX,,P,627,MESORU,,712,,,,Y
+623,PD,GM,J3124,PALTAN,ROSMU,,p,712,,,y,1,,,Y
+623,PD,GM,J3125,MELACA,ROSMU,,d,704,,,,,toid possible but not seen 817,,Y
+623,PD,GM,J3126,UNKNXX,VIBPL,,p,623,,,f,,failed emergence noticed 817,,Y
+623,PD,GM,J3127,EUPIXX,VIBPL,,d,702,,n,,,,,Y
+623,PD,GM,J3128,MICROX,VIBPL,,P,702,,,719,,,,Y
+623,PD,GM,J3129,IRIDEP,LIGOB,,D,705,GEOMXX,N,,1,,,Y
+623,PD,GM,J3130,GEOMXX,PRUSE,SNAP,,,,,,,,,
+623,PD,GM,J3131,MELACA,PRUSE,,P,726,IRIDLA,,809,1,,,Y
+623,PD,GM,J3132,CROCNO,LIGOB,,D,712,,,,,,,Y
+623,PD,GM,J3133,ACHADI,LIGOB,,P,802,,,,,,,Y
+623,PD,GM,J3134,MORRCO,ROSMU,,D,901,,,,,FAILED PUPATION,,
+623,DR,RP,J3135,EUPIXX,BERTH,,D,723,,Y,,,,728,Y
+623,DR,RP,J3136,ACHADI,MALXX,,d,813,,,,1,,,Y
+623,DR,RP,J3137,UNKNXX,BERTH,LITTLE GREEN MICROISH,d,712,MICROX,,,1,,,Y
+623,DR,RP,J3138,CROCNO,CRAXX,,P,802,,,,,,,Y
+623,DR,RP,J3139,GEOMXX,CRAXX,HELLA SMALL,D,705,,,,1,,803,Y
+623,DR,RP,J3140,NOTODX,CRAXX,,P,816,ACROSU,,,,,,Y
+623,DR,RP,J3141,MELACA,CRAXX,,D,723,LOMOVE,,,,,,Y
+623,DR,RP,J3142,EUPIXX,CRAXX,,D,729,,,,1,was dead long before think i lost the body,,Y
+623,DR,RP,J3143,MELACA,CRAXX,,D,712,LOMOVE,,,,,,Y
+623,DR,RP,J3144,SMICRO,CRAXX,,K,706,,,,,killed by weird insects,,Y
+623,DR,RP,J3145,MELACA,CRAXX,,D,702,,y,,,,,Y
+623,DR,RP,J3146,NOTODX,CRAXX,,D,813,ACROSU,,,2,,,Y
+623,DR,RP,J3147,NOTODX,CRAXX,,PP,813,ACROSU,,,,D 816,,Y
+623,KD,HW,J3148,IRIDEP,LIGOB,,p,627,,n,,,,,Y
+623,KD,HW,J3149,MICROX,LIGOB,,d,702,,,,,,,Y
+623,KD,HW,J3150,MICROX,VIBDI,,t,714,,,Y,,P702,,Y
+623,KD,HW,J3151,CROCNO,BERTH,,D,725,,,,,had weird butt goop,,Y
+623,KD,HW,J3152,CROCNO,BERTH,,D,815,,,,,,,Y
+623,KD,HW,J3153,CROCNO,BERTH,,D,726,,628,,,,,Y
+623,KD,HW,J3154,CROCNO,BERTH,,d,725,,,,,,,Y
+623,KD,ML,J3155,UNIDXX,BERTH,,p,623,,,,,,,Y
+623,KD,ML,J3156,CROCNO,BERTH,,D,823,,,,,,,
+623,KD,ML,J3157,MICROX,ROSMU,,pp,802,,,,,d806,,Y
+623,KD,ML,J3158,EUPIXX,ROSMU,,OW,205,PROTPO,,,,,,
+623,KD,ML,J3159,MICROX,ROSMU,,T,623,,,708,,SAUSAGE,,Y
+623,KD,ML,J3160,ORTHRU,ROSMU,,t,627,,,,,,,Y
+623,KD,ML,J3161,UNIDXX,VIBPL,,p,623,MICROX,,702,,archips purpurana,,Y
+623,KD,ML,J3162,CROCNO,VIBPL,,d,728,,,,,,,Y
+623,KD,ML,J3163,GEOMXX,VIBPL,,d,630,stripx,unk,,,,,Y
+623,KD,ML,J3164,ORTHXX,PRUSE,,P,712,ORTHHI,Y,,1,,,Y
+623,KD,ML,J3165,MELACA,PRUSE,,p,705,LOMOVE,,,,,,Y
+623,KD,ML,J3166,CROCNO,ROSMU,,MIA,706,,,,,,,Y
+623,KD,ML,J3167,MICROX,ROSMU,,mia,802,,628,,,,,Y
+623,KD,ML,J3168,ACHADI,ROSMU,,P,728,,Y,,1,,,Y
+623,KD,ML,J3169,ORTHHI,LIGOB,,P,712,,,,,,,Y
+623,KD,ML,J3170,ACHADI,LIGOB,,d,627,,,,1,looks toided; no toid by 817,,Y
+623,KD,ML,J3171,MICROX,FRAXX,,d,706,,y,,,,,Y
+623,AO,PD;KD,J3172,MICROX,BERTH,,T,727,,,Y,,,,Y
+623,PD,KD;AO,J3173,CORYME,BERTH,,d,627,,n,,,,,Y
+623,PD,KD;AO,J3174,ORTHHI,ROSMU,,P,714,,,,,,,Y
+623,PD,KD;AO,J3175,CROCNO,BERTH,,d,815,,628,,,,,Y
+623,ML,ML,J3176,MINEXX,CRAXX,,d,706,,y,,,,,Y
+,,,J3177,,,,,,,,,,,,
+,,,J3178,,,,,,,,,,,,
+617,KD,RP,J3179,LITHXX,LIGVU,,LPP,718,,,,,,,Y
+617,KD,RP,J3180,MICROX,MALXX,,p,702,,,y,,,,Y
+617,KD,RP,J3181,NYMPHX,MALXX,S,D,622,SCHIXX,,,,,,Y
+617,KD,RP,J3182,NYMPHX,MALXX,S,D,622,SCHIXX,Y,,,,,Y
+617,KD,RP,J3183,EUPIMI,BERTH,,D,712,,,,,,,Y
+617,KD,RP,J3184,EUPSXX,ROSMU,,P,819,,,,,PP 707,,Y
+617,KD,RP,J3185,NOTODX,PRUSE,S,d,620,FURCBO,n,,,,,Y
+617,KD,RP,J3186,CROCNO,ROSMU,,P,806,,,,,,,Y
+,,,J3187,,,,,,,,,,,,
+,,,J3188,,,,,,,,,,,,
+,,,J3189,,,,,,,,,,,,
+,,,J3190,,,,,,,,,,,,
+,,,J3191,,,,,,,,,,,,
+,,,J3192,,,,,,,,,,,,
+,,,J3193,,,,,,,,,,,,
+,,,J3194,,,,,,,,,,,,
+,,,J3195,,,,,,,,,,,,
+,,,J3196,,,,,,,,,,,,
+,,,J3197,,,,,,,,,,,,
+,,,J3198,,,,,,,,,,,,
+,,,J3199,,,,,,,,,,,,
+,,,J3200,,,,,,,,,,,,
+,,,J3201,,,,,,,,,,,,
+,,,J3202,,,,,,,,,,,,
+,,,J3203,,,,,,,,,,,,
+,,,J3204,,,,,,,,,,,,
+,,,J3205,,,,,,,,,,,,
+,,,J3206,,,,,,,,,,,,
+,,,J3207,,,,,,,,,,,,
+,,,J3208,,,,,,,,,,,,
+,,,J3209,,,,,,,,,,,,
+623,AO,RP,J3210,MICROX,ROSMU,,P,702,,624,708,,,,Y
+623,AO,RP,J3211,MICROX,MALXX,,D,702,,624,,,,,Y
+623,AO,RP,J3212,MELACA,MALXX,,p,712,lomove,n,,,,,Y
+623,AO,RP,J3213,MELACA,MALXX,,p,705,lomove,628,,,p date is pp,,Y
+623,AO,RP,J3214,MELACA,MALXX,,P,715,LOMOVE,,,,,,Y
+623,AO,RP,J3215,MELACA,MALXX,,d,702,,y,,,,,Y
+623,AO,RP,J3216,MELACA,MALXX,,P,723,LOMOVE,,,,,,Y
+623,AO,RP,J3217,EUPIMI,MALXX,,D,705,EUPIXX,Y,,,still unsure on ID,,Y
+623,AO,RP,J3218,MELACA,MALXX,,D,713,,,,,,,Y
+623,AO,RP,J3219,NOTODX,MALXX,S,d,629,SMICRO,,,1,,,Y
+623,AO,RP,J3220,MELACA,MALXX,,D,629,,,,,,,Y
+623,AO,RP,J3221,GEOMXX,MALXX,,P,818,ECTRCR,,,,,,Y
+623,AO,RP,J3222,UNKNXX,MALXX,S,D,705,ACROXX,Y,,,,,Y
+623,AO,RP,J3223,LITHXX,RHOSC,,D,628,,,,,MAYBE TOID BUT NO TOID,,Y
+623,AO,RP,J3224,GEOMXX,ROSMU,S,p,712,PROCLI,,727,1,,,Y
+623,AO,RP,J3225,ORTHHI,ROSMU,,P,726,,,,,,,Y
+623,AO,RP,J3226,MORRCO,ROSMU,,MIA,630,,,,,,,Y
+623,AO,RP,J3227,EUPIMI,ROSMU,,d,702,,y,,,,,Y
+623,AO,RP,J3228,MORRCO,ROSMU,LOST IN FIELD; NOT COLLECTED,,,,,,,,,
+623,AO,RP,J3229,UNIDXX,LIGOB,P,T,623,,,702,,P623,,Y
+623,AO,RP,J3230,EUPIXX,MALXX,D,D,725,ALSOPO,,,,,728,Y
+623,AO,RP,J3231,EUPIXX,MALXX,,P,820,CAMPPE,,118,1,,,
+623,AO,RP,J3232,UNKNXX,MALXX,,T,626,,,714,,SAUSAGE,,Y
+623,AO,RP,J3233,MICROX,ROSMU,,d,702,,y,,,,,Y
+623,AO,RP,J3234,LITHXX,ROSMU,,d,725,,,,,,,Y
+623,AO,RP,J3235,HYPAUN,ROSMU,S,P,705,ENNOSU,,,1,FAILED EMEGENCE,,Y
+,,,J3236,,,,,,,,,,,,
+,,,J3237,,,,,,,,,,,,
+,,,J3238,,,,,,,,,,,,
+,,,J3239,,,,,,,,,,,,
+,,,J3240,,,,,,,,,,,,
+624,ML,PD,J3241,STRIPX,VIBDI,,d,705,,y,,,might have photo,,Y
+624,ML,PD,J3242,UNIDXX,VIBDI,,T,624,,,,,FOUND WITH TOID PUPA,,Y
+624,ML,PD,J3243,GEOMXX,VIBDI,,D,701,,,,,,728,Y
+624,ML,PD,J3244,ZALEXX,VIBDI,,T,806,MORRLA,,,,,,Y
+624,ML,PD,J3245,MICROX,VIBAC,,t,712,,,,,,,Y
+624,ML,PD,J3246,MICROX,FRAAM,,K,820,,,,,GE,,
+624,ML,PD,J3247,MICROX,BERTH,,T,702,,,702,,,,Y
+624,ML,PD,J3248,ZALEXX,VIBDE,,P,715,,,,1,,,Y
+624,ML,PD,J3249,ZALEXX,VIBDE,,P,715,,,,,,,Y
+624,ML,PD,J3250,UNKNXX,VIBDE,S,D,702,,,,1,,728,Y
+624,ML,PD,J3251,CROCNO,SAMCA,,P,719,,,,,,,Y
+624,ML,PD,J3252,ZALEXX,VIBDE,,D,629,,,,,,727,Y
+624,ML,PD,J3253,UNKNXX,SAMCA,PHOTOGRAPH,T,728,LIKELY MORRLA SAYS CROCNO,,Y,,LIKELY MORRLA,,Y
+624,ML,PD,J3254,UNKNXX,VIBDE,PHOTOGRAPH,MIA,727,MICROX,,,1,,,Y
+,,,J3255,,,,,,,,,,,,
+,,,J3256,,,,,,,,,,,,
+,,,J3257,,,,,,,,,,,,
+,,,J3258,,,,,,,,,,,,
+,,,J3259,,,,,,,,,,,,
+,,,J3260,,,,,,,,,,,,
+,,,J3261,,,,,,,,,,,,
+,,,J3262,,,,,,,,,,,,
+,,,J3263,,,,,,,,,,,,
+,,,J3264,,,,,,,,,,,,
+,,,J3265,,,,,,,,,,,,
+,,,J3266,,,,,,,,,,,,
+,,,J3267,,,,,,,,,,,,
+,,,J3268,,,,,,,,,,,,
+,,,J3269,,,,,,,,,,,,
+,,,J3270,,,,,,,,,,,,
+,,,J3271,,,,,,,,,,,,
+624,PD,ML,J3272,MELACA,VIBAC,,T,707,,,722,,,,Y
+624,PD,ML,J3273,MELACA,PRUSE,,d,702,,y,,,,,Y
+624,PD,ML,J3274,ZALEXX,VIBDE,,P,825,MORRLA,,,,,,
+624,PD,ML,J3275,PALTAN,LONTA,,p,702,,,y,,male,,Y
+624,PD,ML,J3276,MICROX,LONTA,,OW,205,,,,,,,
+624,PD,ML,J3277,PALTAN,LONTA,,P,725,,,809,,,,Y
+624,PD,ML,J3278,MICROX,CRAXX,,D,712,,,,,,,Y
+624,PD,ML,J3279,MICROX,CRAXX,,mia ,702,,,,,,,Y
+624,PD,ML,J3280,MICROX,CRAXX,,D,823,MORRCO,,,,,,
+,,,J3281,,,,,,,,,,,,
+,,,J3282,,,,,,,,,,,,
+,,,J3283,,,,,,,,,,,,
+,,,J3284,,,,,,,,,,,,
+,,,J3285,,,,,,,,,,,,
+,,,J3286,,,,,,,,,,,,
+,,,J3287,,,,,,,,,,,,
+,,,J3288,,,,,,,,,,,,
+,,,J3289,,,,,,,,,,,,
+,,,J3290,,,,,,,,,,,,
+,,,J3291,,,,,,,,,,,,
+,,,J3292,,,,,,,,,,,,
+,,,J3293,,,,,,,,,,,,
+,,,J3294,,,,,,,,,,,,
+,,,J3295,,,,,,,,,,,,
+,,,J3296,,,,,,,,,,,,
+,,,J3297,,,,,,,,,,,,
+,,,J3298,,,,,,,,,,,,
+,,,J3299,,,,,,,,,,,,
+,,,J3300,,,,,,,,,,,,
+,,,J3301,,,,,,,,,,,,
+,,,J3302,,,,,,,,,,,,
+,,,J3303,,,,,,,,,,,,
+,,,J3304,,,,,,,,,,,,
+,,,J3305,,,,,,,,,,,,
+,,,J3306,,,,,,,,,,,,
+,,,J3307,,,,,,,,,,,,
+,,,J3308,,,,,,,,,,,,
+,,,J3309,,,,,,,,,,,,
+,,,J3310,,,,,,,,,,,,
+,,,J3311,,,,,,,,,,,,
+,,,J3312,,,,,,,,,,,,
+,,,J3313,,,,,,,,,,,,
+,,,J3314,,,,,,,,,,,,
+,,,J3315,,,,,,,,,,,,
+,,,J3316,,,,,,,,,,,,
+,,,J3317,,,,,,,,,,,,
+,,,J3318,,,,,,,,,,,,
+,,,J3319,,,,,,,,,,,,
+,,,J3320,,,,,,,,,,,,
+,,,J3321,,,,,,,,,,,,
+,,,J3322,,,,,,,,,,,,
+,,,J3323,,,,,,,,,,,,
+,,,J3324,,,,,,,,,,,,
+,,,J3325,,,,,,,,,,,,
+,,,J3326,,,,,,,,,,,,
+,,,J3327,,,,,,,,,,,,
+,,,J3328,,,,,,,,,,,,
+,,,J3329,,,,,,,,,,,,
+,,,J3330,,,,,,,,,,,,
+,,,J3331,,,,,,,,,,,,
+,,,J3332,,,,,,,,,,,,
+,,,J3333,,,,,,,,,,,,
+,,,J3334,,,,,,,,,,,,
+,,,J3335,,,,,,,,,,,,
+,,,J3336,,,,,,,,,,,,
+,,,J3337,,,,,,,,,,,,
+,,,J3338,,,,,,,,,,,,
+,,,J3339,,,,,,,,,,,,
+,,,J3340,,,,,,,,,,,,
+,,,J3341,,,,,,,,,,,,
+,,,J3342,,,,,,,,,,,,
+,,,J3343,,,,,,,,,,,,
+,,,J3344,,,,,,,,,,,,
+,,,J3345,,,,,,,,,,,,
+,,,J3346,,,,,,,,,,,,
+,,,J3347,,,,,,,,,,,,
+,,,J3348,,,,,,,,,,,,
+,,,J3349,,,,,,,,,,,,
+,,,J3350,,,,,,,,,,,,
+,,,J3351,,,,,,,,,,,,
+,,,J3352,,,,,,,,,,,,
+,,,J3353,,,,,,,,,,,,
+,,,J3354,,,,,,,,,,,,
+,,,J3355,,,,,,,,,,,,
+,,,J3356,,,,,,,,,,,,
+,,,J3357,,,,,,,,,,,,
+,,,J3358,,,,,,,,,,,,
+,,,J3359,,,,,,,,,,,,
+,,,J3360,,,,,,,,,,,,
+,,,J3361,,,,,,,,,,,,
+,,,J3362,,,,,,,,,,,,
+,,,J3363,,,,,,,,,,,,
+,,,J3364,,,,,,,,,,,,
+628,ML,ML,J3365,MICROX,VIBAC,P,p,628,,,,,,,Y
+628,ML,ML,J3366,MICROX,VIBAC,P,T,708,,,708,,P628,,Y
+628,ML,ML,J3367,MICROX,VIBAC,P,p,628,,,,,,,Y
+628,ML,ML,J3368,MELACA,RUBXX,,d,714,MESORU,,,,fed RUBPH for a minute; f714,,Y
+628,ML,ML,J3369,MELACA,PRUSE,,d,714,LOMOVE,,,,fed RHOSC for a minute; f714 on RHOSC,,Y
+628,ML,ML,J3370,MELACA,PRUSE,,P,729,LOMOVE,,,,,,Y
+628,ML,ML,J3371,MELACA,PRUSE,,P,726,LOMOVE,,,,,,Y
+628,ML,ML,J3372,MELACA,PRUSE,,D,816,LOMOVE,,,,,,Y
+628,KD,ML,J3373,MICROX,AMEXX,,d,706,,,,,,,Y
+,,,J3374,,,,,,,,,,,,
+,,,J3375,,,,,,,,,,,,
+,,,J3376,,,,,,,,,,,,
+,,,J3377,,,,,,,,,,,,
+,,,J3378,,,,,,,,,,,,
+,,,J3379,,,,,,,,,,,,
+,,,J3380,,,,,,,,,,,,
+,,,J3381,,,,,,,,,,,,
+,,,J3382,,,,,,,,,,,,
+,,,J3383,,,,,,,,,,,,
+,,,J3384,,,,,,,,,,,,
+,,,J3385,,,,,,,,,,,,
+,,,J3386,,,,,,,,,,,,
+,,,J3387,,,,,,,,,,,,
+,,,J3388,,,,,,,,,,,,
+,,,J3389,,,,,,,,,,,,
+,,,J3390,,,,,,,,,,,,
+,,,J3391,,,,,,,,,,,,
+,,,J3392,,,,,,,,,,,,
+,,,J3393,,,,,,,,,,,,
+,,,J3394,,,,,,,,,,,,
+,,,J3395,,,,,,,,,,,,
+,,,J3396,,,,,,,,,,,,
+,,,J3397,,,,,,,,,,,,
+,,,J3398,,,,,,,,,,,,
+,,,J3399,,,,,,,,,,,,
+,,,J3400,,,,,,,,,,,,
+,,,J3401,,,,,,,,,,,,
+,,,J3402,,,,,,,,,,,,
+,,,J3403,,,,,,,,,,,,
+,,,J3404,,,,,,,,,,,,
+,,,J3405,,,,,,,,,,,,
+,,,J3406,,,,,,,,,,,,
+,,,J3407,,,,,,,,,,,,
+,,,J3408,,,,,,,,,,,,
+,,,J3409,,,,,,,,,,,,
+,,,J3410,,,,,,,,,,,,
+,,,J3411,,,,,,,,,,,,
+,,,J3412,,,,,,,,,,,,
+,,,J3413,,,,,,,,,,,,
+,,,J3414,,,,,,,,,,,,
+,,,J3415,,,,,,,,,,,,
+,,,J3416,,,,,,,,,,,,
+,,,J3417,,,,,,,,,,,,
+,,,J3418,,,,,,,,,,,,
+,,,J3419,,,,,,,,,,,,
+,,,J3420,,,,,,,,,,,,
+,,,J3421,,,,,,,,,,,,
+,,,J3422,,,,,,,,,,,,
+,,,J3423,,,,,,,,,,,,
+,,,J3424,,,,,,,,,,,,
+,,,J3425,,,,,,,,,,,,
+,,,J3426,,,,,,,,,,,,
+628,ML,ML,J3427,GEOMXX,LONMO,,p,819,CAMPPE,,908,,tiny! suspected eupixx but is definitely camppe,,Y
+628,ML,ML,J3428,ACROXX,LONMO,,D,118,PYRRIS,,,1,?,,
+628,ML,ML,J3429,ZALEXX,LONMO,,d,702,,,,,doubts on Zale,,Y
+628,ML,ML,J3430,PALTAN,LONMO,,P,804,,,908,,,,Y
+628,ML,ML,J3431,ZALEXX,LONMO,S. UNSURE ON ZALE,D,702,NOT ZALE,N,,1,,,Y
+628,ML,ML,J3432,EUPIXX,LONMO,S,d,702,,,,,,,Y
+628,ML,ML,J3433,UNKNXX,LONMO,S,D,704,,N,,1,,,Y
+628,ML,ML,J3434,ZALEXX,LONMO,S,p,702,NOT ZALE,,714,1,,,Y
+628,ML,ML,J3435,UNKNXX,VIBAC,S,D,705,CROCNO,Y,,1,,728,Y
+628,ML,ML,J3436,SMICRO,VIBAC,,t,817,,,817,,pupated 706; toid emerged from pupa sometime before 817,,Y
+628,ML,ML,J3437,GEOMXX,MALXX,S,P,827,CAMPPE,,101,,,,
+628,ML,ML,J3438,MICROX,VIBAC,P,T,705,,,705,,,,Y
+628,ML,ML,J3439,MICROX,VIBAC,AWOL?,T,630,,,630,,CATERPILLAR NEVE FOUND,,Y
+628,ML,ML,J3440,SMICRO,VIBAC,S,P,710,,,,1,,,Y
+628,ML,ML,J3441,MICROX,VIBAC,,T,712,,,,,P702,,Y
+628,ML,ML,J3442,MICROX,VIBAC,,P,628,,,702,,,,Y
+628,ML,ML,J3443,MICROX,VIBAC,,P,628,,,,,,,Y
+628,ML,ML,J3444,MELACA,PRUSE,,p,719,LOMOVE,,,,,,Y
+628,ML,ML,J3445,MELACA,AMEXX,,d,813,lomove,,,,,,Y
+628,ML,ML,J3446,MELACA,AMEXX,,d,712,,y,,,might be lomove,,Y
+628,ML,ML,J3447,MICROX,CRAXX,,d,712,,,,,,,Y
+628,ML,ML,J3448,CROCNO,VIBAC,,P,804,,,,,,,Y
+628,ML,ML,J3449,EUPIMI,AMEXX,DYING,D,629,,,,,,,Y
+628,ML,ML,J3450,MICROX,AMEXX,UNSURE IF CAT,d,702,,,,1,,,Y
+628,ML,ML,J3451,MICROX,AMEXX,UNSURE IF CAT,mia,702,,,,1,,,Y
+628,ML,ML,J3452,MINEXX,PRUSE,KILLED:NOT COLLECTED,,,,,,,,,
+628,ML,ML,J3453,MINEXX,PRUSE,,d,706,,,,,,,Y
+628,ML,ML,J3454,MELACA,VIBAC,,k,702,,,,,killed by lid,,Y
+628,ML,ML,J3455,MINEXX,PRUSE,,,,,,,,,,
+,,,J3456,,,,,,,,,,,,
+,,,J3457,,,,,,,,,,,,
+629,ML,ML,J3458,MICROX,VIBDI,,d,712,,,,,,,Y
+629,ML,ML,J3459,MICROX,VIBDI,,d,706,,,,,,,Y
+629,ML,ML,J3460,MELACA,MALXX,,D,702,,,,,,,Y
+629,ML,ML,J3461,MELACA,MALXX,,d,702,,y,,,,,Y
+629,ML,ML,J3462,MELACA,RUBXX,,d,707,,,,,,,Y
+629,ML,ML,J3463,LOMOVE,PRUSE,,d,706,,y,,,,,Y
+629,ML,ML,J3464,MELACA,PRUSE,,P,726,LOMOVE,,,,,,Y
+629,ML,ML,J3465,MELACA,PRUSE,,d,705,,y,,,,,Y
+629,ML,ML,J3466,STRIPX,PRUSE,,p,816,hypaun,,908,,,,Y
+629,ML,ML,J3467,GEOMXX,PRUSE,,mia,702,,,,,,,Y
+629,ML,ML,J3468,UNKNXX,PRUSE,,P,806,ECTRCR,,,2,,,Y
+629,ML,ML,J3469,STRIPX,PRUSE,,P,806,HYPAUN,,817,1,,,Y
+629,ML,ML,J3470,MELACA,PRUSE,,k,629,,,,,heat death,,Y
+629,ML,ML,J3471,MELACA,PRUSE,,D,718,LOMOVE,,,,,,Y
+629,ML,ML,J3472,MELACA,PRUSE,,P,729,LOMOVE,,,,,,Y
+629,ML,ML,J3473,MELACA,PRUSE,,D,709,LOMOVE,,,,,,Y
+629,ML,ML,J3474,MELACA,MALXX,DEAD IN FIELD,D,629,,,,,,,Y
+629,ML,ML,J3475,MELACA,MALXX,,P,804,LOMOVE,,,,,,Y
+629,ML,ML,J3476,MICROX,MALXX,,d,717,,,,,,,Y
+629,ML,ML,J3477,EUPIMI,PRUSE,,d,705,,,,1,,,Y
+629,ML,ML,J3478,STRIPX,PRUSE,,d,705,,,,,,,Y
+629,ML,ML,J3479,MELACA,PRUSE,,P,809,,,,,,,Y
+629,ML,ML,J3480,MELACA,PRUSE,,D,716,lomove,,,,,,Y
+629,ML,ML,J3481,MELACA,PRUSE,,D,903,LOMOVE,901,,,,,
+629,ML,ML,J3482,MELACA,MALXX,,P,809,LOMOVE,,,,,,Y
+629,ML,ML,J3483,LOMOVE,AMEXX,,D,714,,,,,,,Y
+629,ML,ML,J3484,MELACA,AMEXX,,D,709,LOMOVE,,,,,,Y
+629,ML,ML,J3485,PALEXX,ROSMU,,D,706,,,,1,,727,Y
+629,ML,ML,J3486,MICROX,ROSMU,,p,712,,,719,,,,Y
+629,ML,ML,J3487,CROCNO,ROSMU,,P,910,MORRLA,,,,,,
+,,,J3488,,,,,,,,,,,,
+,,,J3489,,,,,,,,,,,,
+,,,J3490,,,,,,,,,,,,
+,,,J3491,,,,,,,,,,,,
+,,,J3492,,,,,,,,,,,,
+,,,J3493,,,,,,,,,,,,
+,,,J3494,,,,,,,,,,,,
+,,,J3495,,,,,,,,,,,,
+,,,J3496,,,,,,,,,,,,
+,,,J3497,,,,,,,,,,,,
+,,,J3498,,,,,,,,,,,,
+,,,J3499,,,,,,,,,,,,
+,,,J3500,,,,,,,,,,,,
+,,,J3501,,,,,,,,,,,,
+,,,J3502,,,,,,,,,,,,
+,,,J3503,,,,,,,,,,,,
+,,,J3504,,,,,,,,,,,,
+,,,J3505,,,,,,,,,,,,
+,,,J3506,,,,,,,,,,,,
+,,,J3507,,,,,,,,,,,,
+,,,J3508,,,,,,,,,,,,
+,,,J3509,,,,,,,,,,,,
+,,,J3510,,,,,,,,,,,,
+,,,J3511,,,,,,,,,,,,
+,,,J3512,,,,,,,,,,,,
+,,,J3513,,,,,,,,,,,,
+,,,J3514,,,,,,,,,,,,
+,,,J3515,,,,,,,,,,,,
+,,,J3516,,,,,,,,,,,,
+,,,J3517,,,,,,,,,,,,
+,,,J3518,,,,,,,,,,,,
+,,,J3519,,,,,,,,,,,,
+,,,J3520,,,,,,,,,,,,
+,,,J3521,,,,,,,,,,,,
+,,,J3522,,,,,,,,,,,,
+,,,J3523,,,,,,,,,,,,
+,,,J3524,,,,,,,,,,,,
+,,,J3525,,,,,,,,,,,,
+,,,J3526,,,,,,,,,,,,
+,,,J3527,,,,,,,,,,,,
+,,,J3528,,,,,,,,,,,,
+,,,J3529,,,,,,,,,,,,
+,,,J3530,,,,,,,,,,,,
+,,,J3531,,,,,,,,,,,,
+,,,J3532,,,,,,,,,,,,
+,,,J3533,,,,,,,,,,,,
+,,,J3534,,,,,,,,,,,,
+,,,J3535,,,,,,,,,,,,
+,,,J3536,,,,,,,,,,,,
+,,,J3537,,,,,,,,,,,,
+,,,J3538,,,,,,,,,,,,
+,,,J3539,,,,,,,,,,,,
+,,,J3540,,,,,,,,,,,,
+,,,J3541,,,,,,,,,,,,
+,,,J3542,,,,,,,,,,,,
+,,,J3543,,,,,,,,,,,,
+,,,J3544,,,,,,,,,,,,
+,,,J3545,,,,,,,,,,,,
+,,,J3546,,,,,,,,,,,,
+,,,J3547,,,,,,,,,,,,
+,,,J3548,,,,,,,,,,,,
+,,,J3549,,,,,,,,,,,,
+,,,J3550,,,,,,,,,,,,
+629,ML,ML,J3551,MELACA,MALXX,,d,710,,,,,,,Y
+629,ML,ML,J3552,MELACA,MALXX,,d,714,lomove,,,,,,Y
+629,ML,ML,J3553,MICROX,MALXX,,D,715,,,,,,,Y
+629,ML,ML,J3554,NOCTXX,BERTH,,,,,,,,,,
+629,ML,ML,J3555,BROWNX,ROSMU,,,,,,,,,,
+629,ML,ML,J3556,BROWNX,ROSMU,,,,,,,,,,
+629,ML,ML,J3557,BROWNX,ROSMU,,,,,,,,,,
+629,ML,ML,J3558,BROWNX,ROSMU,,D,704,,,,,,,Y
+629,ML,ML,J3559,MICROX,ROSMU,,p,702,,,721,,,,Y
+629,ML,ML,J3560,MELACA,AMEXX,,d,712,,y,,,,,Y
+629,ML,ML,J3561,MICROX,BERTH,,p,702,,,y,,,,Y
+,,,J3562,,,,,,,,,,,,
+,,,J3563,,,,,,,,,,,,
+,,,J3564,,,,,,,,,,,,
+,,,J3565,,,,,,,,,,,,
+,,,J3566,,,,,,,,,,,,
+,,,J3567,,,,,,,,,,,,
+,,,J3568,,,,,,,,,,,,
+,,,J3569,,,,,,,,,,,,
+,,,J3570,,,,,,,,,,,,
+,,,J3571,,,,,,,,,,,,
+,,,J3572,,,,,,,,,,,,
+,,,J3573,,,,,,,,,,,,
+,,,J3574,,,,,,,,,,,,
+,,,J3575,,,,,,,,,,,,
+,,,J3576,,,,,,,,,,,,
+,,,J3577,,,,,,,,,,,,
+,,,J3578,,,,,,,,,,,,
+,,,J3579,,,,,,,,,,,,
+,,,J3580,,,,,,,,,,,,
+,,,J3581,,,,,,,,,,,,
+630,ML,ML,J3582,PROCLI,FRAAM,S,d,707,,y,,1,,,Y
+630,ML,ML,J3583,MELACA,SAMCA,,P,726,,,,,,,Y
+630,ML,ML,J3584,MICROX,VIBAC,,d,712,,,,,,,Y
+630,ML,ML,J3585,CORYME,BERTH,,p,715,,,,,failed emergence 727,,Y
+630,ML,ML,J3586,MICROX,AMEXX,,D,712,,,,,,,Y
+630,ML,ML,J3587,MICROX,BERTH,,MIA,712,,,,,,,Y
+630,ML,ML,J3588,GEOMXX,BERTH,S,OW,205,PROTPO,,,1,,,
+630,ML,ML,J3589,UNIDXX,VIBAC,P,p,630,ENNOSU,n,y,,,,Y
+630,ML,ML,J3590,GEOMXX,LONMO,S,OW,205,PROTPO,,,2,,,
+630,ML,ML,J3591,GEOMXX,LONMO,S,T,726,EUTRCL,,802,2,BIG TOIDED HOURS,,Y
+630,ML,ML,J3592,PALTAN,LONMO,,p,819,,,908,,,,Y
+630,ML,ML,J3593,MICROX,LONMO,S SPEEDX,D,727,,,,,,,Y
+630,ML,ML,J3594,MICROX,LONMO,SPEEDX,d,712,,,,,number was erroneously j3544,,Y
+630,ML,ML,J3595,MICROX,VIBAC,SPEEDX,p,712,,,y,,,,Y
+630,ML,ML,J3596,CROCNO,LONMO,,d,701,likely was actually MORRLA,,,,,,Y
+630,ML,ML,J3597,CROCNO,LONMO,,d,712,likely was actually MORRLA,y,,,,,Y
+630,ML,ML,J3598,CROCNO,LONMO,,d,705,likely was actually MORRLA,,,,,,Y
+630,ML,ML,J3599,MICROX,LONMO,SPEEDX,D,712,,,,,,,Y
+630,ML,ML,J3600,MICROX,LONMO,SPEEDX,D,712,,,,,,,Y
+630,ML,ML,J3601,ZALEXX,ROSMU,S,D,705,,,,,,728,Y
+630,PD,KD;RP,J3602,NOCTXX,BERTH,S,D,901,PALTAN,,,1,MILLIPEDE REMOVED FROM CUP 811,,
+630,ML,ML,J3603,MICROX,VIBSI,,T,706,,,,,,,Y
+630,RP,KD/PD,J3604,MORRCO,VIBSI,,D,908,,,,,,,
+630,RP,KD/PD,J3605,ORTHHI,VIBSI,,T,707,,,722,,SCARY,,Y
+630,RP,KD/PD,J3606,MICROX,VIBSI,,d,719,,,,,,,Y
+630,RP,KD/PD,J3607,GEOMXX,ROSMU,,d,725,,,,1,,,Y
+630,ML,ML,J3608,EUPIMI,BERTH,UNSURE ID,T,707,,,,,,,Y
+630,ML,ML,J3609,CROCNO,BERTH,,d,705,likely was actually MORRLA,n,,,likely was actually MORRLA,,Y
+701,PD,ML,K4001,GEOMXX,FRAAM,,D,710,,,,,,728,Y
+701,PD,ML,K4002,MICROX,FRAAM,,d,706,,,,,,,Y
+701,PD,ML,K4003,SPHICH,FRAAM,SNAP,P,802,CERAUN,,,2,,,Y
+701,PD,ML,K4004,MORRCO,FRAAM,,d,716,,,,,,,Y
+701,PD,ML,K4005,EUPIXX,FRAAM,SNAP,D,730,ALSOPO,,,Y,only shade fraam,802,Y
+701,PD,ML,K4006,GEOMXX,FRAAM,SNAP (STRIP?),p,726,HYPAUN,,809,2,p date is pp,,Y
+701,PD,ML,K4007,MELACA,FRAAM,,D,711,,,,,,,Y
+701,PD,ML,K4008,IRIDEP,FRAAM,,P,721,iridla,,809,1,,,Y
+701,PD,ML,K4009,STRIPX,FRAAM,,D,825,ECTRCR,,,,FAILED PUPATION,,
+701,PD,ML,K4010,EUPIXX,FRAAM,,P,823,CAMPPE,,108,1,,,
+701,PD,ML,K4011,BISTBE,PRUSE,,p,709,,,804,,,,Y
+701,PD,ML,K4012,POLYIN,PRUSE,SNAP,P,917,HYALCE,,,2,,,
+701,PD,ML,K4013,ERANTI,ROSMU,,T,708,,N,714,,STRONG DOUBTS ON eRANTI,,Y
+701,PD,ML,K4014,BISTBE,ROSMU,,P,817,,,,1,,,Y
+701,PD,ML,K4015,MORRCO,ROSMU,,D,827,,,,1,FAILED PUPATION,,
+701,PD,ML,K4016,CROCNO,ROSMU,,d,716,,,,1,cat was reared on EUOAL and I'm nearly certain it was caught on EUOAL,,Y
+701,PD,ML,K4017,GEOMXX,PRUSE,4006 IS SAME TYPE,P,726,HYPAUN,,903,2,,,Y
+701,PD,ML,K4018,STRIPX,ROSMU,OW,D,118,HYPAUN,,,,,,
+701,PD,ML,K4019,MELACA,ROSMU,SNAP,D,705,,,,1,,,Y
+701,PD,ML,K4020,STRIPX,FRAAM,,p,728,HYPAUN,,809,2,,,Y
+701,PD,ML,K4021,GEOMXX,RUBXX,,P,831,,,,2,STARTED AGAIN WAS ON WRONG HOST,,
+701,PD,ML,K4022,GEOMXX,FRAAM,SNAP,p,706,anavpa,,y,1,id UNCERTAIN; CHECK CAT PHOTO,,Y
+701,PD,ML,K4023,GEOMXX,FRAAM,SNAP,k,704,,y,,1,lid kill,,Y
+701,PD,ML,K4024,GEOMXX,MALXX,SNAP,P,908,PROCLI,,,2,,,
+701,PD,ML,K4025,EUPIMI,PRUSE,,P,811,CAMPPE,,903,,,,Y
+701,PD,ML,K4026,GEOMXX,LIGOB,SNAP,D,118,,,,1,,,
+701,PD,ML,K4027,EUPIMI,VIBDI,,,,,,,,,,
+701,PD,ML,K4028,MICROX,VIBDI,,T,712,,Y,Y,,,,Y
+701,PD,ML,K4029,MICROX,RUBXX,,P,702,,,Y,,P DATE IS PP,,Y
+701,PD,ML,K4030,GEOMXX,LIGOB,SNAP,d,714,,,,,highly likely to have toid is noted; no toid found by 817,,Y
+701,PD,ML,K4031,MELACA,ROSMU,END OF DAY,d,802,mesoru,,,,started again was on wrong host,,Y
+706,DR,HW,K4032,GEOMXX,MALXX,S,P,728,hypaun,,809,1,,,Y
+706,DR,HW,K4033,GEOMXX,ROSMU,DOA?,d,706,,,,,,,Y
+706,DR,HW,K4034,GEOMXX,ROSMU,,D,720,,,,,,728,Y
+706,DR,HW,K4035,STRIPX,ROSMU,,d,712,,y,,,,,Y
+706,DR,HW,K4036,ZALEXX,LIGOB,,D,710,,,,,,728,Y
+706,DR,HW,K4037,BROWNX,ROSMU,,D,708,PALTAN,,,,,,Y
+706,DR,HW,K4038,GEOMXX,ROSMU,S,D,712,,Y,,,TOID?,728,Y
+706,DR,HW,K4039,MELACA,RUBXX,,P,723,MESORU,,,,,,Y
+706,DR,HW,K4040,MELACA,RUBXX,,P,725,MESORU,,823,,,,Y
+,,,K4041,,,,,,,,,,,,
+,,,K4042,,,,,,,,,,,,
+,,,K4043,,,,,,,,,,,,
+,,,K4044,,,,,,,,,,,,
+,,,K4045,,,,,,,,,,,,
+,,,K4046,,,,,,,,,,,,
+,,,K4047,,,,,,,,,,,,
+,,,K4048,,,,,,,,,,,,
+,,,K4049,,,,,,,,,,,,
+,,,K4050,,,,,,,,,,,,
+,,,K4051,,,,,,,,,,,,
+,,,K4052,,,,,,,,,,,,
+,,,K4053,,,,,,,,,,,,
+,,,K4054,,,,,,,,,,,,
+,,,K4055,,,,,,,,,,,,
+,,,K4056,,,,,,,,,,,,
+,,,K4057,,,,,,,,,,,,
+,,,K4058,,,,,,,,,,,,
+,,,K4059,,,,,,,,,,,,
+,,,K4060,,,,,,,,,,,,
+,,,K4061,,,,,,,,,,,,
+,,,K4062,,,,,,,,,,,,
+702,RP,PD,K4063,GEOMXX,BERTH,,D,705,,n,,,,,Y
+702,RP,PD,K4064,ZALEXX,VIBSI,,D,710,,,,,,,Y
+702,RP,PD,K4065,MICROX,FRAAM,,d,802,,,,,,,Y
+702,RP,PD,K4066,LOMOVE,MALXX,,P,711,,,,,,,Y
+702,RP,PD,K4067,MELACA,MALXX,,D,811,LOMOVE,,,,,,Y
+702,RP,PD,K4068,MELACA,MALXX,,P,726,LOMOVE,,,,,,Y
+702,RP,PD,K4069,GEOMXX,MELACA,S,OW,205,PROTPO,,,2,,,
+702,RP,ML/HW,K4070,MELACA,MALXX,,T,818,LOMOVE,,,,,,Y
+702,RP,ML/HW,K4071,MELACA,MALXX,,P,729,LOMOVE,Y,,,,,Y
+702,RP,ML/HW,K4072,MELACA,MALXX,,P,809,LOMOVE,,,,,,Y
+702,RP,ML/HW,K4073,MELACA,MALXX,,d,719,,,,,,,Y
+702,RP,ML/HW,K4074,MELACA,ROSMU,,D,707,,,,,,,Y
+702,RP,ML/HW,K4075,MORRCO,ROSMU,,P,831,,,,,,,
+702,RP,ML/HW,K4076,MELACA,MALXX,,p,710,,y,,,,,Y
+702,RP,ML/HW,K4077,MELACA,MALXX,ROUGH SHAPE,d,705,,,,,,,Y
+702,RP,ML/HW,K4078,MELACA,PRUSE,,P,806,LOMOVE,,,,,,Y
+702,RP,ML/HW,K4079,ZALEXX,ROSMU,,D,712,,,,,,728,Y
+702,RP,ML/HW,K4080,PALTAN,ROSMU,S,D,809,PSEUCY,,,2,,,Y
+702,RP,ML/HW,K4081,STRIPX,ROSMU,,P,726,HYPAUN,,809,,,,Y
+702,RP,ML/HW,K4082,GEOMXX,FRAAM,S,mia,721,,,,2,,,Y
+702,RP,ML/HW,K4083,EUPIMI,ROSMU,,P,712,,,,,,,Y
+702,RP,ML/HW,K4084,PALTAN,ROSMU,,D,707,PSEUCY,,,1,,,Y
+702,RP,ML/HW,K4085,EUPIMI,ROSMU,,P,816,CAMPPE,,,1,,,Y
+702,ML,ML,K4086,MICROX,ROSMU,added later; this caterpillar is not on the datasheet and is listed as a repeat of k4085; thiw will need to be fixed in coding to attribute it to the correct plant,P,712,,,804,,,,Y
+,,,K4087,,,,,,,,,,,,
+,,,K4088,,,,,,,,,,,,
+,,,K4089,,,,,,,,,,,,
+,,,K4090,,,,,,,,,,,,
+,,,K4091,,,,,,,,,,,,
+,,,K4092,,,,,,,,,,,,
+,,,K4093,,,,,,,,,,,,
+702,DR,DR/KD,K4094,MELACA,PRUSE,,p,705,,n,,,,,Y
+702,DR,DR/KD,K4095,MELACA,PRUSE,,P,726,,,,,,,Y
+702,DR,DR/KD,K4096,MELACA,PRUSE,,d,718,lomove,,,,,,Y
+702,DR,DR/KD,K4097,MICROX,PRUSE,,d,707,,,,,cat is on lid,,Y
+702,DR,DR/KD,K4098,MELACA,PRUSE,,d,705,,,,,,,Y
+702,DR,DR/KD,K4099,MELACA,PRUSE,,k,705,,,,,kill date unsure; killed by Michael hes dumb,,Y
+702,DR,DR/KD,K4100,MICROX,VIBDI,TOA,T,702,,,Y,,,,Y
+702,DR,DR/KD,K4101,MELACA,MALXX,,pp,811,,,,,d816; pupation fail,,Y
+702,DR,DR/KD,K4102,EUPIMI,MALXX,,d,714,,,,,cat could have been camppe; no way to tell outside of bardocing,,Y
+702,DR,DR/KD,K4103,LOMOVE,MALXX,,P,726,,,,,,,Y
+702,DR,DR/KD,K4104,ZALEXX,EUOAL,,D,704,,N,,1,,,Y
+702,DR,DR/KD,K4105,PALTAN,ROSMU,PP?,t,729,,n,817,,,,Y
+702,DR,DR/KD,K4106,GEOMXX,ROSMU,S,D,712,,,,1,,728,Y
+702,DR,ML,K4107,ZALEXX,ROSMU,,P,809,PALTAN,,817,1,,,Y
+,,,K4108,,,,,,,,,,,,
+,,,K4109,,,,,,,,,,,,
+,,,K4110,,,,,,,,,,,,
+,,,K4111,,,,,,,,,,,,
+,,,K4112,,,,,,,,,,,,
+,,,K4113,,,,,,,,,,,,
+,,,K4114,,,,,,,,,,,,
+,,,K4115,,,,,,,,,,,,
+,,,K4116,,,,,,,,,,,,
+,,,K4117,,,,,,,,,,,,
+,,,K4118,,,,,,,,,,,,
+,,,K4119,,,,,,,,,,,,
+,,,K4120,,,,,,,,,,,,
+,,,K4121,,,,,,,,,,,,
+,,,K4122,,,,,,,,,,,,
+,,,K4123,,,,,,,,,,,,
+,,,K4124,,,,,,,,,,,,
+705,ML,ML,K4125,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4126,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4127,PALTAN,LONMO,DYING; MAYBE DIF,d,705,,,,,dead in field,,Y
+705,ML,ML,K4128,ORTHHI,LONMO,,P,726,,,,,,,Y
+705,ML,ML,K4129,EUPIMI,ROSMU,,d,726,,,,,,,Y
+705,ML,ML,K4130,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4131,MICROX,ROSMU,,p,712,,,809,,,,Y
+705,ML,ML,K4132,EUPIMI,ROSMU,,p,712,,,804,,,,Y
+705,ML,ML,K4133,MELACA,ROSMU,,D,809,,,,1,,,Y
+705,ML,ML,K4134,STRIPX,ROSMU,,OW,?,HYPAUN,,,,,,
+705,ML,ML,K4135,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4136,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4137,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4138,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4139,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4140,MICROX,ROSMU,,d,712,,,,,,,Y
+705,ML,ML,K4141,MICROX,MALXX,,P,901,,,101,,,,
+,,,K4142,,,,,,,,,,,,
+,,,K4143,,,,,,,,,,,,
+,,,K4144,,,,,,,,,,,,
+,,,K4145,,,,,,,,,,,,
+,,,K4146,,,,,,,,,,,,
+,,,K4147,,,,,,,,,,,,
+,,,K4148,,,,,,,,,,,,
+,,,K4149,,,,,,,,,,,,
+,,,K4150,,,,,,,,,,,,
+,,,K4151,,,,,,,,,,,,
+,,,K4152,,,,,,,,,,,,
+,,,K4153,,,,,,,,,,,,
+,,,K4154,,,,,,,,,,,,
+,,,K4155,,,,,,,,,,,,
+707,ML,ML GM,K4156,MELACA,BERTH,MIGHT ACTUALLY BE FROM LINBE,D,712,,,,,NEEDS FRASSS CONFIRMED,,Y
+707,ML,ML GM,K4157,MELACA,BERTH,,d,712,,n,,,may actually be trical rejecting berth,,Y
+707,ML,ML GM,K4158,MICROX,BERTH,,T,712,,,,,,,Y
+707,ML,ML GM,K4159,GEOMXX,VIBAC,S,D,712,,,,1,,728,Y
+707,ML,ML GM,K4160,GEOMXX,ROSMU,S; DYING,d,710,,n,,,,,Y
+707,ML,ML GM,K4161,SCHIXX,MALXX,,P,806,SCHIUN,Y,,,,,Y
+707,ML,ML GM,K4162,MICROX,LIGOB,,pp,729,,,,,d729,,Y
+707,ML,ML GM,K4163,MICROX,LIGOB,,P,903,,,,,,,
+707,ML,ML GM,K4164,FOURLX,BERTH,FOUR PAIRS OF PROLEGS; S,p,708,HYPEBA,n,726,,p date is pp; did not eat and is an acer specialist baltimore snout,,Y
+707,ML,ML GM,K4165,MORRLA,BERTH,MAYBE CROCNO,T,813,,,817,,,,Y
+707,ML,ML GM,K4166,MELACA,ROSMU,,d,712,,y,,,,,Y
+,,,K4167,,,,,,,,,,,,
+,,,K4168,,,,,,,,,,,,
+,,,K4169,,,,,,,,,,,,
+,,,K4170,,,,,,,,,,,,
+,,,K4171,,,,,,,,,,,,
+,,,K4172,,,,,,,,,,,,
+,,,K4173,,,,,,,,,,,,
+,,,K4174,,,,,,,,,,,,
+,,,K4175,,,,,,,,,,,,
+,,,K4176,,,,,,,,,,,,
+,,,K4177,,,,,,,,,,,,
+,,,K4178,,,,,,,,,,,,
+,,,K4179,,,,,,,,,,,,
+,,,K4180,,,,,,,,,,,,
+,,,K4181,,,,,,,,,,,,
+,,,K4182,,,,,,,,,,,,
+,,,K4183,,,,,,,,,,,,
+,,,K4184,,,,,,,,,,,,
+,,,K4185,,,,,,,,,,,,
+,,,K4186,,,,,,,,,,,,
+707,PD,AO,K4187,GEOMXX,ROSMU,,t,718,,,,1,,,Y
+707,PD,AO,K4188,STRIPX,ROSMU,,OW,?,HYPAUN ,,,,,,
+707,PD,AO,K4189,STRIPX,MALXX,,P,806,HYPAUN ,,817,1,,,Y
+707,PD,AO,K4190,EUPIXX,ROSMU,,D,809,,,,1,,,Y
+707,PD,AO,K4191,FOURLX,LONMO,,D,710,,N,,,HIGH LIKELYHOOD OF TOID BUT NO ASD OF 817,,Y
+,,,K4192,,,,,,,,,,,,
+,,,K4193,,,,,,,,,,,,
+,,,K4194,,,,,,,,,,,,
+,,,K4195,,,,,,,,,,,,
+,,,K4196,,,,,,,,,,,,
+,,,K4197,,,,,,,,,,,,
+,,,K4198,,,,,,,,,,,,
+,,,K4199,,,,,,,,,,,,
+,,,K4200,,,,,,,,,,,,
+,,,K4201,,,,,,,,,,,,
+,,,K4202,,,,,,,,,,,,
+,,,K4203,,,,,,,,,,,,
+,,,K4204,,,,,,,,,,,,
+,,,K4205,,,,,,,,,,,,
+,,,K4206,,,,,,,,,,,,
+,,,K4207,,,,,,,,,,,,
+,,,K4208,,,,,,,,,,,,
+,,,K4209,,,,,,,,,,,,
+,,,K4210,,,,,,,,,,,,
+,,,K4211,,,,,,,,,,,,
+,,,K4212,,,,,,,,,,,,
+,,,K4213,,,,,,,,,,,,
+,,,K4214,,,,,,,,,,,,
+,,,K4215,,,,,,,,,,,,
+,,,K4216,,,,,,,,,,,,
+,,,K4217,,,,,,,,,,,,
+706,ML,ML;PD,K4218,MICROX,FRAAM,,d,802,,,,,,,Y
+706,ML,ML;PD,K4219,GEOMXX,MALXX,,mia,715,,,,,wrong food,,Y
+706,ML,ML;PD,K4220,PROTPO,MALXX,ID UNSURE; S,d,813,,,,1,,,Y
+706,ML,ML;PD,K4221,EUPIMI,MALXX,,D,723,,,,,POSSIBLY KILLED BY SPIDER,,Y
+706,ML,ML;PD,K4222,MELACA,MALXX,,d,804,,y,,1,about to die 802; not MELACA,,Y
+706,ML,ML;PD,K4223,UNKNXX,MALXX,S,OW,205,PALTAN,,,1,,,
+706,ML,ML;PD,K4224,UNKNXX,MALXX,S,OW,205,PALTAN,,,1,,,
+706,ML,ML;PD,K4225,MELACA,MALXX,,D,718,lomove,,,,,,Y
+706,ML,ML;PD,K4226,MICROX,MALXX,,MIA,730,,,,,,,Y
+706,ML,ML;PD,K4227,CRABXX,MALXX,S,d,712,,,,,,,Y
+706,ML,ML;PD,K4228,CRABXX,BERTH,LOST OFF TARP,,,,,,,,,
+706,ML,ML;PD,K4229,LOMOVE,MALXX,,P ,716,,,,,,,Y
+706,ML,ML;PD,K4230,LOMOVE,MALXX,,pp,716,,,,,failed pupation,,Y
+706,ML,ML;PD,K4231,MELACA,MALXX,,pp,,LOMOVE,,,,,,Y
+706,ML,ML;PD,K4232,MICROX,MALXX,,d,712,,,,,real small,,Y
+706,ML,ML;PD,K4233,MELACA,MALXX,,,,,,,,,,
+706,ML,ML;PD,K4234,ROUGEX,LONMO,,,,,,,,,,
+706,ML,ML;PD,K4235,ROUGEX,VIBLE,,,,,,,,,,
+706,ML,ML;PD,K4236,EUPIMI,MALXX,,D,712,,,,,,,Y
+706,ML,ML;PD,K4237,GEOMXX,VIBLE,,T,913,,,,,UNSURE WHAT'S HAPPENING,,
+706,ML,ML;PD,K4238,MELACA,MALXX,,P,804,LOMOVE,,,,,,Y
+706,ML,ML;PD,K4239,MELACA,MALXX,,d,714,,,,,,,Y
+706,ML,ML;PD,K4240,LOMOVE,MALXX,,P,726,,,,,,,Y
+706,ML,ML;PD,K4241,MELACA,PRUSE,,p,719,lomove,,,,,,Y
+706,ML,ML;PD,K4242,LOMOVE,PRUSE,,PP,802,LOMOVE,,,,failed pupation 816,,Y
+706,ML,ML;PD,K4243,MICROX,PRUSE,,p,712,,,809,,,,Y
+706,ML,ML;PD,K4244,LITHXX,FRAAM,,d,707,not lithxx,,,1,not lithxx,,Y
+706,ML,ML;PD,K4245,GEOMXX,BERTH,,D,725,PROTPO,,,1,almost certainly toid is noted; no toid has been found,,Y
+706,ML,ML;PD,K4246,GEOMXX,FRAAM,,P,910,PROCLI,,,1,,,
+706,ML,ML;PD,K4247,MELACA,PRUSE,,P,726,LOMOVE,,,,,,Y
+706,ML,ML;PD,K4248,GEOMXX,PRUSE,S,P,729,EUTRCL,,,,,,Y
+713,RP,ML;PD,K4249,EUPIXX,PRUSE,,P,811,CAMPPE,,,1,,,Y
+713,RP,ML;PD,K4250,STRIPX,MALXX,,OW,?,HYPAUN,,,,,,
+713,RP,ML;PD,K4251,UNKNXX,RUBXX,,p,719,microx,,809,,,,Y
+,,,K4252,,,,,,,,,,,,
+,,,K4253,,,,,,,,,,,,
+,,,K4254,,,,,,,,,,,,
+,,,K4255,,,,,,,,,,,,
+,,,K4256,,,,,,,,,,,,
+,,,K4257,,,,,,,,,,,,
+,,,K4258,,,,,,,,,,,,
+,,,K4259,,,,,,,,,,,,
+,,,K4260,,,,,,,,,,,,
+,,,K4261,,,,,,,,,,,,
+,,,K4262,,,,,,,,,,,,
+,,,K4263,,,,,,,,,,,,
+,,,K4264,,,,,,,,,,,,
+,,,K4265,,,,,,,,,,,,
+,,,K4266,,,,,,,,,,,,
+,,,K4267,,,,,,,,,,,,
+,,,K4268,,,,,,,,,,,,
+,,,K4269,,,,,,,,,,,,
+,,,K4270,,,,,,,,,,,,
+,,,K4271,,,,,,,,,,,,
+,,,K4272,,,,,,,,,,,,
+,,,K4273,,,,,,,,,,,,
+,,,K4274,,,,,,,,,,,,
+,,,K4275,,,,,,,,,,,,
+,,,K4276,,,,,,,,,,,,
+,,,K4277,,,,,,,,,,,,
+,,,K4278,,,,,,,,,,,,
+,,,K4279,,,,,,,,,,,,
+713,KD,AO,K4280,MORRLA,ROSMU,,D,813,,,,1,BUTT GOO,,Y
+713,KD,AO,K4281,MELACA,ROSMU,,D,721,,,,,MAYBE TOID,,Y
+713,KD,AO,K4282,LONMOVE,MALXX,,PP,719,,,,,DEAD,,Y
+713,KD,AO,K4283,MELACA,MALXX,,P,802,LOMOVE,,,,,,Y
+713,KD,AO,K4284,LOMOVE,MALXX,FELL ON COLLECTOR FROM MALXX,P,726,,,,,,,Y
+713,KD,AO,K4285,MELACA,MALXX,,d,720,,y,,,,,Y
+713,KD,AO,K4286,LOMOVE,MALXX,,P,729,,,,,,,Y
+713,KD,AO,K4287,STRRIPX,MALXX,,D,726,HYPAUN,N,,,,,Y
+713,KD,AO,K4288,LOMOVE,MALXX,,P,726,,,,,,,Y
+713,KD,AO,K4289,MORRLA,MALXX,,D,726,,Y,,,,,Y
+713,KD,AO,K4290,GEOMXX,MALXX,EYE SPOTS ON A4,P,813,ECTRCR,,908,,,,Y
+713,KD,AO,K4291,MELACA,FRAAM,,D,720,,,,,,,Y
+713,KD,AO,K4292,MELACA,MALXX,,P,818,LOMOVE,,,,,,Y
+713,KD,AO,K4293,MELACA,MALXX,,P,818,LOMOVE,,,,PUPAL DATE IS SAME AS PREPUPAL DATE,,
+713,KD,AO,K4294,LOMOVE,MALXX,,P,729,,,,,,,Y
+713,KD,AO,K4295,MELACA,MALXX,,D,823,LOMOVE,,,,,,
+713,KD,AO,K4296,MORRCO,MALXX,,D,714,,,,,,,Y
+713,KD,AO,K4297,MORRLA,MALXX,ID UNSURE,d,806,maybe pseucy or paltan,,,1,,,Y
+713,RP,PD,K4298,MELACA,MALXX,FROM MALXX ON T210,P,804,LOMOVE,,,,,,Y
+,,,K4299,,,,,,,,,,,,
+,,,K4300,,,,,,,,,,,,
+,,,K4301,,,,,,,,,,,,
+,,,K4302,,,,,,,,,,,,
+,,,K4303,,,,,,,,,,,,
+,,,K4304,,,,,,,,,,,,
+,,,K4305,,,,,,,,,,,,
+,,,K4306,,,,,,,,,,,,
+,,,K4307,,,,,,,,,,,,
+,,,K4308,,,,,,,,,,,,
+,,,K4309,,,,,,,,,,,,
+,,,K4310,,,,,,,,,,,,
+713,RP,PD,K4311,STRIPX,ROSMU,,P,809,HYPAUN,,903,1,,,Y
+713,RP,PD,K4312,MORRCO,MALXX,,d,716,,,,,,,Y
+713,RP,PD,K4313,STRIPX,MALXX,,D,811,,,,,,,Y
+713,RP,PD,K4314,MELACA,MALXX,,D,719,,,,,,,Y
+713,RP,PD,K4315,MELACA,MALXX,,P,802,LOMOVE,,,,,,Y
+713,RP,PD,K4316,STRIPX,MALXX,,OW,?,HYPAUN,,,,,,
+713,RP,PD,K4317,MORRCO,MALXX,,T,719,,,817,,,,Y
+713,RP,PD,K4318,MELACA,MALXX,,D,719,,Y,,,MAYBE FUNGUS,,Y
+713,RP,PD,K4319,SCHIXX,MALXX,,p,819,HETEGU,,,1,,,Y
+713,RP,PD,K4320,MELACA,MALXX,,P,806,LOMOVE,,,,,,Y
+713,RP,PD,K4321,MELACA,MALXX,,P,806,LOMOVE,,,,,,Y
+713,RP,PD,K4322,MELACA,MALXX,,p,819,LOMOVE,,,1,number said k4522 erroneously,,Y
+713,RP,PD,K4323,MELACA,MALXX,,p,813,lomove,,,,,,Y
+713,RP,PD,K4324,MELACA,MALXX,,P,818,,,,1,,,Y
+713,RP,PD,K4325,LOMOVE,MALXX,,P,726,,,,,,,Y
+713,RP,PD,K4326,LOMOVE,MALXX,,P,721,,,,,,,Y
+713,RP,PD,K4327,BISTBE,MALXX,,k,714,,,,,,,Y
+713,RP,PD,K4328,STRIPX,MALXX,,P,818,HYPAUN,,903,,,,Y
+713,RP,PD,K4329,GEOMXX,MALXX,,T,728,hypaun,,Y,1,,,Y
+713,RP,PD,K4330,MICROX,MALXX,,D,825,,,,,FAILED PUPATION,,
+713,RP,PD,K4331,LOMOVE,MALXX,,P,729,,,,,,,Y
+713,RP,PD,K4332,MELACA,MALXX,,D,802,,Y,,,,,Y
+713,RP,PD,K4333,MELACA,MALXX,,P,811,LOMOVE,Y,,,,,Y
+713,RP,PD,K4334,MELACA,MALXX,,P,804,LOMOVE,,,,,,Y
+713,RP,PD,K4335,STRIPX,MALXX,,OW,?,HYPAUN,,,,,,
+713,RP,PD,K4336,MELACA,MALXX,,P,802,LOMOVE,,,,,,Y
+713,RP,PD,K4337,LOMOVE,MALXX,,P,726,,,,,,,Y
+713,RP,PD,K4338,ACROSU,MALXX,,D,725,,,,,,,Y
+713,RP,PD,K4339,LOMOVE,MALXX,,P,726,,,,,,,Y
+713,RP,PD,K4340,LOMOVE,MALXX,,P,729,,,,,,,Y
+713,RP,PD,K4341,GEOMXX,ROSMU,,P,802,HYPAUN,,903,1,,,Y
+714,PD,ML,K4342,MORRLA,MALXX,,P,908,,,,,,,
+714,PD,ML,K4343,FUZZYX,MALXX,,D,729,,Y,,,,,Y
+714,PD,ML,K4344,FUZZYX,MALXX,,D,908,PYRRIS,,,,,,
+714,PD,ML,K4345,LOMOVE,PRUSE,,P,726,,,,,,,Y
+714,PD,ML,K4346,LOMOVE,PRUSE,,,722,,Y,,,,,
+714,PD,ML,K4347,STRIPX,PRUSE,,p,811,ECTRCR,,,,,,Y
+714,PD,ML,K4348,MELACA,PRUSE,,D,728,LOMOVE,,,,,,Y
+714,PD,ML,K4349,ZALEXX,PRUSE,,P,823,,,,,,,
+714,PD,ML,K4350,ZALEXX,PRUSE,,D,729,,,,,,802,Y
+714,PD,ML,K4351,ZALEXX,PRUSE,,D,726,,,,,,802,Y
+714,PD,ML,K4352,EUPIXX,PRUSE,,d,729,ZALEXX,Y,,,,,Y
+714,PD,ML,K4353,MORRLA,PRUSE,,P,831,,,,,,,
+714,PD,ML,K4354,LOMOVE,PRUSE,,P,722,,,,,,,Y
+714,PD,ML,K4355,ZALEXX,PRUSE,,D,719,,y,,,liely same as other zale from pruse same day k4349,,Y
+714,PD,ML,K4356,UNKNXX,PRUSE,,p,715,,,,,MIGHT BE TOID PUPA,,Y
+714,PD,ML,K4357,MELACA,PRUSE,,P,811,LOMOVE,,,,,,Y
+714,PD,ML,K4358,GRAPEX,PRUSE,,,,,,,,,,
+,,,K4359,,,,,,,,,,,,
+,,,K4360,,,,,,,,,,,,
+,,,K4361,,,,,,,,,,,,
+,,,K4362,,,,,,,,,,,,
+,,,K4363,,,,,,,,,,,,
+,,,K4364,,,,,,,,,,,,
+,,,K4365,,,,,,,,,,,,
+,,,K4366,,,,,,,,,,,,
+,,,K4367,,,,,,,,,,,,
+,,,K4368,,,,,,,,,,,,
+,,,K4369,,,,,,,,,,,,
+,,,K4370,,,,,,,,,,,,
+,,,K4371,,,,,,,,,,,,
+,,,K4372,,,,,,,,,,,,
+716,ML,ML,K4373,PYRRIS,ROSMU,,D,118,,,,1,,,
+716,ML,ML,K4374,PYRRIS,ROSMU,,D,118,,,,,,,
+716,ML,ML,K4375,STRIPX,MALXX,,OW,?,HYPAUN,,,,,,
+716,ML,ML,K4376,EREBXX,RUBXX,S; HAS ECTOTOID,T,716,,,,1,,,Y
+716,ML,ML,K4377,MELACA,ROSMU,,d,728,MESORU,n,,,rejecting host; re-id uncertain,,Y
+716,ML,ML,K4378,BUTTX,PRUSE,"S; PROBABLY EREBEDAE, FUZZY, GREEN, BLACK PROLEGS",D,806,,,,1,,,Y
+716,ML,ML,K4379,BUTTX,PRUSE,,D,820,,,,1,,,
+716,ML,ML,K4380,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4381,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4382,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4383,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4384,RHEUPR,PRUSE,,P,729, ,,,,,,Y
+716,ML,ML,K4385,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4386,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4387,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4388,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4389,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4390,RHEUPR,PRUSE,,D,903,,N,,,,,
+716,ML,ML,K4391,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4392,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4393,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4394,MELACA,PRUSE,,P,806,LOMOVE,,,,,,Y
+716,ML,ML,K4395,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4396,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4397,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4398,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4399,RHEUPR,PRUSE,,D,725,,,,,,,Y
+716,ML,ML,K4400,RHEUPR,PRUSE,,P,729,,,,,,,Y
+716,ML,ML,K4401,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4402,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4403,RHEUPR,PRUSE,GOES ON TO NEXT SHEET,P,726,,Y,,,,,Y
+716,ML,ML,K4404,RHEUPR,PRUSE,COMES FROM PREVIOUS SHEET,P,725,,,,,,,Y
+716,ML,ML,K4405,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4406,RHEUPR,PRUSE,,T,728,,,,1,,,Y
+716,ML,ML,K4407,RHEUPR,PRUSE,,P,725,,,,,,,Y
+716,ML,ML,K4408,RHEUPR,PRUSE,,T,728,,,Y,,,,Y
+716,ML,ML,K4409,RHEUPR,PRUSE,,P,726,,,,,,,Y
+716,ML,ML,K4410,MELACA,BERTH,,D,725,,,,,,,Y
+716,ML,PD,K4411,LOMOVE,CRAXX,,P,725,,,,,,,Y
+,,,K4412,,,,,,,,,,,,
+,,,K4413,,,,,,,,,,,,
+,,,K4414,,,,,,,,,,,,
+,,,K4415,,,,,,,,,,,,
+,,,K4416,,,,,,,,,,,,
+,,,K4417,,,,,,,,,,,,
+,,,K4418,,,,,,,,,,,,
+,,,K4419,,,,,,,,,,,,
+,,,K4420,,,,,,,,,,,,
+,,,K4421,,,,,,,,,,,,
+,,,K4422,,,,,,,,,,,,
+,,,K4423,,,,,,,,,,,,
+,,,K4424,,,,,,,,,,,,
+,,,K4425,,,,,,,,,,,,
+,,,K4426,,,,,,,,,,,,
+,,,K4427,,,,,,,,,,,,
+,,,K4428,,,,,,,,,,,,
+,,,K4429,,,,,,,,,,,,
+,,,K4430,,,,,,,,,,,,
+,,,K4431,,,,,,,,,,,,
+,,,K4432,,,,,,,,,,,,
+,,,K4433,,,,,,,,,,,,
+,,,K4434,,,,,,,,,,,,
+715,ML,ML,K4435,MICROX,ROSMU,,P,901,,,903,,,,
+715,ML,ML,K4436,MORRLA,FRAAM,,T,901,,,,,,,
+715,ML,ML,K4437,HYPAUN,FRAAM,,p,728,,,809,1,,,Y
+715,ML,ML,K4438,GEOMXX,ROSMU,CRUSHED NOT COLLECTED,,,,,,,,,
+715,ML,ML,K4439,HYPAUN,ROSMU,,P,802,,,908,1,,,Y
+715,ML,ML,K4440,HYPAUN,ROSMU,,P,802,,,817,,,,Y
+715,ML,ML,K4441,UNKNXX,BERTH,LOOKS MICRO-ISH OR MORRLA,d,729,,unk,,,,,Y
+715,ML,ML,K4442,CAMPPE,ROSMU,,P,729,,,818,1,,,Y
+715,ML,ML,K4443,MORRLA,LONMO,,T ,823,,,,,,,
+715,ML,ML,K4444,MICROX,FRAAM,,P,726,,,,,,,Y
+715,ML,ML,K4445,MICROX,LONMO,BIG,k,802,,,,,squashed in lid,,Y
+715,ML,ML,K4446,MICROX,LONMO,,K,722,,,,,BALL MILLLED 715,,Y
+715,ML,ML,K4447,SYNCAE,ROSMU,,D,804,,,,,,,Y
+715,ML,ML,K4448,PALTAN,ROSMU,,P,722,,n,804,,,,Y
+715,ML,ML,K4449,EUPIME,LIGOB,,P,818,CAMPPE,,,,PUPAL DATE IS SAME AS PREPUPAL DATE,,
+715,ML,ML,K4450,EUPIXX,ROSMU,,T,720,,Y,,,,,Y
+715,ML,ML,K4451,UNKNXX,MALXX,EREBINAE? S,P,802,,N,,1,,,Y
+715,ML,ML,K4452,MELACA,MALXX,,d,719,,y,,,,,Y
+715,ML,ML,K4453,EREBXX,MALXX,MAYBE SAME AS ZALEXX FROM PRUSE YESTERDAY,D,719,,N,,,,,Y
+715,ML,ML,K4454,EREBXX,MALXX,,D,720,,,,,,728,Y
+715,ML,ML,K4455,GEOMXX,MALXX,,P,823,PROTPO,,108,1,,,
+715,ML,ML,K4456,EREBXX,MALXX,,P,831,,,,,,,
+715,ML,ML,K4457,MELACA,MALXX,,8,809,LOMOVE,Y,,1,,,Y
+715,ML,ML,K4458,LOMOVE,MALXX,,k,718,,,,,hurt on arrival,,Y
+715,ML,ML,K4459,UNKNXX,MALXX,SAME AS K4451,P,816,,N,,,,,Y
+715,ML,ML,K4460,GEOMXX,ROSMU,HOST UNCERTAIN,D,825,PROTPO,,,1,FAILED PUPATION,,
+,,,K4461,,,,,,,,,,,,
+,,,K4462,,,,,,,,,,,,
+,,,K4463,,,,,,,,,,,,
+,,,K4464,,,,,,,,,,,,
+,,,K4465,,,,,,,,,,,,
+719,ML,ML,K4466,MORRCO,ROSMU,,P,927,,,,,,,
+,,,K4467,,,,,,,,,,,,
+,,,K4468,,,,,,,,,,,,
+,,,K4469,,,,,,,,,,,,
+,,,K4470,,,,,,,,,,,,
+,,,K4471,,,,,,,,,,,,
+,,,K4472,,,,,,,,,,,,
+,,,K4473,,,,,,,,,,,,
+,,,K4474,,,,,,,,,,,,
+,,,K4475,,,,,,,,,,,,
+,,,K4476,,,,,,,,,,,,
+,,,K4477,,,,,,,,,,,,
+,,,K4478,,,,,,,,,,,,
+,,,K4479,,,,,,,,,,,,
+,,,K4480,,,,,,,,,,,,
+,,,K4481,,,,,,,,,,,,
+,,,K4482,,,,,,,,,,,,
+,,,K4483,,,,,,,,,,,,
+,,,K4484,,,,,,,,,,,,
+,,,K4485,,,,,,,,,,,,
+,,,K4486,,,,,,,,,,,,
+,,,K4487,,,,,,,,,,,,
+,,,K4488,,,,,,,,,,,,
+,,,K4489,,,,,,,,,,,,
+,,,K4490,,,,,,,,,,,,
+,,,K4491,,,,,,,,,,,,
+,,,K4492,,,,,,,,,,,,
+,,,K4493,,,,,,,,,,,,
+,,,K4494,,,,,,,,,,,,
+,,,K4495,,,,,,,,,,,,
+,,,K4496,,,,,,,,,,,,
+719,HW,RP,K4497,BISTBE,MALXX,,pp,815,,y,,,D819,,Y
+719,HW,RP,K4498,MICROX,MALXX,,pp,819,,,903,,,,
+,,,K4499,,,,,,,,,,,,
+,,,K4500,,,,,,,,,,,,
+,,,K4501,,,,,,,,,,,,
+,,,K4502,,,,,,,,,,,,
+,,,K4503,,,,,,,,,,,,
+,,,K4504,,,,,,,,,,,,
+,,,K4505,,,,,,,,,,,,
+,,,K4506,,,,,,,,,,,,
+,,,K4507,,,,,,,,,,,,
+,,,K4508,,,,,,,,,,,,
+,,,K4509,,,,,,,,,,,,
+,,,K4510,,,,,,,,,,,,
+,,,K4511,,,,,,,,,,,,
+,,,K4512,,,,,,,,,,,,
+,,,K4513,,,,,,,,,,,,
+,,,K4514,,,,,,,,,,,,
+,,,K4515,,,,,,,,,,,,
+,,,K4516,,,,,,,,,,,,
+,,,K4517,,,,,,,,,,,,
+,,,K4518,,,,,,,,,,,,
+,,,K4519,,,,,,,,,,,,
+,,,K4520,,,,,,,,,,,,
+,,,K4521,,,,,,,,,,,,
+,,,K4522,,,,,,,,,,,,
+,,,K4523,,,,,,,,,,,,
+,,,K4524,,,,,,,,,,,,
+,,,K4525,,,,,,,,,,,,
+,,,K4526,,,,,,,,,,,,
+,,,K4527,,,,,,,,,,,,
+720,ML,ML,K4528,ZALEXX,ROSMU,,P,830,FOURLX,Y,,,,,
+720,ML,ML,K4529,GEOMXX,SAMCA,"Big, looks kinda EUTRCL but has horns",P,729,,,,,,,Y
+720,ML,ML,K4530,MICROX,RUBXX,,d,727,,,,,,,Y
+720,ML,ML,K4531,MELACA,ROSMU,,p,813,,,,,,,Y
+720,ML,ML,K4532,ZALEXX,PRUSE,,D,,Y,,,,,728,Y
+720,ML,ML,K4533,MICROX,PRUSE,,p,722,,,817,,,,Y
+720,ML,ML,K4534,MELACA,PRUSE,,P,823,,,,,,,
+720,ML,ML,K4535,MELACA,ROSMU,,D,816,,,,,,,Y
+720,ML,ML,K4536,EUPIXX,ROSMU,,T,823,,,,,,,
+720,ML,ML,K4537,GEOMXX,ROSMU,,D,903,,,,1,MAYBE FAILED TOID OR FAILED PUPATION,,
+720,ML,ML,K4538,EUPIXX,ROSMU,,K,726,,,,,SMASHED?,802,Y
+720,ML,ML,K4539,MICROX,VIBDE,P,p,720,,n,804,,,,Y
+720,ML,ML,K4540,GEOMXX,PRUSE,,P,809,NEMARE,,908,,,,Y
+720,ML,ML,K4541,LOMOVE,PRUSE,,P,813,MELACA,,,,,,Y
+720,ML,ML,K4542,ZALEXX,PRUSE,,P,910,,,101,,,,
+720,ML,ML,K4543,MICROX,LIGOB,,OW,205,,,,,,,
+720,ML,ML,K4544,BUTTTX,PRUSE,S,D,730,,,,1,,,Y
+720,ML,ML,K4545,MICROX,PRUSE,,t,802,,,817,,,,Y
+720,ML,ML,K4546,MICROX,VIBLE,P,T,804,,,804,,PUPATED UNK DATE,,Y
+,,,K4547,,,,,,,,,,,,
+,,,K4548,,,,,,,,,,,,
+,,,K4549,,,,,,,,,,,,
+,,,K4550,,,,,,,,,,,,
+,,,K4551,,,,,,,,,,,,
+,,,K4552,,,,,,,,,,,,
+,,,K4553,,,,,,,,,,,,
+,,,K4554,,,,,,,,,,,,
+,,,K4555,,,,,,,,,,,,
+,,,K4556,,,,,,,,,,,,
+,,,K4557,,,,,,,,,,,,
+,,,K4558,,,,,,,,,,,,
+721,ML,PD,K4559,LOMOVE,MALXX,,PP,806,,,,,,,Y
+721,ML,PD,K4560,ORTHHI,MALXX,ACHADI,PP,726,ACHADI,N,,,FAILED PUPATION,,Y
+721,ML,PD,K4561,LOMOVE,MALXX,,T,728,,,,,,,Y
+721,ML,PD,K4562,LOMOVE,MALXX,,P,802,,,,,,,Y
+721,ML,PD,K4563,HYPAUN,MALXX,,t,816,,,,,,,Y
+721,ML,PD,K4564,LOMOVE,MALXX,,D,809,,N,,,,,Y
+721,ML,PD,K4565,GEOMXX,LONMO,S,OW,205,PROTPO,,,2,,,
+721,ML,PD,K4566,GEOMXX,LONMO,S,P,726,iridep,,809,,SEEMS TOO LATE BUT WE HAVE NO PHOTO,,Y
+721,ML,PD,K4567,MICROX,MALXX,,P,819,,,903,,GE,,
+721,ML,PD,K4568,GEOMXX,MALXX,S,P,920,,,,1,,,
+721,ML,PD,K4569,LOMOVE,PRUSE,,p,816,,,,,,,Y
+721,ML,PD,K4570,MICROX,PRUSE,"speedy green, same as K4367",P,823,,,108,1,GE,,
+721,ML,PD,K4571,MICROX,PRUSE,tiny tiny,,,,,,,,,
+721,ML,PD,K4572,GEOMXX,PRUSE,same as K4568; S,P,910,PROCLI,,,1,,,
+721,ML,PD,K4573,LOMOVE,PRUSE,,P,729,,,,,,,Y
+721,ML,PD,K4574,LOMOVE,MALXX,,t,729,,,,,,,Y
+721,ML,PD,K4575,LOMOVE,MALXX,,P,804,,,,,,,Y
+721,ML,PD,K4576,PALTAN,EUOAL,,OW,205,,723,,,,,
+,,,K4577,,,,,,,,,,,,
+,,,K4578,,,,,,,,,,,,
+,,,K4579,,,,,,,,,,,,
+,,,K4580,,,,,,,,,,,,
+,,,K4581,,,,,,,,,,,,
+,,,K4582,,,,,,,,,,,,
+,,,K4583,,,,,,,,,,,,
+,,,K4584,,,,,,,,,,,,
+,,,K4585,,,,,,,,,,,,
+,,,K4586,,,,,,,,,,,,
+,,,K4587,,,,,,,,,,,,
+,,,K4588,,,,,,,,,,,,
+,,,K4589,,,,,,,,,,,,
+722,ML,ML,K4590,HYPAUN,FRAAM,,D,816,,,,,,,Y
+722,ML,PD RP,K4591,PALTAN,BERTH,,D,101,,,,,MIA 927? MIA 929.,,
+722,ML,PD RP,K4592,PALTAN,BERTH,,D,825,,,,,,,
+722,ML,PD RP,K4593,PALTAN,BERTH,,D,917,,,,,,,
+722,ML,ML,K4594,PROTPO,VIBDI,,T,726,,,,,,,Y
+722,ML,PD RP,K4595,ECTRCR,BERTH,,P,816,,,908,,,,Y
+722,ML,PD RP,K4596,CORYME,BERTH,,P,809,,,,,,,Y
+722,ML,PD RP,K4597,MORRLA,FRAAM,,D,924,,,,,STOPPED EATING,,
+722,ML,PD RP,K4598,SPILVI,BERTH,,d,815,,,,,,,Y
+722,ML,PD RP,K4599,PALTAN,BERTH,,D,108,,,,,,,
+722,ML,PD RP,K4600,MICROX,BERTH,,D,825,,,,,,,
+722,ML,ML,K4601,HYPAUN,AMEXX,,D,823,,,,,WEIRD BUG INSIDE,,
+722,ML,ML,K4602,MORRLA,AMEXX,,D,915,,,,,,,
+722,ML,ML,K4603,SCHIIP,AMEXX,,d,811,HETEGU,,,,,,Y
+722,ML,ML,K4604,CAMPPE,FRAAM,,T,809,,,,,,,Y
+,,,K4605,,,,,,,,,,,,
+,,,K4606,,,,,,,,,,,,
+,,,K4607,,,,,,,,,,,,
+,,,K4608,,,,,,,,,,,,
+,,,K4609,,,,,,,,,,,,
+,,,K4610,,,,,,,,,,,,
+,,,K4611,,,,,,,,,,,,
+,,,K4612,,,,,,,,,,,,
+,,,K4613,,,,,,,,,,,,
+,,,K4614,,,,,,,,,,,,
+,,,K4615,,,,,,,,,,,,
+,,,K4616,,,,,,,,,,,,
+,,,K4617,,,,,,,,,,,,
+,,,K4618,,,,,,,,,,,,
+,,,K4619,,,,,,,,,,,,
+,,,K4620,,,,,,,,,,,,
+726,ML,PD,K4621,MICROX,FRAAM,,P,816,,,,,,,Y
+726,ML,ML,K4622,UNIDXX,VIBAC,P,P,726,,,,,PUPA IN FIELD,,Y
+726,ML,ML,K4623,MICROX,FRAAM,,D,816,,,,,,,Y
+726,ML,ML,K4624,PROTPO,BERTH,,OW,205,,,,1,,,
+726,ML,ML,K4625,PALTAN,BERTH,,D,910,,,,,,,
+726,ML,ML,K4626,PALTAN,VIBSI,,T,813,,,,,,,Y
+726,ML,ML,K4627,GEOMXX,ROSMU,P,P,922,PROCLI,,,1,,,
+726,ML,ML,K4628,PALTAN,ROSMU,,d,802,,Y,,,,,Y
+726,ML,ML,K4629,PSEUCY,ROSMU,,D,729,,,,,,,Y
+726,ML,ML,K4630,MICROX,ROSMU,,T,730,,,817,,,,Y
+726,ML,ML,K4631,PSEUCY,ROSMU,I think numphx on malxx is PSEUCY,,,,,,,,,
+726,ML,ML,K4632,PSEUCY,ROSMU,,,,,,,,,,
+726,ML,ML,K4633,PALTAN,VIBPL,,d,730,,N,,,,,Y
+,,,K4634,,,,,,,,,,,,
+,,,K4635,,,,,,,,,,,,
+,,,K4636,,,,,,,,,,,,
+,,,K4637,,,,,,,,,,,,
+,,,K4638,,,,,,,,,,,,
+,,,K4639,,,,,,,,,,,,
+,,,K4640,,,,,,,,,,,,
+,,,K4641,,,,,,,,,,,,
+,,,K4642,,,,,,,,,,,,
+,,,K4643,,,,,,,,,,,,
+,,,K4644,,,,,,,,,,,,
+,,,K4645,,,,,,,,,,,,
+,,,K4646,,,,,,,,,,,,
+,,,K4647,,,,,,,,,,,,
+,,,K4648,,,,,,,,,,,,
+,,,K4649,,,,,,,,,,,,
+,,,K4650,,,,,,,,,,,,
+,,,K4651,,,,,,,,,,,,
+726,DR,PD,K4652,MICROX,VIBAC,,P,118,,,,,,,
+726,DR,PD,K4653,MELACA,BERTH,,D,730,,N,,,,,Y
+726,DR,PD,K4654,EREBXX,BERTH,,d,730,,N,,,,,Y
+726,DR,PD,K4655,MICROX,BERTH,,D,727,,,,,,,Y
+,,,K4656,,,,,,,,,,,,
+,,,K4657,,,,,,,,,,,,
+,,,K4658,,,,,,,,,,,,
+,,,K4659,,,,,,,,,,,,
+,,,K4660,,,,,,,,,,,,
+,,,K4661,,,,,,,,,,,,
+,,,K4662,,,,,,,,,,,,
+,,,K4663,,,,,,,,,,,,
+,,,K4664,,,,,,,,,,,,
+,,,K4665,,,,,,,,,,,,
+,,,K4666,,,,,,,,,,,,
+,,,K4667,,,,,,,,,,,,
+,,,K4668,,,,,,,,,,,,
+,,,K4669,,,,,,,,,,,,
+,,,K4670,,,,,,,,,,,,
+,,,K4671,,,,,,,,,,,,
+,,,K4672,,,,,,,,,,,,
+,,,K4673,,,,,,,,,,,,
+,,,K4674,,,,,,,,,,,,
+,,,K4675,,,,,,,,,,,,
+,,,K4676,,,,,,,,,,,,
+,,,K4677,,,,,,,,,,,,
+,,,K4678,,,,,,,,,,,,
+,,,K4679,,,,,,,,,,,,
+,,,K4680,,,,,,,,,,,,
+,,,K4681,,,,,,,,,,,,
+,,,K4682,,,,,,,,,,,,
+729,DR,ML,K4683,MELACA,VIBLE,,P,831,,,,,,,
+729,DR,ML,K4684,MORRLA,VIBLE,S; ID UNSURE,T,730,,,,,,,Y
+729,DR,ML,K4685,HETEGU,CRAXX,SCHIPP RE-ID,P,806,,,,,,,Y
+729,DR,ML,K4686,FOURLX,MALXX,,P,831,,,,1,,,
+729,DR,ML,K4687,FOURLX,MALXX,,D,811,,,,,,,Y
+729,DR,ML,K4688,HYPAUN,MALXX,OW,D,118,,,,,,,
+729,DR,ML,K4689,ZALELU,MALXX,,D,811,,,,,,,Y
+729,DR,ML,K4690,MELACA,PRUSE,,P,831,,,,,,,
+729,DR,ML,K4691,MELACA,PRUSE,,P,910,,,,,,,
+729,DR,ML,K4692,MELACA,PRUSE,,P,823,,,,,,,
+729,DR,ML,K4693,HYPAUN,PRUSE,,OW,?,,,,,,,
+729,DR,ML,K4694,GEOMXX,ROSMU,,P,908,,,922,1,,,
+729,DR,ML,K4695,ZALEXX,ROSMU,,d,809,,809,,,,,Y
+729,DR,ML,K4696,ZALEXX,ROSMU,,P,908,FOURLX,,101,,,,
+729,DR,ML,K4697,HEMATH,VIBLE,,d,806,,,,,,,Y
+,,,K4698,,,,,,,,,,,,
+,,,K4699,,,,,,,,,,,,
+,,,K4700,,,,,,,,,,,,
+,,,K4701,,,,,,,,,,,,
+,,,K4702,,,,,,,,,,,,
+,,,K4703,,,,,,,,,,,,
+,,,K4704,,,,,,,,,,,,
+,,,K4705,,,,,,,,,,,,
+,,,K4706,,,,,,,,,,,,
+,,,K4707,,,,,,,,,,,,
+,,,K4708,,,,,,,,,,,,
+,,,K4709,,,,,,,,,,,,
+,,,K4710,,,,,,,,,,,,
+,,,K4711,,,,,,,,,,,,
+,,,K4712,,,,,,,,,,,,
+,,,K4713,,,,,,,,,,,,
+730,ML,MLPD,K4714,UNKNXX,PRUSE,MICRO?ACRO?ARCT?,P,926,ACROHA,,,,,,
+730,ML,MLPD,K4715,MICROX,LIGOB,S SAME AS MALXX MICROX,P,901,,,,1,GE,,
+730,ML,MLPD,K4716,PROCLI,ROSMU,S,P,927,,,,1,,,
+730,ML,MLPD,K4717,GEOMXX,RUBXX,LONG DARK,P,903,EUTRCL,,,,,,
+730,ML,MLPD,K4718,GEOMXX,RUBXX,SAME AS K4717,D,811,,,,,,,Y
+730,ML,MLPD,K4719,MELACA,ROSMU,S; SPECIFICALLY HEAD CAPSULE,D,806,,N,,1,,,Y
+730,ML,MLPD,K4720,MICROX,ROSMU,,D,819,,,,,,,
+730,ML,MLPD,K4721,PROCLI,ROSMU,S,P,924,,,,1,,,
+730,ML,MLPD,K4722,GEOMXX,ROSMU,S,D,816,,,,,,,Y
+730,ML,MLPD,K4723,NOCTXX,ROSMU,S; SAME AS MORRLA FROM 729,D,827,UNKNXX,,,2,,,
+730,ML,MLPD,K4724,ECTRCR,ROSMU,,P,908,,,,,,,
+730,ML,MLPD,K4725,PROCLI,ROSMU,,P,922,,,,1,,,
+730,ML,MLPD,K4726,GEOMXX,ROSMU,FAT,P,,,,101,1,,,
+730,ML,MLPD,K4727,HERMXX,ROSMU,S; LIKE BIG MICRO,P,806,MICROX,N,,1,GE,,Y
+,,,K4728,,,,,,,,,,,,
+,,,K4729,,,,,,,,,,,,
+,,,K4730,,,,,,,,,,,,
+,,,K4731,,,,,,,,,,,,
+,,,K4732,,,,,,,,,,,,
+,,,K4733,,,,,,,,,,,,
+,,,K4734,,,,,,,,,,,,
+,,,K4735,,,,,,,,,,,,
+,,,K4736,,,,,,,,,,,,
+,,,K4737,,,,,,,,,,,,
+,,,K4738,,,,,,,,,,,,
+,,,K4739,,,,,,,,,,,,
+,,,K4740,,,,,,,,,,,,
+,,,K4741,,,,,,,,,,,,
+,,,K4742,,,,,,,,,,,,
+,,,K4743,,,,,,,,,,,,
+,,,K4744,,,,,,,,,,,,
+,,,K4745,,,,,,,,,,,,
+,,,K4746,,,,,,,,,,,,
+,,,K4747,,,,,,,,,,,,
+,,,K4748,,,,,,,,,,,,
+,,,K4749,,,,,,,,,,,,
+,,,K4750,,,,,,,,,,,,
+,,,K4751,,,,,,,,,,,,
+,,,K4752,,,,,,,,,,,,
+,,,K4753,,,,,,,,,,,,
+,,,K4754,,,,,,,,,,,,
+,,,K4755,,,,,,,,,,,,
+,,,K4756,,,,,,,,,,,,
+,,,K4757,,,,,,,,,,,,
+,,,K4758,,,,,,,,,,,,
+,,,K4759,,,,,,,,,,,,
+,,,K4760,,,,,,,,,,,,
+,,,K4761,,,,,,,,,,,,
+,,,K4762,,,,,,,,,,,,
+,,,K4763,,,,,,,,,,,,
+,,,K4764,,,,,,,,,,,,
+,,,K4765,,,,,,,,,,,,
+,,,K4766,,,,,,,,,,,,
+,,,K4767,,,,,,,,,,,,
+,,,K4768,,,,,,,,,,,,
+,,,K4769,,,,,,,,,,,,
+,,,K4770,,,,,,,,,,,,
+,,,K4771,,,,,,,,,,,,
+,,,K4772,,,,,,,,,,,,
+,,,K4773,,,,,,,,,,,,
+,,,K4774,,,,,,,,,,,,
+,,,K4775,,,,,,,,,,,,
+,,,K4776,,,,,,,,,,,,
+,,,K4777,,,,,,,,,,,,
+,,,K4778,,,,,,,,,,,,
+,,,K4779,,,,,,,,,,,,
+,,,K4780,,,,,,,,,,,,
+,,,K4781,,,,,,,,,,,,
+,,,K4782,,,,,,,,,,,,
+,,,K4783,,,,,,,,,,,,
+,,,K4784,,,,,,,,,,,,
+,,,K4785,,,,,,,,,,,,
+,,,K4786,,,,,,,,,,,,
+,,,K4787,,,,,,,,,,,,
+,,,K4788,,,,,,,,,,,,
+,,,K4789,,,,,,,,,,,,
+,,,K4790,,,,,,,,,,,,
+,,,K4791,,,,,,,,,,,,
+,,,K4792,,,,,,,,,,,,
+,,,K4793,,,,,,,,,,,,
+,,,K4794,,,,,,,,,,,,
+,,,K4795,,,,,,,,,,,,
+,,,K4796,,,,,,,,,,,,
+,,,K4797,,,,,,,,,,,,
+,,,K4798,,,,,,,,,,,,
+,,,K4799,,,,,,,,,,,,
+,,,K4800,,,,,,,,,,,,
+,,,K4801,,,,,,,,,,,,
+,,,K4802,,,,,,,,,,,,
+,,,K4803,,,,,,,,,,,,
+,,,K4804,,,,,,,,,,,,
+,,,K4805,,,,,,,,,,,,
+,,,K4806,,,,,,,,,,,,
+,,,K4807,,,,,,,,,,,,
+,,,K4808,,,,,,,,,,,,
+,,,K4809,,,,,,,,,,,,
+,,,K4810,,,,,,,,,,,,
+,,,K4811,,,,,,,,,,,,
+,,,K4812,,,,,,,,,,,,
+,,,K4813,,,,,,,,,,,,
+,,,K4814,,,,,,,,,,,,
+,,,K4815,,,,,,,,,,,,
+,,,K4816,,,,,,,,,,,,
+,,,K4817,,,,,,,,,,,,
+,,,K4818,,,,,,,,,,,,
+,,,K4819,,,,,,,,,,,,
+,,,K4820,,,,,,,,,,,,
+,,,K4821,,,,,,,,,,,,
+,,,K4822,,,,,,,,,,,,
+,,,K4823,,,,,,,,,,,,
+,,,K4824,,,,,,,,,,,,
+,,,K4825,,,,,,,,,,,,
+,,,K4826,,,,,,,,,,,,
+,,,K4827,,,,,,,,,,,,
+,,,K4828,,,,,,,,,,,,
+,,,K4829,,,,,,,,,,,,
+,,,K4830,,,,,,,,,,,,
+,,,K4831,,,,,,,,,,,,
+,,,K4832,,,,,,,,,,,,
+,,,K4833,,,,,,,,,,,,
+,,,K4834,,,,,,,,,,,,
+,,,K4835,,,,,,,,,,,,
+,,,K4836,,,,,,,,,,,,
+,,,K4837,,,,,,,,,,,,
+,,,K4838,,,,,,,,,,,,
+,,,K4839,,,,,,,,,,,,
+,,,K4840,,,,,,,,,,,,
+,,,K4841,,,,,,,,,,,,
+,,,K4842,,,,,,,,,,,,
+,,,K4843,,,,,,,,,,,,
+,,,K4844,,,,,,,,,,,,
+,,,K4845,,,,,,,,,,,,
+,,,K4846,,,,,,,,,,,,
+,,,K4847,,,,,,,,,,,,
+,,,K4848,,,,,,,,,,,,
+,,,K4849,,,,,,,,,,,,
+,,,K4850,,,,,,,,,,,,
+,,,K4851,,,,,,,,,,,,
+,,,K4852,,,,,,,,,,,,
+,,,K4853,,,,,,,,,,,,
+,,,K4854,,,,,,,,,,,,
+,,,K4855,,,,,,,,,,,,
+,,,K4856,,,,,,,,,,,,
+,,,K4857,,,,,,,,,,,,
+,,,K4858,,,,,,,,,,,,
+,,,K4859,,,,,,,,,,,,
+,,,K4860,,,,,,,,,,,,
+,,,K4861,,,,,,,,,,,,
+,,,K4862,,,,,,,,,,,,
+,,,K4863,,,,,,,,,,,,
+,,,K4864,,,,,,,,,,,,
+,,,K4865,,,,,,,,,,,,
+,,,K4866,,,,,,,,,,,,
+,,,K4867,,,,,,,,,,,,
+,,,K4868,,,,,,,,,,,,
+,,,K4869,,,,,,,,,,,,
+,,,K4870,,,,,,,,,,,,
+,,,K4871,,,,,,,,,,,,
+,,,K4872,,,,,,,,,,,,
+,,,K4873,,,,,,,,,,,,
+,,,K4874,,,,,,,,,,,,
+,,,K4875,,,,,,,,,,,,
+,,,K4876,,,,,,,,,,,,
+,,,K4877,,,,,,,,,,,,
+,,,K4878,,,,,,,,,,,,
+,,,K4879,,,,,,,,,,,,
+,,,K4880,,,,,,,,,,,,
+,,,K4881,,,,,,,,,,,,
+,,,K4882,,,,,,,,,,,,
+,,,K4883,,,,,,,,,,,,
+,,,K4884,,,,,,,,,,,,
+,,,K4885,,,,,,,,,,,,
+,,,K4886,,,,,,,,,,,,
+,,,K4887,,,,,,,,,,,,
+,,,K4888,,,,,,,,,,,,
+,,,K4889,,,,,,,,,,,,
+,,,K4890,,,,,,,,,,,,
+,,,K4891,,,,,,,,,,,,
+,,,K4892,,,,,,,,,,,,
+,,,K4893,,,,,,,,,,,,
+,,,K4894,,,,,,,,,,,,
+,,,K4895,,,,,,,,,,,,
+,,,K4896,,,,,,,,,,,,
+,,,K4897,,,,,,,,,,,,
+,,,K4898,,,,,,,,,,,,
+,,,K4899,,,,,,,,,,,,
+,,,K4900,,,,,,,,,,,,
+,,,K4901,,,,,,,,,,,,
+,,,K4902,,,,,,,,,,,,
+,,,K4903,,,,,,,,,,,,
+,,,K4904,,,,,,,,,,,,
+,,,K4905,,,,,,,,,,,,
+,,,K4906,,,,,,,,,,,,
+,,,K4907,,,,,,,,,,,,
+,,,K4908,,,,,,,,,,,,
+,,,K4909,,,,,,,,,,,,
+,,,K4910,,,,,,,,,,,,
+,,,K4911,,,,,,,,,,,,
+,,,K4912,,,,,,,,,,,,
+,,,K4913,,,,,,,,,,,,
+,,,K4914,,,,,,,,,,,,
+,,,K4915,,,,,,,,,,,,
+,,,K4916,,,,,,,,,,,,
+,,,K4917,,,,,,,,,,,,
+,,,K4918,,,,,,,,,,,,
+,,,K4919,,,,,,,,,,,,
+,,,K4920,,,,,,,,,,,,
+,,,K4921,,,,,,,,,,,,
+,,,K4922,,,,,,,,,,,,
+,,,K4923,,,,,,,,,,,,
+,,,K4924,,,,,,,,,,,,
+,,,K4925,,,,,,,,,,,,
+,,,K4926,,,,,,,,,,,,
+,,,K4927,,,,,,,,,,,,
+,,,K4928,,,,,,,,,,,,
+,,,K4929,,,,,,,,,,,,
+,,,K4930,,,,,,,,,,,,
+,,,K4931,,,,,,,,,,,,
+,,,K4932,,,,,,,,,,,,
+,,,K4933,,,,,,,,,,,,
+,,,K4934,,,,,,,,,,,,
+,,,K4935,,,,,,,,,,,,
+,,,K4936,,,,,,,,,,,,
+,,,K4937,,,,,,,,,,,,
+,,,K4938,,,,,,,,,,,,
+,,,K4939,,,,,,,,,,,,
+,,,K4940,,,,,,,,,,,,
+,,,K4941,,,,,,,,,,,,
+,,,K4942,,,,,,,,,,,,
+,,,K4943,,,,,,,,,,,,
+,,,K4944,,,,,,,,,,,,
+,,,K4945,,,,,,,,,,,,
+,,,K4946,,,,,,,,,,,,
+,,,K4947,,,,,,,,,,,,
+,,,K4948,,,,,,,,,,,,
+,,,K4949,,,,,,,,,,,,
+,,,K4950,,,,,,,,,,,,
+,,,K4951,,,,,,,,,,,,
+,,,K4952,,,,,,,,,,,,
+,,,K4953,,,,,,,,,,,,
+,,,K4954,,,,,,,,,,,,
+,,,K4955,,,,,,,,,,,,
+,,,K4956,,,,,,,,,,,,
+,,,K4957,,,,,,,,,,,,
+,,,K4958,,,,,,,,,,,,
+,,,K4959,,,,,,,,,,,,
+,,,K4960,,,,,,,,,,,,
+,,,K4961,,,,,,,,,,,,
+,,,K4962,,,,,,,,,,,,
+,,,K4963,,,,,,,,,,,,
+,,,K4964,,,,,,,,,,,,
+,,,K4965,,,,,,,,,,,,
+,,,K4966,,,,,,,,,,,,
+,,,K4967,,,,,,,,,,,,
+,,,K4968,,,,,,,,,,,,
+,,,K4969,,,,,,,,,,,,
+,,,K4970,,,,,,,,,,,,
+,,,K4971,,,,,,,,,,,,
+,,,K4972,,,,,,,,,,,,
+,,,K4973,,,,,,,,,,,,
+,,,K4974,,,,,,,,,,,,
+,,,K4975,,,,,,,,,,,,
+,,,K4976,,,,,,,,,,,,
+,,,K4977,,,,,,,,,,,,
+,,,K4978,,,,,,,,,,,,
+,,,K4979,,,,,,,,,,,,
+,,,K4980,,,,,,,,,,,,
+,,,K4981,,,,,,,,,,,,
+,,,K4982,,,,,,,,,,,,
+,,,K4983,,,,,,,,,,,,
+,,,K4984,,,,,,,,,,,,
+,,,K4985,,,,,,,,,,,,
+,,,K4986,,,,,,,,,,,,
+,,,K4987,,,,,,,,,,,,
+,,,K4988,,,,,,,,,,,,
+,,,K4989,,,,,,,,,,,,
+,,,K4990,,,,,,,,,,,,
+,,,K4991,,,,,,,,,,,,
+,,,K4992,,,,,,,,,,,,
+723,ML,ML,K4993,MICROX,RUBXX,DIF: not collected,,,,,,,,,
+723,ML,ML,K4994,MICROX,RUBXX,DIF: not collected,D,727,,,,,,,Y
+723,ML,ML,K4995,ZALEXX,PRUSE,,P,823,,,108,,,,
+723,DR,ML,K4996,MELACA,PRUSE,,P,901,,901,,,,,
+723,DR,ML,K4997,MICROX,RUBXX,,P,730,,,817,,,,Y
+723,DR,ML,K4998,MICROX,RUBXX,SAME AS K4997; GE,P,810,,,908,,,,Y
+723,ML,ML,K4999,MELACA,PRUSE,,P,820,,,,,PUPAL DATE IS PREPUPAL DATE,,
+723,ML,ML,K5000,CAMPPE,PRUSE,,P,809,,,908,,,,Y
+723,ML,PD DR,K5001,CORYME,BERTH,,P,809,,,823,,,,Y
+723,ML,ML,K5002,GEOMXX,ROSMU,,T,927,,,,1,,,
+723,ML,ML,K5003,CORYME,BERTH,,P,809,,,908,,,,Y
+723,ML,ML,K5004,MICROX,LONMO,S,D,727,,N,,,,,Y
+723,ML,ML,K5005,GEOMXX,ROSMU,LOST OFF TARP,,,,,,,,,
+723,ML,ML,K5006,GEOMXX,ROSMU,SAME AS K5005,d,817,,y,,,,,Y
+723,ML,ML,K5007,UNKNXX,ROSMU,UNSURE OF HOST; LOOKS LIKE BUTTTX,,,,,,,,,
+723,ML,ML,K5008,ACROSU,MALXX,,p,819,,,,,,,Y
+723,ML,ML,K5009,HYPAUN,PRUSE,,OW,?,,,,,,,
+723,ML,ML,K5010,MICROX,ROSMU,,t,730,,,817,,,,Y
+,,,K5011,,,,,,,,,,,,
+,,,K5012,,,,,,,,,,,,
+,,,K5013,,,,,,,,,,,,
+,,,K5014,,,,,,,,,,,,
+,,,K5015,,,,,,,,,,,,
+,,,K5016,,,,,,,,,,,,
+,,,K5017,,,,,,,,,,,,
+,,,K5018,,,,,,,,,,,,
+,,,K5019,,,,,,,,,,,,
+,,,K5020,,,,,,,,,,,,
+,,,K5021,,,,,,,,,,,,
+,,,K5022,,,,,,,,,,,,
+,,,K5023,,,,,,,,,,,,
+727,PD,"DR, HW, ML",K5024,MICROX,CRAXX,Same as MICROX on other Rosease,T,810,,,,,,,Y
+727,PD,"DR, HW, ML",K5025,PALTAN,BERTH,,D,118,,,,,,,
+727,PD,"DR, HW, ML",K5026,MICROX,BERTH,,D,827,,,,,,,
+727,PD,"DR, HW, ML",K5027,PALTAN,BERTH,,MIA,820,,,,,,,
+727,PD,"DR, HW, ML",K5028,PALTAN,BERTH,,d,730,,,,,,,Y
+727,PD,"DR, HW, ML",K5029,PALTAN,BERTH,,mia,803,,,,,,,Y
+727,PD,"DR, HW, ML",K5030,CRABXX,VIBSI,,D,903,,N,,,,,
+727,PD,"DR, HW, ML",K5031,MICROX,VIBSI,,d,802,,,,,,,Y
+727,PD,"DR, HW, ML",K5032,FOURLX,VIBDI,ROSMU near beat area; S,d,803,,803,,1,,,Y
+727,PD,"DR, HW, ML",K5033,MICROX,MALXX,SAME CAT K5024,d,802,,,,,,,Y
+727,PD,"DR, HW, ML",K5034,MICROX,PRUSE,,D,816,,,,,,,Y
+727,PD,"DR, HW, ML",K5035,MELACA,ROSMU,,P,803,,,,,,,Y
+727,PD,"DR, HW, ML",K5036,GEOMXX,ROSMU,,D,816,,,,,,,Y
+727,PD,"DR, HW, ML",K5037,PSEUCY,ROSMU,,mia,806,,n,,,,,Y
+727,PD,"DR, HW, ML",K5038,MICROX,ROSMU,,D,827,,,,,,,
+727,PD,"DR, HW, ML",K5039,HYPAUN,ROSMU,,D,806,,,,,,,Y
+727,PD,"DR, HW, ML",K5040,MICROX,LIGOB,,D,729,,,,,LIQUID,,Y
+727,PD,"DR, HW, ML",K5041,HYPAUN,MALXX,,OW,?,,,,,,,
+,,,K5042,,,,,,,,,,,,
+,,,K5043,,,,,,,,,,,,
+,,,K5044,,,,,,,,,,,,
+,,,K5045,,,,,,,,,,,,
+,,,K5046,,,,,,,,,,,,
+,,,K5047,,,,,,,,,,,,
+,,,K5048,,,,,,,,,,,,
+,,,K5049,,,,,,,,,,,,
+,,,K5050,,,,,,,,,,,,
+,,,K5051,,,,,,,,,,,,
+,,,K5052,,,,,,,,,,,,
+,,,K5053,,,,,,,,,,,,
+,,,K5054,,,,,,,,,,,,
+,,,K5055,,,,,,,,,,,,
+,,,K5056,,,,,,,,,,,,
+,,,K5057,,,,,,,,,,,,
+,,,K5058,,,,,,,,,,,,
+,,,K5059,,,,,,,,,,,,
+,,,K5060,,,,,,,,,,,,
+,,,K5061,,,,,,,,,,,,

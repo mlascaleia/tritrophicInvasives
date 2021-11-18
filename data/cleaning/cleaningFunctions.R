@@ -44,6 +44,19 @@ dfCompare <- function(b11, b22, discrepancy = "1;1", outputFile){
   }
 }
 
+# add to closet search function
+
+problem <- function(catNumb, problemNote, 
+                    outputFile = "data/cleaning/makeClosetSearch.R", 
+                    fixFile = "data/cleaning/fixIssuesCaterpillar.R"){
+  cat("\ntheseProbs[i,] <- cats %>%
+      filter(catNum %in% '", catNumb, "') %>%
+      dplyr::select(catNum, catSpecies, treeSpecies, fate, photograph) %>%
+      mutate(issue = '", problemNote, "')
+      i <- i + 1\n", append = T, sep = "", file = outputFile
+  )
+  cat("# ", catNumb, "\n\n", append =T, file = fixFile, sep = "")
+}
 
 
 

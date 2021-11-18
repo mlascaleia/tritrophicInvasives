@@ -6,6 +6,7 @@
 
 rm(list = ls())
 library(tidyverse)
+source("data/cleaning/cleaningFunctions.R")
 
 # load sheets ####
 
