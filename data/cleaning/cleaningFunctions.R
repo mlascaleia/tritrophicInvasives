@@ -1,4 +1,4 @@
-# this script contains usefull functions for cleaning data #
+# this script contains useful functions for cleaning data #
 
 # set up ####
 

@@ -383,6 +383,190 @@ table(cats$catSpecies[cats$showDave == "" & !cats$fate %in% c("K", "MIA")])
 cats[cats$catSpecies %in% "NOCTXX" & cats$showDave == "" & !cats$fate %in% c("K", "MIA"), ]
 cats[cats$catSpecies %in% "NOT ORTHRU" & cats$showDave == "" & !cats$fate %in% c("K", "MIA"), ]
 
+cats[cats$catNum %in% "J2612", ]
+cats[cats$catNum %in% "J2821", ] # I remember that this one died one day after capture?
+cats[cats$catNum %in% "J3554", ]
+
+# pp <- cats$catNum[cats$fateDate %in% "" & !cats$catNum %in% theseProbs$catNum]
+cats$fateDate[cats$catNum %in% 'K4532'] <- 729 # fateDate D729
+
+cats$barcode[cats$catNum %in% "K5006"] <- 219
+
+# actuallyFixIssues
+
+# J2873
+
+cats$catSpecies[cats$catNum %in% "J2873"] <- "ORTHRU"
+cats$barcode[cats$catNum %in% "J2873"] <- 728
+
+# K4532
+
+cats$catSpecies[cats$catNum %in% "K4532"] <- "ZALEXX"
+
+# photo search cats not looked for
+
+# J2096
+
+cats$treeSpecies[cats$catNum %in% "J2096"] <- "VIBDI"
+cats$hostNative[cats$catNum %in% "J2096"] <- "exotic"
+cats$hostFamily[cats$catNum %in% "J2096"] <- "Caprifoliaceae"
+
+# K4069
+
+cats$treeSpecies[cats$catNum %in% "K4069"] <- "MALXX"
+cats$hostNative[cats$catNum %in% "K4069"] <- "exotic"
+cats$hostFamily[cats$catNum %in% "K4069"] <- "Roseaceae"
+
+# J2017
+
+cats$treeSpecies[cats$catNum %in% "J2017"] <- "VIBDI"
+cats$hostNative[cats$catNum %in% "J2017"] <- "exotic"
+cats$hostFamily[cats$catNum %in% "J2017"] <- "Caprifoliaceae"
+
+
+# J2265
+
+cats$fate[cats$catNum %in% "J2265"] <- "MIA"
+cats$fateDate[cats$catNum %in% "J2265"] <- ""
+
+# J2276
+
+cats$fate[cats$catNum %in% "J2276"] <- "T"
+cats$fateDate[cats$catNum %in% "J2276"] <- 604
+
+# J2439
+
+cats$fate[cats$catNum %in% "J2439"] <- "D"
+cats$fateDate[cats$catNum %in% "J2439"] <- ""
+cats$barcode[cats$catNum %in% "J2439"] <- 728
+
+# J2612
+
+cats$fate[cats$catNum %in% "J2612"] <- "MIA"
+cats$fateDate[cats$catNum %in% "J2612"] <- ""
+
+# J2821
+
+cats$fate[cats$catNum %in% "J2821"] <- "MIA"
+cats$fateDate[cats$catNum %in% "J2821"] <- ""
+
+# J3130
+
+cats$fate[cats$catNum %in% "J3130"] <- "D"
+cats$fateDate[cats$catNum %in% "J3130"] <- ""
+cats$barcode[cats$catNum %in% "J3130"] <- 728
+
+# J3554
+
+cats$fate[cats$catNum %in% "J3554"] <- "MIA"
+cats$fateDate[cats$catNum %in% "J3554"] <- ""
+
+# K4027
+
+cats$fate[cats$catNum %in% "K4027"] <- "D"
+cats$fateDate[cats$catNum %in% "K4027"] <- 818
+cats$catSpecies[cats$catNum %in% "K4027"] <- "CAMPPE"
+
+# K4233
+
+cats$fate[cats$catNum %in% "K4233"] <- "MIA"
+cats$fateDate[cats$catNum %in% "K4233"] <- 723
+
+# K4234
+
+cats$fate[cats$catNum %in% "K4234"] <- "MIA"
+cats$fateDate[cats$catNum %in% "K4234"] <- ""
+
+# K4235
+
+cats$fate[cats$catNum %in% "K4235"] <- "MIA"
+cats$fateDate[cats$catNum %in% "K4235"] <- ""
+
+# K4346
+
+cats$fate[cats$catNum %in% "K4346"] <- "P"
+cats$fateDate[cats$catNum %in% "K4346"] <- 722
+
+# K4571
+
+cats$fate[cats$catNum %in% "K4571"] <- "T"
+cats$fateDate[cats$catNum %in% "K4571"] <- 913
+
+# K4631
+
+cats$fate[cats$catNum %in% "K4631"] <- "MIA"
+cats$fateDate[cats$catNum %in% "K4631"] <- 806
+
+# K4632
+
+cats$fate[cats$catNum %in% "K4632"] <- "D"
+cats$fateDate[cats$catNum %in% "K4632"] <- 910
+
+# K5007
+
+cats$fate[cats$catNum %in% "K5007"] <- "D"
+cats$fateDate[cats$catNum %in% "K5007"] <- ""
+cats$barcode[cats$catNum %in% "K5007"] <- 213
+
+# K5006
+
+# fixed above
+
+# extra: K4457
+
+cats$fate[cats$catNum %in% "K4457"] <- "P"
+cats$fateDate[cats$catNum %in% "K4457"] <- 809
+
+# combine w/ weights and identify problems
+
+wt$catNum[wt$catNum %in% "K4522"] <- "K4322"
+
+cw <- merge(cats, wt, by = "catNum", all.x = T)
+wt[!wt$catNum %in% cw$catNum,]
+
+# # most of these don't matter, with the exception of K4522
+# 
+# cw[cw$dateInitialWeight %in% 720,]
+# cw[cw$catNum %in% "K4322",]
+
+dupes <- cw$catNum[duplicated(cw$catNum)]
+cw[cw$catNum %in% dupes, ]
+
+cw$line <- 1:nrow(cw)
+
+cw[cw$catNum %in% cw$catNum[duplicated(cw$catNum)] & is.na(cw$finalWeight), ]
+cw <- cw[!cw$line  %in% c(147, 305, 702, 807), ]
+cw[cw$catNum %in% cw$catNum[duplicated(cw$catNum)] & !is.na(cw$finalWeight), ]
+# I'm relatively certain that line 803 is a ZALEXX on VIBLE
+cw <- cw[!cw$line  %in% c(378, 404), ]
+cw$catSpecies[cw$line %in% 803] <- "ZALEXX"
+cw$treeSpecies[cw$line %in% 803] <- "VIBLE"
+cw$catNum[cw$line %in% 803] <- "K5999"
+
+cw$frassWeight[cw$catNum %in% "K4377"] <- 0
+
+# add pupal weights 
+
+pw <- read.csv("data/dirty/cat/pupalWeights.csv")
+pw <- pw %>%
+  rename(pNote = note, pwDate = date, pWeight = weight)
+pw$catNum[pw$catNum %in% "K4238" & pw$speciesCode %in% "ZALEXX"] <- "K5999"
+pwp <- merge(cw, pw, by = c("catNum"), all.y = T) %>%
+  select(- speciesCode, -treeCode, - pupalDate)
+
+
+# nop <- pwp[is.na(pwp$fate) & !grepl("L|C", pwp$catNum),] %>%
+#   select(catNum, treeSpecies, catSpecies)
+# cwNop <- cw[cw$catNum %in% nop$catNum, ] %>%
+#   select(catNum, treeSpecies, catSpecies)
+# 
+# anyProbs <- merge(nop, cwNop, by = "catNum")
+# anyProbs
+# 
+# # there's one problem surround k4238
+# # it's in the other set as well
+
+save(cw, pwp, file = "data/clean/catWeights.rdata")
 
 
 
