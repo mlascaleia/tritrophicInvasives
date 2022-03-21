@@ -589,7 +589,7 @@ cw$catSpecies[cw$catSpecies %in% "NOT ORTHRU"] <- "NOCTXX"
 
 # add plant information ####
 
-invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','VIBDI','VIBPL','VIBSI')
+invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','RHOSC','VIBDI','VIBPL','VIBSI')
 cw$hostNative <- "native"
 cw$hostNative[cw$treeSpecies %in% invasives] <- "exotic"
 

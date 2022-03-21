@@ -354,7 +354,7 @@ plotweb(t(intMat),
         text.rot = 90, 
         labsize =  1.8
         )
-
+save(sameB, file = "data/clean/cleanBranch.rdata")
   
 
 
