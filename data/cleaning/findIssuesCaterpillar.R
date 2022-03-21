@@ -274,16 +274,7 @@ cats$treeSpecies[cats$treeSpecies %in% "RUBAL"] <- "RUBXX"
 
 cats$treeSpecies[cats$treeSpecies %in% "VIBPL" & cats$date < 621] <- "VIBSI"
 
-# add plant information ####
 
-invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','VIBDI','VIBPL','VIBSI')
-cats$hostNative <- "native"
-cats$hostNative[cats$treeSpecies %in% invasives] <- "exotic"
-
-cats$hostFamily <- "Roseaceae"
-cats$hostFamily[cats$treeSpecies %in% c("BERTH", 'EUOAL')] <- 'InvasiveOutgroups'
-cats$hostFamily[cats$treeSpecies %in% c("VIBLE","LONMO","VIBDE","VIBDI","VIBAC", "VIBPL","VIBSI","SAMCA")] <- 'Caprifoliaceae'
-cats$hostFamily[cats$treeSpecies %in% c("FRAAM", "LIGOB")] <- 'Oleaceae'
 
 # fix fates ####
 # table(cats$fate)
@@ -545,16 +536,6 @@ cw$catNum[cw$line %in% 803] <- "K5999"
 
 cw$frassWeight[cw$catNum %in% "K4377"] <- 0
 
-# add pupal weights 
-
-pw <- read.csv("data/dirty/cat/pupalWeights.csv")
-pw <- pw %>%
-  rename(pNote = note, pwDate = date, pWeight = weight)
-pw$catNum[pw$catNum %in% "K4238" & pw$speciesCode %in% "ZALEXX"] <- "K5999"
-pwp <- merge(cw, pw, by = c("catNum"), all.y = T) %>%
-  select(- speciesCode, -treeCode, - pupalDate)
-
-
 # nop <- pwp[is.na(pwp$fate) & !grepl("L|C", pwp$catNum),] %>%
 #   select(catNum, treeSpecies, catSpecies)
 # cwNop <- cw[cw$catNum %in% nop$catNum, ] %>%
@@ -565,6 +546,66 @@ pwp <- merge(cw, pw, by = c("catNum"), all.y = T) %>%
 # 
 # # there's one problem surround k4238
 # # it's in the other set as well
+
+# results in from Dave...
+
+daveName <- function(cn, daveID, dat = cw){
+  dat$catSpecies[dat$catNum %in% cn] <- daveID
+  return(dat)
+}
+
+cw <- daveName("J2565", "EUPIMI")
+cw <- daveName("J2676", "ZANCXX")
+cw <- daveName("J2902", "EUPIMI")
+# J3224 fine
+# J3231 fine
+# J3235 fine
+cw <- daveName("J3433", "HYPESC")
+cw <- daveName("J3434", "HYPESC")
+# J3485 still unknxx
+cw <- daveName("J3485", "UNKNXX")
+cw <- daveName("K4019", "EUPIMI")
+# K4021 unknxx geom
+cw <- daveName("K4023", "PEROXX")
+# k4024 okay
+cw <- daveName("K4082", "PROTPO")
+cw <- daveName("K4187", "PROTPO")
+cw <- daveName("K4224", "ZANCXX")
+# k4244 still unknxx
+cw <- daveName("K4244", "UNKNXX")
+# k4245 okay
+cw$catSpecies[cw$catSpecies %in% "BUTTTX"] <- "CERMCE" # cerma cerintha
+cw <- daveName("K4297", "MICROX")
+cw <- daveName("K4451", "BALSLA")
+cw <- daveName("K4537", "PROCLI")
+cw <- daveName("K4568", "PROCLI")
+#k4572 okay
+cw <- daveName("K4686", "BALSLA")
+cw <- daveName("K4723", "MICROX")
+cw <- daveName("K5032", "HYPESC")
+
+cw$catSpecies[cw$catSpecies %in% c("EREBXX", "FOURLX", "NOT ZALE")] <- "HYPESC"
+cw$catSpecies[cw$catSpecies %in% "NOT ORTHRU"] <- "NOCTXX"
+
+# add plant information ####
+
+invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','VIBDI','VIBPL','VIBSI')
+cw$hostNative <- "native"
+cw$hostNative[cw$treeSpecies %in% invasives] <- "exotic"
+
+cw$hostFamily <- "Roseaceae"
+cw$hostFamily[cw$treeSpecies %in% c("BERTH", 'EUOAL')] <- 'InvasiveOutgroups'
+cw$hostFamily[cw$treeSpecies %in% c("VIBLE","LONMO","VIBDE","VIBDI","VIBAC", "VIBPL","VIBSI","SAMCA")] <- 'Caprifoliaceae'
+cw$hostFamily[cw$treeSpecies %in% c("FRAAM", "LIGOB")] <- 'Oleaceae'
+
+# add pupal weights 
+
+pw <- read.csv("data/dirty/cat/pupalWeights.csv")
+pw <- pw %>%
+  rename(pNote = note, pwDate = date, pWeight = weight)
+pw$catNum[pw$catNum %in% "K4238" & pw$speciesCode %in% "ZALEXX"] <- "K5999"
+pwp <- merge(cw, pw, by = c("catNum"), all.y = T) %>%
+  select(- speciesCode, -treeCode, - pupalDate)
 
 save(cw, pwp, file = "data/clean/catWeights.rdata")
 

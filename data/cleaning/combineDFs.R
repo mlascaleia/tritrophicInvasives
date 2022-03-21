@@ -1,3 +1,5 @@
+sameB <- b1
+
 sameB[6,3] <- b1[6,3]  # 6;3 KD not SB
 sameB[6,4] <- b1[6,4]  # 6;4 PDSB not KDPD
 sameB[7,3] <- b1[7,3]  # 7;3 KD not SB

@@ -238,7 +238,7 @@ source("data/cleaning/cleaningFunctions.R")
 # You should restart the program at discrepancy 1821;8
 # dfCompare(b1, b2, discrepancy = "1821;8", outputFile = "data/cleaning/combineDFs.R")
 
-dfCompare(b1, b2, discrepancy = "1964;6", outputFile = "data/cleaning/combineDFs.R")
+# dfCompare(b1, b2, discrepancy = "1964;6", outputFile = "data/cleaning/combineDFs.R")
 # all done!
 
 
