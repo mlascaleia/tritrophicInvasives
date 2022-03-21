@@ -265,8 +265,6 @@ btab2 <- cwbb %>%
   group_by(bid) %>%
   summarise(tot = sum(!is.na(catSpecies)))
 
-btab <- btab %>%
-  filter(!(treeSpecies == "RHOSC" & hostNative == "native"))
 level_order <- btab$treeSpecies
 
 p1 <- ggplot(data = btab, aes(x = factor(treeSpecies, level = level_order),
