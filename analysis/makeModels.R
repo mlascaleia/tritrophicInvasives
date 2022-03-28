@@ -11,9 +11,9 @@ library(glmmTMB)
 library(patchwork)
 load("data/clean/catWeights.rdata")
 
-# organize data ####
+# organize data for modelling ####
 
-# eliminate unecessary columns
+# eliminate unnecessary columns
 
 cw <- cw %>%
   dplyr::select(catNum, date, catSpecies, treeSpecies, fate, hostNative, hostFamily,
@@ -42,54 +42,49 @@ cwc$wtChange <- cwc$finalWeight - cwc$initialWeight
 # make weight change percent
 cwc$wtChangePer <- cwc$wtChange/cwc$initialWeight
 
-# make grwoth efficiency
+# make growth efficiency
 cwc$ge <- cwc$wtChange/cwc$frassWeight
+cwc$lge <- log(cwc$wtChange)/log(cwc$frassWeight)
 
 # ignore shrinking caterpillars (rejecting host)
 cwc <- cwc[cwc$ge >= 0, ]
 
-# boxplot(log(wtChange) ~ hostNative, data = cwc)
-# boxplot(ge ~ hostNative, data = cwc)
-
 # get growth efficiency residuals by frass produced
 cwc$geResid <- resid(lm(log(wtChange) ~ log(frassWeight), data = cwc))
 
-# hist(cwc$geResid)
-# table(cwc$catSpecies, cwc$hostNative)
-
-# # remove invasive plant outgroups (BERTH + EUOAL)
+# # remove invasive plant outgroups (BERTH + EUOAL) (optional)
 # cwc <- cwc[!cwc$hostFamily %in% "InvasiveOutgroups", ]
 
-# # remove apple
+# # remove apple (optional)
 # cwc <- cwc[!cwc$treeSpecies %in% "MALXX",]
 
 # give host families contrast sums
 cwc$hostFamily <- factor(cwc$hostFamily)
 contrasts(cwc$hostFamily) <- "contr.sum"
 
-# make models ####
+# make ge models ####
 
-m1 <- lmer(log(ge) ~ hostNative + log(initialWeight) + hostFamily + (1|catSpecies), data = cwc)
-# anova(m1)
-summary(m1)
+# With logged ge and intialWeight
+# m1 <- lmer(log(ge) ~ hostNative + log(initialWeight) + hostFamily + (1|catSpecies), data = cwc)
+# # anova(m1)
+# summary(m1)
 
-m1b <- lmer(log(ge) ~ log(initialWeight) + (1|hostFamily) + (1|catSpecies), data = cwc)
-summary(m1b)
-cwc$m1bResid <- resid(m1b)
-boxplot(m1bResid ~ hostNative, data = cwc)
+# Just all around bad
+# m1b <- lmer(log(ge) ~ log(initialWeight) + (1|hostFamily) + (1|catSpecies), data = cwc)
+# summary(m1b)
+# cwc$m1bResid <- resid(m1b)
+# boxplot(m1bResid ~ hostNative, data = cwc)
 
+# the one to use - pure ge 
 m1c <- lmer(ge ~ hostNative + initialWeight + hostFamily + (1|catSpecies), data = cwc)
 summary(m1c)
-performance::check_model(m1c)
+# performance::check_model(m1c)
 
+# with pre-logged ge, which ends up very, very bad (skewed)
+# m1d <- lmer(lge ~ hostNative + initialWeight + hostFamily + (1|catSpecies), data = cwc)
+# summary(m1d)
 
-
-(ggplot(data = cwc, aes(x = hostNative, y = m1bResid)) +
-  geom_violin()) +
-(ggplot(data = cwc, aes(x = hostNative, y = ge)) +
-  geom_violin())
-
-performance::check_model(m1c)
+# organize data for non-ge models ####
 
 cw <- cw %>%
   mutate(isToid = ifelse(fate == "T", 1, 0)) %>%
@@ -99,64 +94,35 @@ cw <- cw %>%
 
 biToid <- cw %>%
   filter(isDead == 0 & isMissing == 0) %>%
-  group_by(treeSpecies) %>%
-  summarise(tot = n(), toided = sum(isToid), family = first(hostFamily), native = first(hostNative))
-
-biToid2 <- cw %>%
-  filter(isDead == 0 & isMissing == 0) %>%
   group_by(catSpecies, hostNative, hostFamily) %>%
-  summarise(tot = n(), toided = sum(isToid), avgDate = mean(jDate))
-
-cw %>%
-  filter(isToid == 0 & isMissing == 0) 
+  summarise(tot = n(), 
+            toided = sum(isToid),
+            noToid = n() - sum(isToid),
+            avgDate = mean(jDate)) %>%
+  mutate(rate = toided/tot)
 
 biPupal <- cw %>%
   filter(isToid == 0 & isMissing == 0) %>%
-  group_by(treeSpecies) %>%
-  summarise(tot = n(), pupal = sum(isPupal), family = first(hostFamily), native = first(hostNative)) %>%
-  filter(tot > 5) %>%
-  arrange(family)
-
-biPupal2 <- cw %>%
-  filter(isToid == 0 & isMissing == 0) %>%
   group_by(catSpecies, hostNative, hostFamily) %>%
-  summarise(tot = n(), pupal = sum(isPupal), avgDate = mean(jDate)) %>%
+  summarise(tot = n(), 
+            pupal = sum(isPupal),
+            noPupa = n() - sum(isPupal),
+            avgDate = mean(jDate)) %>%
   mutate(rate = pupal/tot)
 
+# run binomial model ####
 
-m2 <- glm(cbind(toided, tot - toided) ~ native + family, data = biToid, family = "binomial")
+m2 <- glmmTMB(cbind(toided, noToid) ~ hostNative + hostFamily + (1|catSpecies), 
+              data = biToid, family = "betabinomial")
 summary(m2)
 
-m2b <- glmer(cbind(toided, tot - toided) ~ hostNative + hostFamily + (1|catSpecies), data = biToid2, family = "binomial")
-summary(m2b)
+# run pupal model ####
 
-# this is the one
-m2c <- glmmTMB(cbind(toided, tot - toided) ~ hostNative + hostFamily + (1|catSpecies), data = biToid2, family = "betabinomial")
-summary(m2c)
-
-# i think this one is not a super valid way of looking at the data
-m2d <- glmmTMB(cbind(toided, tot - toided) ~ native + family, data = biToid, family = "betabinomial")
-summary(m2d)
-
-# yet another way to slice it
-
-m3 <- glmer(cbind(pupal, tot - pupal) ~ native + (1|family), data = biPupal, family = "binomial")
+m3 <- glmer(cbind(pupal, noPupa) ~ hostNative + hostFamily + (1|catSpecies), 
+            data = biPupal, family = "binomial")
 summary(m3)
 
-m3b <- glmer(cbind(pupal, tot - pupal) ~ hostNative + (1|hostFamily) + (1|catSpecies), data = biPupal2, family = "binomial")
-summary(m3b)
-
-performance::check_model(m2c)
-performance::check_overdispersion(m2b)
-
-sum(resid(m2b, type = "pearson")^2)
-df.residual(m2b)
-
-
-ggplot(data = biPupal2, aes(x = hostNative, y = rate)) +
-  geom_violin()
-
-
+# organize data for pupal weight ####
 pwp <- pwp[!grepl("C|L", pwp$catNum), ]
 pwp <- pwp[!pwp$catSpecies %in% c("GEOMXX", "MICROX"), ]
 hist(pwp$pWeight[!pwp$catSpecies %in% "CERAUN"])
@@ -263,7 +229,7 @@ cwc$hostNative <- relevel(as.factor(cwc$hostNative), "native")
 cwci <- cwc[!cwc$hostFamily %in% "InvasiveOutgroups",]
 
 ggplot(data = cwci, aes(x = hostFamily, y = ge, fill = hostNative)) +
-  geom_boxplot(position = "dodge", color = "white") +
+  geom_boxplot(position = "dodge", color = "white") + 
   # geom_errorbar(stat = "summary", position = position_dodge(.9), size = .2, width = .25, color = "white") +
   theme_tufte(base_size = 24) +
   theme(panel.border = element_rect(colour = "#0d0d0d", fill = NA),
@@ -276,7 +242,7 @@ ggplot(data = cwci, aes(x = hostFamily, y = ge, fill = hostNative)) +
         text = element_text(colour = "white")) +
   labs(x = "\nHost plant family",
        y = "Growth efficiency\n") +
-  scale_fill_manual(name = "Host nativeness", 
+  scale_fill_manual(name = "Host nativeness",
                     labels = c("Native", "Exotic"),
                     values = c("grey", "#0d0d0d"))
 
@@ -345,7 +311,7 @@ pwpi <- pwp[!pwp$hostFamily %in% "InvasiveOutgroups" &
             !pwp$catSpecies %in% "CERAUN",]
 
 bu2 <- ggplot(data = pwpi, aes(x = hostFamily, y = pWeight, fill = hostNative)) +
-  geom_boxplot(position = "dodge", color = 'black') +
+  geom_pointrange(position = "dodge", color = 'black') +
   theme_tufte(base_size = 24) +
   theme(legend.position = "none",
         axis.title.x = element_blank(),
@@ -372,8 +338,6 @@ bu3 <- ggplot(data = ggPup,
        aes(x = hostFamily, y = pRate , color = hostNative)) +
   geom_pointrange(stat = "identity", position = position_dodge(width = 1),
                   mapping = aes(ymin = pRate - pSE, ymax = pRate + pSE)) +
-  geom_pointrange(data = ggToid, stat = "identity", position = position_dodge(width = 1),
-                  mapping = aes(y = tRate, ymin = tRate - tSE, ymax = tRate + tSE)) +
   theme_tufte(base_size = 24) +
   theme(legend.position = "none") +
   labs(x = "\nHost plant family",

@@ -4,6 +4,7 @@ load("data/clean/catWeights.rdata")
 library(ggthemes)
 library(patchwork)
 library(bipartite)
+library(igraph)
 
 # dontInclude <- c("LYMADI", "MICROX", "NOT ORTHRU", "GEOMXX", "NOT ZALE", "NOCTXX",
 #                  "UNKNXX", "UNIDXX", "FOURLX", "CERAUN", "HYALCE", "EREBXX", "RHEUPR")
@@ -253,17 +254,13 @@ table(cwbb$catSpecies)
 # and now my graphs change
 
 btab <- cwbb %>%
+  filter(!treeSpecies %in% c("RHOSC", "RUBPH")) %>%
   group_by(treeSpecies, hostFamily, hostNative, .drop = F) %>%
   summarise(total = sum(!is.na(catSpecies)), 
             rate = sum(!is.na(catSpecies))/length(unique(bid)),
             error = sd(!is.na(catSpecies))/(sqrt(length(unique(bid))))) %>%
   mutate(rate = ifelse(is.nan(rate), 0, rate)) %>%
   arrange(hostFamily, -rate)
-
-btab2 <- cwbb %>%
-  filter(treeSpecies == "VIBLE") %>%
-  group_by(bid) %>%
-  summarise(tot = sum(!is.na(catSpecies)))
 
 level_order <- btab$treeSpecies
 
@@ -352,6 +349,45 @@ plotweb(t(intMat),
         text.rot = 90, 
         labsize =  1.8
         )
+
+load("data/clean/catWeights.rdata")
+
+cwMat <- cw %>%
+  mutate(isToid = ifelse(fate == "T", 1, 0)) %>%
+  mutate(isPupal = ifelse(grepl("O|P", fate, ignore.case = T), 1, 0)) %>%
+  mutate(isDead = ifelse(fate == "D", 1, 0)) %>%
+  mutate(isMissing = ifelse(fate %in% c("MIA","K"), 1, 0)) %>% 
+  select(catSpecies, starts_with("is")) %>%
+  group_by(catSpecies) %>%
+  summarise(toided = sum(isToid),
+            pupal = sum(isPupal),
+            dead = sum(isDead),
+            missing = sum(isMissing)) %>%
+  filter(catSpecies %in% colnames(intMat)) %>%
+  column_to_rownames(var = "catSpecies") %>%
+  as.matrix()
+
+
+
+plotweb2(intMat, cwMat)
+
+
+
+# try igraph ####
+
+g <- graph_from_incidence_matrix(t(intMat))
+
+layer <- rep(2, length(V(g)$name))
+layer[grep("^.{6}$",V(g)$name)] <- 1
+layout = layout_with_sugiyama(g, layers=layer)
+plot(g, 
+     layout=cbind(layer,layout$layout[,1]),
+     vertex.shape=c("square","circle")[layer],
+     vertex.size=c(50,20)[layer],
+     vertex.label.dist=c(0,0)[layer],
+     vertex.label.degree=0)
+
+# end ####
 save(sameB, file = "data/clean/cleanBranch.rdata")
   
 
