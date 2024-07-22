@@ -1,6 +1,6 @@
 source("data/cleaning/dfCompareBranches.R")
 source("data/cleaning/combineDFs.R")
-load("data/clean/catWeights.rdata")
+load("data/clean/catWeights21.rdata")
 library(ggthemes)
 library(patchwork)
 library(bipartite)
@@ -217,7 +217,7 @@ cwbb <- cwbb %>%
          -treeSpecies.x, -treeSpecies.y, 
          -hostFamily.x, -hostFamily.y)
 
-
+save(cwbb, file = "data/clean/catsWithBranch.Rdata")
 
 # THE DATASET IS STILL MISSING 6 CATS IF THIS MESSAGE STILL EXISTS
 # #PRAY FOR xyMiss (and by pray I mean look at the physical cups)
@@ -350,7 +350,7 @@ plotweb(t(intMat),
         labsize =  1.8
         )
 
-load("data/clean/catWeights.rdata")
+load("data/clean/catWeights21.rdata")
 
 cwMat <- cw %>%
   mutate(isToid = ifelse(fate == "T", 1, 0)) %>%

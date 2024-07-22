@@ -5,7 +5,7 @@ library(ggthemes)
 
 # This script is for making quick and dirty figures of all my data
 
-c21 <- load("data/clean/catWeights.rdata")
+c21 <- load("data/clean/catWeights21.rdata")
 
 cw
 

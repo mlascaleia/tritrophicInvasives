@@ -607,7 +607,7 @@ pw$catNum[pw$catNum %in% "K4238" & pw$speciesCode %in% "ZALEXX"] <- "K5999"
 pwp <- merge(cw, pw, by = c("catNum"), all.y = T) %>%
   select(- speciesCode, -treeCode, - pupalDate)
 
-save(cw, pwp, file = "data/clean/catWeights.rdata")
+save(cw, pwp, file = "data/clean/catWeights21.rdata")
 
 
 
