@@ -1,6 +1,6 @@
 # initialize ####
 
-source("analysis/01_makeGrowthData.R")
+source("analysis/02_makeGrowthModels.R")
 
 library(glmmTMB)
 
@@ -39,31 +39,17 @@ uc <- uc %>%
   mutate(isMissing = ifelse(fate == "killed", 1, 0)) %>%
   filter(!hostFamily %in% "InvasiveOutgroups")
 
-biToid <- uc %>%
-  filter(isDead == 0 & isMissing == 0) %>%
-  group_by(catSpecies, hostNative, hostFamily) %>%
-  summarise(tot = n(), 
-            toided = sum(isToid),
-            noToid = n() - sum(isToid),
-            avgDate = mean(jDate)) %>%
-  mutate(rate = toided/tot)
+# get good cat species
+cats.good <- table(uc$catSpecies, uc$hostNative) %>%
+  as.data.frame() %>%
+  pivot_wider(id_cols = Var1, names_from = Var2, values_from = Freq) %>%
+  rename(catSpecies = Var1) %>%
+  filter(exotic > 0 & native > 0) 
 
-biPupal <- uc %>%
-  filter(isToid == 0 & isMissing == 0) %>%
-  group_by(catSpecies, hostNative, hostFamily) %>%
-  summarise(tot = n(), 
-            pupal = sum(isPupal),
-            noPupa = n() - sum(isPupal),
-            avgDate = mean(jDate)) %>%
-  mutate(rate = pupal/tot)
+uc <- uc %>%
+  filter(catSpecies %in% cats.good$catSpecies)
 
-# run binomial model ####
-# 
-# m2 <- glmmTMB(cbind(toided, noToid) ~ hostNative + hostFamily + (1|catSpecies), 
-#               data = biToid, family = "binomial")
-# summary(m2)
-
-# make bernouli model
+# make toid model
 
 toidest <- uc %>%
   filter(fate %in% c("pupal", "toided")) %>%
@@ -76,61 +62,89 @@ toidest <- uc %>%
 
 # library(lme4)
 
-m2a <- glmmTMB(isToid ~ hostNative * hostFamily +
-                 (1|transect) + (1|catSpecies), 
+m.toid <- glmmTMB(isToid ~ hostNative * hostFamily +
+                 year + (1|transect) + (1|catSpecies), 
               data = toidest, family = "binomial")
 
-summary(m2a)
+summary(m.toid)
 
-m2.rose <- glmmTMB(isToid ~ hostNative +
-                     year + jDate + 
-                 (1|transect) + (1|catSpecies), 
-               data = toidest[toidest$hostFamily %in% "Roseaceae", ], 
-               family = "binomial")
+gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0", 
+                                   "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
+                                   "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
 
-summary(m2.rose)
+summary(gl.toid, test = adjusted(type = "none"))
 
-m2.olive <- glmmTMB(isToid ~ hostNative +
-                     year + jDate + 
-                     (1|transect) + (1|catSpecies), 
-                   data = toidest[toidest$hostFamily %in% "Oleaceae", ], 
-                   family = "binomial")
+m.toid2 <- glmmTMB(isToid ~ hostNative + hostFamily +
+                    year + (1|transect) + (1|catSpecies), 
+                  data = toidest, family = "binomial")
 
-summary(m2.olive)
+summary(m.toid2)
 
-m2.caprid <- glmmTMB(isToid ~ hostNative +
-                      year + jDate + 
-                      (1|transect) + (1|catSpecies), 
-                    data = toidest[toidest$hostFamily %in% "Caprifoliaceae", ], 
-                    family = "binomial")
+# make pupal model ####
 
-summary(m2.caprid)
+pupest <- uc %>%
+  filter(fate %in% c("died", "pupal")) %>%
+  mutate(hostFamily = factor(hostFamily),
+         hostNative = factor(hostNative)) %>%
+  mutate(jDate = scale(jDate)) %>%
+  dplyr::select(catNum, catSpecies, isPupal, transect, 
+                treeSpecies, hostFamily, hostNative,
+                year, jDate)
 
-# run pupal model ####
+m.pupal <- glmmTMB(isPupal ~ hostNative * hostFamily +
+                    year + (1|transect) + (1|catSpecies), 
+                  data = pupest, family = "binomial")
 
-m3 <- glmmTMB(cbind(pupal, noPupa) ~ hostNative + hostFamily + (1|catSpecies), 
-            data = biPupal, family = "binomial")
-summary(m3)
+summary(m.pupal)
+
+gl.pupa <- glht(m.pupal, linfct = c("hostNativenative = 0", 
+                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
+                                    "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
+
+summary(gl.pupa, test = adjusted(type = "none"))
+
+m.pupal2 <- glmmTMB(isPupal ~ hostNative + hostFamily +
+                     year + (1|transect) + (1|catSpecies), 
+                   data = pupest, family = "binomial")
+
+summary(m.pupal2)
 
 # organize data for pupal weight ####
+load("data/clean/catWeights21.rdata")
+rm(cw)
 pwp <- pwp[!grepl("C|L", pwp$catNum), ]
-pwp <- pwp[!pwp$catSpecies %in% c("GEOMXX", "MICROX"), ]
-hist(pwp$pWeight[!pwp$catSpecies %in% "CERAUN"])
-# boxplot(pWeight ~ hostNative, data = pwp[!pwp$catSpecies %in% "CERAUN",])
+pwp <- pwp[!pwp$catSpecies %in% c("GEOMXX", "MICROX", "CERAUN"), ]
 pwp$pWeightLog <- log(pwp$pWeight)
 
-m4 <- lmer(pWeightLog ~ hostNative + (1|hostFamily) + (1|catSpecies), data = pwp[!pwp$catSpecies %in% "CERAUN",])
-summary(m4)
+pwp2 <- cc %>%
+  dplyr::select(catNum, transect) %>%
+  right_join(pwp) %>%
+  filter(hostFamily != "InvasiveOutgroups")
 
-plot(m4)
-performance::check_model(m4)
+pw.good <- table(pwp2$catSpecies, pwp2$hostNative) %>%
+  as.data.frame() %>%
+  pivot_wider(id_cols = Var1, names_from = Var2, values_from = Freq) %>%
+  rename(catSpecies = Var1) %>%
+  filter(exotic > 0 & native > 0) 
 
-ggplot(data = pwp[!pwp$catSpecies %in% "CERAUN",], aes(x = hostNative, y = pWeightLog)) +
-  geom_violin() +
-  theme_bw()
+pwp2 <- pwp2 %>%
+  filter(catSpecies %in% pw.good$catSpecies)
 
-nate <- data.frame(table(pwp$catSpecies, pwp$hostNative)) %>%
-  pivot_wider(names_from = Var2, values_from = Freq) %>%
-  filter(exotic != 0 & native != 0) %>%
-  rename(catSpecies = Var1)
+m.pw <- glmmTMB(pWeightLog ~ hostNative * hostFamily +
+                (1|transect) + (1|catSpecies), 
+                data = pwp2)
+summary(m.pw)
+
+gl.pw <- glht(m.pw, linfct = c("hostNativenative = 0", 
+                               "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
+                               "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
+
+summary(gl.pw, test = adjusted(type = "none"))
+
+m.pw2 <- glmmTMB(pWeightLog ~ hostNative + hostFamily +
+                  (1|transect) + (1|catSpecies), 
+                data = pwp2)
+summary(m.pw2)
+
+
 

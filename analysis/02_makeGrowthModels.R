@@ -10,21 +10,13 @@ library(multcomp)
 # growth efficiency
 
 geUnchanged$hostFamily <- fct_relevel(geUnchanged$hostFamily, "Roseaceae")
+geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "exotic")
 geUnchanged <- geUnchanged[geUnchanged$hostFamily != "InvasiveOutgroups", ]
 
 m.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
                      year + log(initialWeight) + (1|catSpecies),
                 data = geUnchanged)
 summary(m.ge)
-
-# weight gain alone (including those that lost weight now)
-# m.wg <- glmmTMB(wtChangePer ~ hostNative + hostFamily + 
-#                   year + log(initialWeight) + (1|catSpecies), 
-#                 ziformula = ~ hostNative,
-#                 data = geUnchanged)
-# summary(m.wg)
-
-# these are all set then
 
 # look at changing caterpillars
 
@@ -59,7 +51,7 @@ gl.cc <- glht(m.cc, linfct = c("(Intercept) - changeDirnTOe = 0",
                                "changeDirunchanged_exotic - changeDireTOn = 0",
                                "changeDirnTOe - changeDirnTOn = 0",
                                "changeDireTOn - changeDireTOe = 0"))
-summary(gl.cc)
+summary(gl.cc, test = adjusted(type = "none"))
 
 rm(geChanged, geValid)
 

@@ -80,8 +80,8 @@ c22$newHost[c22$newHost %in% "" |
                                                        is.na(c22$newHost)]
 
 invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'CELOR',
-               'MALXX',"MALFL", "MALPR", 
-               "MALPU", "MALSI", 'ROSMU','VIBDI','VIBPL',
+               'MALXX',"MALFL", "MALPR", "MALPU", "MALSI", 
+               'ROSMU','VIBDI','VIBPL',
                'VIBSI', 'RHOSC', "RUBPH")
 c22$hostNative[c22$treeSpecies %in% invasives] <- "exotic"
 c22$hostFamily[c22$treeSpecies %in% c("BERTH", 'EUOAL', "CELOR")] <- 'InvasiveOutgroups'
