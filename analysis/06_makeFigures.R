@@ -2,19 +2,12 @@
 # goodness I love having fast-running models
 
 rm(list = ls())
-source("analysis/03_makeOtherModels.R")
+source("analysis/05_makePanTrapModels.R")
 
 library(ggplot2)
 library(ggthemes)
 library(patchwork)
 library(ggpp)
-
-# makeOne <- geUnchanged[10, ]
-# makeOne$hostFamily <- "InvasiveOutgroups"
-# makeOne$ge <- .5
-# makeOne$hostNative <- "native"
-# 
-# geUnchanged <- rbind(geUnchanged, makeOne)
 
 geu.new <- geUnchanged %>%
   mutate(hostNative = "exotic")
@@ -41,12 +34,12 @@ ggplot(data = geUnchanged, aes(x = hostFamily, y = reFit, fill = hostNative)) +
               position = position_jitternudge(width = 0.1,
                                               seed = 1234, x = -0.15,
                                               nudge.from = "jittered"),
-             color = "darkgreen", alpha = .5, size = 1.1) +
+             color = "darkgreen", alpha = .3, size = 1.2) +
   geom_point(data = geUnchanged[geUnchanged$hostNative == "exotic", ],
              position = position_jitternudge(width = 0.1,
                                              seed = 1234, x = 0.15,
                                              nudge.from = "jittered"),
-             color = "darkblue", alpha = .5, size = 1.1) +
+             color = "darkblue", alpha = .3, size = 1.2) +
   theme_tufte() +
   ylab("Scaled Growth Efficiency\n") +
   xlab("\nHost Family") +
@@ -87,7 +80,6 @@ ggplot(data = changeCompare, aes(x = changeDir, y = reFit)) +
              linetype = "dashed", color = "red", linewidth = .75) +
   geom_violin(aes(fill = changeDir, color = hostNative), 
               linewidth = 1, alpha = 1) +
-  # geom_boxplot(width = .1, linewidth = .75, fill = NA) +
   geom_point(data = did, aes(y = Estimate), size = 4) +
   geom_errorbar(data = did, aes(y = Estimate, ymin = q05, ymax = q95),
                   linewidth = 1.5, width = .2) +
@@ -120,7 +112,13 @@ toid.fig <- toidest %>%
          q05 = rate.toids - (1.96 * se.toids))
 
 ggplot(data = toid.fig, aes(x = hostFamily, y = rate.toids, group = hostNative)) +
-  geom_errorbar(aes(ymin = q05, ymax = q95), position = position_dodge(width = .5))
+  geom_errorbar(aes(ymin = q05, ymax = q95),
+                width = .4,
+                position = position_dodge(width = .5)) +
+  geom_point(position = position_dodge(width = .5)) +
+  theme_tufte() +
+  ylab("Scaled Parasitoid Rate\n") +
+  xlab("\nHost Family") 
 
 # make pupal figure
 
@@ -139,7 +137,13 @@ pupal.fig <- pupest %>%
          q05 = rate.pupals - (1.96 * se.pupals))
 
 ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hostNative)) +
-  geom_errorbar(aes(ymin = q05, ymax = q95), position = position_dodge(width = .5))
+  geom_errorbar(aes(ymin = q05, ymax = q95),
+                width = .4,
+                position = position_dodge(width = .5)) +
+  geom_point(position = position_dodge(width = .5)) +
+  theme_tufte() +
+  ylab("Scaled Pupation Rate\n") +
+  xlab("\nHost Family") 
 
 # make pupal weight figure
 
@@ -156,6 +160,74 @@ pw.fig <- pwp2 %>%
          q05 = mean.w - (1.96 * se.w))
 
 ggplot(data = pw.fig, aes(x = hostFamily, y = mean.w, group = hostNative)) +
-  geom_pointrange(aes(ymin = q05, ymax = q95), position = position_dodge(width = .5))
+  geom_errorbar(aes(ymin = q05, ymax = q95),
+                width = .4,
+                position = position_dodge(width = .5)) +
+  geom_point(position = position_dodge(width = .5)) +
+  theme_tufte() +
+  ylab("Scaled Pupal Rate\n") +
+  xlab("\nHost Family") 
+
+# make bird and toid foraging figure
+
+summary(m.tf)
+
+td.mush.new <- td.mush %>%
+  mutate(ratio = -3) 
+
+td.mush$base <- predict(m.tf, newdata = td.mush.new)
+td.mush$effect <- td.mush$total - td.mush$base
+
+toidSlope <- function(x) {
+  exp(.08355) + exp(.08355 + (x * -0.35174))
+}
+
+rat <- seq(min(td.mush$ratio), max(td.mush$ratio), by = 0.01)
+byrat <- toidSlope(rat)
+
+toidRibbon.top <- exp(log(byrat) + 0.15809)
+toidRibbon.bottom <- exp(log(byrat) - 0.15809)
+
+toidRibbon.frame <- data.frame(top = toidRibbon.top,
+                               bottom = toidRibbon.bottom,
+                               ratio = rat)
+
+ggplot(data = td.mush, aes(x = ratio, y = effect)) +
+  geom_point() +
+  geom_ribbon(data = toidRibbon.frame, 
+              aes(ymin = bottom, ymax = top, x = ratio), 
+              inherit.aes = F,
+              alpha = .1, color = "grey90") +
+  geom_line(stat = "function", fun = toidSlope)
+
+
+# make bird strike figure
+
+summary(m.clay)
+
+clays$base <- plogis(predict(update(m.clay, formula. =  . ~ . - clay - log1p(vol.nat)),
+        newdata = clays.new))
+
+clays$effect <- clays$strikes - clays$base
+
+clay.fig <- clays %>%
+  mutate(eve = log(vol.exo + 1, base = 2) %/% 0.5,
+         rate = effect/trials) %>%
+  group_by(eve, hostNative) %>%
+  summarise(trials.total = sum(trials),
+            effect.total = sum(effect),
+            rate.avg = sum(effect)/sum(trials),
+            effect.sd = sd(effect),
+            effect.se = sd(effect)/(n() * 3),
+            rate.sd = sd(rate),
+            rate.se = sd(rate)/n()) %>%
+  mutate(q95 = rate.avg + (1.96 * rate.se),
+         q05 = rate.avg - (1.96 * rate.se)) %>%
+  mutate(he = paste0(hostNative, eve))
+
+ggplot(data = clay.fig, aes(x = eve, y = rate.avg, group = he, color = hostNative)) +
+  geom_errorbar(aes(ymin = q05, ymax = q95), position = position_dodge(width = .5)) +
+  geom_point(position = position_dodge(width = .5))
+
 
 

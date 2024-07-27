@@ -146,5 +146,3 @@ m.pw2 <- glmmTMB(pWeightLog ~ hostNative + hostFamily +
                 data = pwp2)
 summary(m.pw2)
 
-
-

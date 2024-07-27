@@ -10,7 +10,7 @@ library(multcomp)
 # growth efficiency
 
 geUnchanged$hostFamily <- fct_relevel(geUnchanged$hostFamily, "Roseaceae")
-geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "exotic")
+geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "native")
 geUnchanged <- geUnchanged[geUnchanged$hostFamily != "InvasiveOutgroups", ]
 
 m.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
