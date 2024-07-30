@@ -18,6 +18,8 @@ cats <- cats %>%
 # load("data/clean/cleanBranch21.rdata")
 load("data/clean/catsWithBranch.Rdata")
 
+cwbb$hostFamily[cwbb$hostFamily %in% "Roseaceae"] <- "Rosaceae"
+
 # okay so this is going to get confusing 
 # but I think I'm going to bring everything in...
 # then change the 2021 data to get rid of a bunch of junk
@@ -48,9 +50,9 @@ c22 <- cats %>%
          captureWeight) %>%
   mutate(year = 2022, weirdFinal = "",
          hostNative = "native",
-         hostFamily = "Roseaceae",
+         hostFamily = "Rosaceae",
          newHostNative = "native",
-         newHostFamily = "Roseaceae",
+         newHostFamily = "Rosaceae",
          dateInitialWeight = date + 1)
 
 c22$dateInitialWeight[c22$dateInitialWeight %in% 532] <- 601
@@ -140,7 +142,7 @@ cc$transect[cc$catNum %in% c(2224, 2225, 2228)] <- 359
 
 # look at zome zale that I'm sussy of
 
-# I think any Zale found on roseaceae prior to 615 can reliably be
+# I think any Zale found on Rosaceae prior to 615 can reliably be
 # called a zaleho
 
 # mainly interested to see whether that affects the change experiment
@@ -148,7 +150,9 @@ cc$transect[cc$catNum %in% c(2224, 2225, 2228)] <- 359
 
 cc$catSpecies[cc$catSpecies %in% "ZALEXX" &
                 cc$date < 616 &
-                cc$hostFamily %in% "Roseaceae"] <- "ZALEHO"
+                cc$hostFamily %in% "Rosaceae"] <- "ZALEHO"
+
+cc$catSpecies[cc$catNum %in% "K4013"] <- "GEOMXX"
 
 # make date julian
 cc$jDate <- paste0(cc$year,"0", cc$date) %>%
@@ -159,7 +163,7 @@ cc$jDate <- paste0(cc$year,"0", cc$date) %>%
 cc$hostFamily <- factor(cc$hostFamily, levels = c('InvasiveOutgroups',
                                                   'Caprifoliaceae',
                                                   'Oleaceae',
-                                                  'Roseaceae'))
+                                                  'Rosaceae'))
 
 cc$year <- factor(cc$year)
 

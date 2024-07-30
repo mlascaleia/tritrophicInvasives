@@ -267,7 +267,7 @@ clays <- read.csv("data/dirty/traps/trapClays.csv", fileEncoding="UTF-8-BOM") %>
   rename(clay = color) %>%
   mutate(strikes = str_length(fateDate)/3) %>%
   mutate(strikes = ifelse(is.na(strikes), 0, strikes)) %>%
-  mutate(hostFamily = "Roseaceae",
+  mutate(hostFamily = "Rosaceae",
          hostNative = "native") %>%
   dplyr::select(-fateDate) %>%
   filter(!trap %in% c("HH01", "HH02", "HH03")) %>%
@@ -276,7 +276,7 @@ clays <- read.csv("data/dirty/traps/trapClays.csv", fileEncoding="UTF-8-BOM") %>
          trials = 3) %>%
   left_join(do.clay)
 
-clays$strikes <- clays$strikes - str_count(clays$fate, pattern = "m")
+# clays$strikes <- clays$strikes - str_count(clays$fate, pattern = "m")
 # clays$strikes <- ifelse(clays$strikes > 0, 1, 0)
 
 # rename a few...

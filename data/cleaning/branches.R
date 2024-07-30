@@ -45,7 +45,7 @@ invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','VIBDI','VIB
 sameB$hostNative <- "native"
 sameB$hostNative[sameB$treeSpecies %in% invasives] <- "exotic"
 
-sameB$hostFamily <- "Roseaceae"
+sameB$hostFamily <- "Rosaceae"
 sameB$hostFamily[sameB$treeSpecies %in% c("BERTH", 'EUOAL')] <- 'InvasiveOutgroups'
 sameB$hostFamily[sameB$treeSpecies %in% c("VIBLE","LONMO","VIBDE","VIBDI","VIBAC", "VIBPL","VIBSI","SAMCA")] <- 'Caprifoliaceae'
 sameB$hostFamily[sameB$treeSpecies %in% c("FRAAM", "LIGOB")] <- 'Oleaceae'
@@ -282,7 +282,7 @@ p1 <- ggplot(data = btab, aes(x = factor(treeSpecies, level = level_order),
   ylab("Caterpillars per branch") +
   scale_fill_manual(name = "Host Family",
                     labels = c("Caprifoliaceae", "Invasive outgroups",
-                               "Oleaceae", "Roseaceae"),
+                               "Oleaceae", "Rosaceae"),
                     values = c("#6C9A8B", "#020887", "#FFA630", "#840032")) +
   scale_alpha_manual(values = c(.3, 1),
                      breaks = c("exotic", "native"))
@@ -310,7 +310,7 @@ p2 <- ggplot(data = btab, aes(x = factor(treeSpecies, level = level_order),
   ylab("Total observed caterpillars") +
   scale_fill_manual(name = "Host Family",
                     labels = c("Caprifoliaceae", "Invasive outgroups",
-                               "Oleaceae", "Roseaceae"),
+                               "Oleaceae", "Rosaceae"),
                     values = c("#6C9A8B", "#020887", "#FFA630", "#840032")) +
   scale_alpha_manual(values = c(.3, 1),
                      breaks = c("exotic", "native"))

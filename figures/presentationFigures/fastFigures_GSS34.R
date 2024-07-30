@@ -32,7 +32,7 @@ invasives <- c("BERTH", 'EUOAL', 'LIGOB',"LONTA", 'LONMO', 'MALXX', 'ROSMU','VIB
 c22$hostNative <- "native"
 c22$hostNative[c22$treeSpecies %in% invasives] <- "exotic"
 
-c22$hostFamily <- "Roseaceae"
+c22$hostFamily <- "Rosaceae"
 c22$hostFamily[c22$treeSpecies %in% c("LONTA","LONMO","VIBDE","VIBDI","VIBAC", "VIBLE", "VIBOP", "VIBPL","VIBSI")] <- 'Caprifoliaceae'
 c22$hostFamily[c22$treeSpecies %in% c("FRAAM", "LIGOB")] <- 'Oleaceae'
 

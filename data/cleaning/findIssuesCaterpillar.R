@@ -406,7 +406,7 @@ cats$hostFamily[cats$catNum %in% "J2096"] <- "Caprifoliaceae"
 
 cats$treeSpecies[cats$catNum %in% "K4069"] <- "MALXX"
 cats$hostNative[cats$catNum %in% "K4069"] <- "exotic"
-cats$hostFamily[cats$catNum %in% "K4069"] <- "Roseaceae"
+cats$hostFamily[cats$catNum %in% "K4069"] <- "Rosaceae"
 
 # J2017
 
@@ -593,7 +593,7 @@ invasives <- c("BERTH", 'EUOAL', 'LIGOB', 'LONMO', 'MALXX', 'ROSMU','RHOSC','VIB
 cw$hostNative <- "native"
 cw$hostNative[cw$treeSpecies %in% invasives] <- "exotic"
 
-cw$hostFamily <- "Roseaceae"
+cw$hostFamily <- "Rosaceae"
 cw$hostFamily[cw$treeSpecies %in% c("BERTH", 'EUOAL')] <- 'InvasiveOutgroups'
 cw$hostFamily[cw$treeSpecies %in% c("VIBLE","LONMO","VIBDE","VIBDI","VIBAC", "VIBPL","VIBSI","SAMCA")] <- 'Caprifoliaceae'
 cw$hostFamily[cw$treeSpecies %in% c("FRAAM", "LIGOB")] <- 'Oleaceae'

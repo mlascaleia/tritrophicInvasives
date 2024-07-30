@@ -9,14 +9,18 @@ library(multcomp)
 
 # growth efficiency
 
-geUnchanged$hostFamily <- fct_relevel(geUnchanged$hostFamily, "Roseaceae")
-geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "native")
+# geUnchanged$hostFamily <- fct_relevel(geUnchanged$hostFamily, "Rosaceae")
+# geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "exotic")
 geUnchanged <- geUnchanged[geUnchanged$hostFamily != "InvasiveOutgroups", ]
 
 m.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
                      year + log(initialWeight) + (1|catSpecies),
                 data = geUnchanged)
 summary(m.ge)
+
+gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0", 
+                                   "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
+                                   "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 # look at changing caterpillars
 

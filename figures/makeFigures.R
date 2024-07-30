@@ -1,9 +1,9 @@
-ggplot(data = pwp[pwp$catSpecies %in% nate$catSpecies, ], aes(x = hostNative, y = pWeight, group = catSpecies, color = catSpecies)) +
-  geom_point(stat = "summary", fun = "mean") +
-  geom_line(stat = "summary", fun = "mean") + 
-  geom_point(aes(group = NA), stat = "summary", fun = "mean", size = 3) +
-  geom_line(aes(group = NA), stat = "summary", fun = "mean") +
-  theme_tufte()
+# ggplot(data = pwp[pwp$catSpecies %in% nate$catSpecies, ], aes(x = hostNative, y = pWeight, group = catSpecies, color = catSpecies)) +
+#   geom_point(stat = "summary", fun = "mean") +
+#   geom_line(stat = "summary", fun = "mean") + 
+#   geom_point(aes(group = NA), stat = "summary", fun = "mean", size = 3) +
+#   geom_line(aes(group = NA), stat = "summary", fun = "mean") +
+#   theme_tufte()
 
 # gonna try to make the 4 part plot robi wanted I wonder how many species it will fit ####
 # let's try to make it on all

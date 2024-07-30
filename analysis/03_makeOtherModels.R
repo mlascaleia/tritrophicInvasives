@@ -26,6 +26,11 @@ toidCheck <- read.csv("data/dirty/cat/toidCheck.csv") %>%
 actuallyToided <- c("J2843", "J2539")
 uc$fate[uc$catNum %in% actuallyToided] <- "T"
 
+cc$fate[cc$fate %in% c("E", "U", "OW", "P", "P ", "PP", "LPP")] <- "pupal"
+cc$fate[cc$fate %in% c("G", "K", "MIA", "")] <- "killed"
+cc$fate[cc$fate %in% c("D")] <- "died"
+cc$fate[cc$fate %in% c("T")] <- "toided"
+
 # make some things clearer...
 uc$fate[uc$fate %in% c("E", "U", "OW", "P", "PP", "LPP")] <- "pupal"
 uc$fate[uc$fate %in% c("G", "K", "MIA")] <- "killed"
@@ -70,7 +75,7 @@ summary(m.toid)
 
 gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0", 
                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
-                                   "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
+                                   "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 summary(gl.toid, test = adjusted(type = "none"))
 
@@ -99,7 +104,7 @@ summary(m.pupal)
 
 gl.pupa <- glht(m.pupal, linfct = c("hostNativenative = 0", 
                                     "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
-                                    "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
+                                    "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 summary(gl.pupa, test = adjusted(type = "none"))
 
@@ -111,9 +116,22 @@ summary(m.pupal2)
 
 # organize data for pupal weight ####
 load("data/clean/catWeights21.rdata")
+pwp$hostFamily[pwp$hostFamily %in% "Roseaceae"] <- "Rosaceae"
 rm(cw)
 pwp <- pwp[!grepl("C|L", pwp$catNum), ]
 pwp <- pwp[!pwp$catSpecies %in% c("GEOMXX", "MICROX", "CERAUN"), ]
+
+
+# fix 10x issues...
+
+pwp$pWeight[pwp$catNum %in% c("K4249")] <- 
+  pwp$pWeight[pwp$catNum %in% c("K4249")]/10
+
+# remove dead pupa
+
+pwp <- pwp[!pwp$catNum %in% c("J2171", "J2173"), ]
+
+
 pwp$pWeightLog <- log(pwp$pWeight)
 
 pwp2 <- cc %>%
@@ -130,14 +148,16 @@ pw.good <- table(pwp2$catSpecies, pwp2$hostNative) %>%
 pwp2 <- pwp2 %>%
   filter(catSpecies %in% pw.good$catSpecies)
 
+
+
 m.pw <- glmmTMB(pWeightLog ~ hostNative * hostFamily +
-                (1|transect) + (1|catSpecies), 
+                (1|catSpecies), 
                 data = pwp2)
 summary(m.pw)
 
 gl.pw <- glht(m.pw, linfct = c("hostNativenative = 0", 
                                "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
-                               "hostNativenative + hostNativenative:hostFamilyRoseaceae = 0"))
+                               "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 summary(gl.pw, test = adjusted(type = "none"))
 
