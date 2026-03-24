@@ -52,7 +52,8 @@ cats.good <- table(uc$catSpecies, uc$hostNative) %>%
   filter(exotic > 0 & native > 0) 
 
 uc <- uc %>%
-  filter(catSpecies %in% cats.good$catSpecies)
+  filter(catSpecies %in% cats.good$catSpecies) %>%
+  filter(!catSpecies %in% "MICROX")
 
 # make toid model
 
@@ -80,7 +81,7 @@ gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0",
 summary(gl.toid, test = adjusted(type = "none"))
 
 m.toid2 <- glmmTMB(isToid ~ hostNative + hostFamily +
-                    year + (1|transect) + (1|catSpecies), 
+                    year + jDate + (1|transect) + (1|catSpecies), 
                   data = toidest, family = "binomial")
 
 summary(m.toid2)

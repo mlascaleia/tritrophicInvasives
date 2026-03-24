@@ -300,6 +300,8 @@ toid.fig <- toidest %>%
   mutate(q95 = rate.toids + (1.96 * se.toids),
          q05 = rate.toids - (1.96 * se.toids))
 
+toid.fig
+
 toid.fig <- toidest %>%
   group_by(catSpecies) %>%
   mutate(species_mean = mean(isToid)) %>%

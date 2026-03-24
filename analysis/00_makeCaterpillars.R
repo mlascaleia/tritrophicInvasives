@@ -18,6 +18,7 @@ cats <- cats %>%
 # load("data/clean/cleanBranch21.rdata")
 load("data/clean/catsWithBranch.Rdata")
 
+# fix small error in loaded data
 cwbb$hostFamily[cwbb$hostFamily %in% "Roseaceae"] <- "Rosaceae"
 
 # okay so this is going to get confusing 
@@ -37,8 +38,6 @@ c21 <- cwbb %>%
          newHostNative = hostNative,
          captureWeight = NA)
 
-
-
 # make 2022 look like 2021
 
 c22 <- cats %>%
@@ -55,10 +54,11 @@ c22 <- cats %>%
          newHostFamily = "Rosaceae",
          dateInitialWeight = date + 1)
 
+# fix obvious issues in c22
 c22$dateInitialWeight[c22$dateInitialWeight %in% 532] <- 601
 c22$dateInitialWeight[c22$dateInitialWeight %in% 631] <- 701
 
-# rename a few...
+# rename a few tree species...
 c22$treeSpecies[c22$treeSpecies %in% "CRAPH"] <- "CRAXX"
 c22$treeSpecies[c22$treeSpecies %in% "LONTA"] <- "LONMO"
 # c22$treeSpecies[c22$treeSpecies %in% c("MALFL", "MALPR", 
@@ -166,6 +166,8 @@ cc$hostFamily <- factor(cc$hostFamily, levels = c('InvasiveOutgroups',
                                                   'Rosaceae'))
 
 cc$year <- factor(cc$year)
+
+# and then just randomly make my violin function here for some reason
 
 GeomSplitViolin <- ggproto("GeomSplitViolin", GeomViolin, 
                            draw_group = function(self, data, ..., draw_quantiles = NULL) {
