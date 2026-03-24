@@ -22,6 +22,9 @@ gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0",
                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                    "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
+summary(gl.ge, test = adjusted(type = "none"))
+
+car::Anova(m.ge)
 # look at changing caterpillars
 
 geChanged <- geCats[geCats$changed %in% 1, ]
@@ -44,7 +47,7 @@ changeCompare <- changeCompare %>%
 changeCompare$changeDir <- fct_relevel(changeCompare$changeDir, "unchanged_native")
 # ge.cc <- changeCompare[changeCompare$wtChange > 0, ]
 m.cc <- glmmTMB(ge ~ newHostFamily + changeDir +
-                  log(initialWeight) + (1|catSpecies), 
+                  log(initialWeight) + (1|catSpecies) + (1|newHost), 
                 data = changeCompare, 
                 family = gaussian)
 summary(m.cc)
@@ -52,7 +55,7 @@ summary(m.cc)
 
 gl.cc <- glht(m.cc, linfct = c("(Intercept) - changeDirnTOe = 0", 
                                "(Intercept) - changeDirnTOn = 0",
-                               "changeDirunchanged_exotic - changeDireTOn = 0",
+                               "changeDirunchanged_exotic - changeDirnTOe = 0",
                                "changeDirnTOe - changeDirnTOn = 0",
                                "changeDireTOn - changeDireTOe = 0"))
 summary(gl.cc, test = adjusted(type = "none"))

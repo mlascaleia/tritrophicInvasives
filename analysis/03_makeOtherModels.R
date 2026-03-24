@@ -166,3 +166,12 @@ m.pw2 <- glmmTMB(pWeightLog ~ hostNative + hostFamily +
                 data = pwp2)
 summary(m.pw2)
 
+car::Anova(m.ge)
+
+effects::Effect("hostNative", m.toid)$fit[2] - effects::Effect("hostNative", m.toid)$fit[1]
+
+car::Anova(m.pw)
+car::Anova(m.pupal)
+car::Anova(m.toid)
+
+

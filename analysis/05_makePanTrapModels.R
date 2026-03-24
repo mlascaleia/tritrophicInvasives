@@ -18,20 +18,24 @@ m.tf.flies <- glmmTMB(flies ~ ratio + ratio:scale(vegVolume) +
                         upDate +
                         scale(fail_amount) +
                         offset(log(daysOut)) + (1|block),
-                      ziformula = ~ block,
                       data = td.mush, family = nbinom2)
 
+summary(m.tf.wasps)
 summary(m.tf.flies)
 
 clays$ratio <- scale(clays$vol.exo - clays$vol.nat)
 clays$vegVolume <- clays$vol.exo + clays$vol.nat
 
-m.clay <- glmmTMB(cbind(strikes, trials) ~ ratio + ratio:scale(vegVolume) +
+clays$strikesB <- as.integer(clays$strikes > 0)
+
+m.clay <- glmmTMB(strikesB ~ ratio + ratio:scale(vegVolume) +
                     upDate + clay +
                     (1|block/trap),
                   data = clays, family = binomial)
 
 summary(m.clay)
+
+
 # diagnose(m.clay)
 
 
