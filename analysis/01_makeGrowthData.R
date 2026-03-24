@@ -1,29 +1,10 @@
+# this script will make the data regarding the growth efficiency assay
+
 # initialize ####
 
-source("analysis/00_makeCaterpillars.R")
+source("analysis/00b_makeCleanerCaterpillarData.R")
 
-library(glmmTMB)
-
-# eliminate unidentified and invasive caterpillars
-cc <- cc[!cc$catSpecies %in% c("GEOMXX", "MIRCOX", "NOCTXX", "UNKNXX", "CORYME"), ]
-
-# make caterpillar weights dataframe ####
-
-# mark how host was changed
-cc$changed <- as.integer(!cc$treeSpecies == cc$newHost)
-cc$changeDir <- "unchanged"
-cc$changeDir[cc$hostNative %in% "native" & 
-               cc$newHostNative %in% "exotic"] <- "nTOe"
-cc$changeDir[cc$hostNative %in% "exotic" & 
-               cc$newHostNative %in% "native"] <- "eTOn"
-cc$changeDir[cc$hostNative %in% "native" & 
-               cc$newHostNative %in% "native" &
-               cc$changed == 1] <- "nTOn"
-cc$changeDir[cc$hostNative %in% "exotic" & 
-               cc$newHostNative %in% "exotic" &
-               cc$changed == 1] <- "eTOe"
-
-# fix data entry errors (usually decimal point errors)
+# fix data entry errors (decimal point errors)
 
 cc$initialWeight[cc$catNum %in% c("J2616")] <- 
   cc$initialWeight[cc$catNum %in% c("J2616")] * 10
@@ -40,16 +21,14 @@ cc$frassWeight[cc$catNum %in% c("2157", "1618")] <-
 cc$weirdFinal[cc$catNum %in% c("J2016", "J3218")] <- "DEAD"
 cc$weirdFinal[cc$catNum %in% "K4230"] <- "PP"
 
-
-# eliminate weirdfinals and unwieghed
+# eliminate weirdfinals and unwieghed, make growth efficiency dataset
 geCats <- cc[cc$weirdFinal %in% "" & !is.na(cc$finalWeight),]
 
-# little cats are also ending up as weird outliers
+# eliminate caterpillars that starved rather than eat
+geCats <- geCats[geCats$frassWeight > 0,]
 
+# eliminate caterpillars that were too small to start
 geCats <- geCats[geCats$initialWeight > 0.002, ]
-
-# eliminate ones that were really too small to start
-geCats <- geCats[geCats$initialWeight > 0.001, ]
 
 # make weight change
 geCats$wtChange <- geCats$finalWeight - geCats$initialWeight 
@@ -58,15 +37,17 @@ geCats$wtChange <- geCats$finalWeight - geCats$initialWeight
 geCats$wtChangePer <- geCats$wtChange/geCats$initialWeight
 
 # make growth efficiency
-
 geCats$ge <- geCats$wtChange/geCats$frassWeight
-geCats$ge[geCats$ge < 0] <- 0
-# geCats[geCats$wtChangePer < 0, ]
-geValid <- geCats[geCats$wtChange > 0, ]
 
-geUnchanged <- geCats[geCats$changed == 0, ]
+# I initially thought that ge should never be negative, but that was a mistake
+# some caterpillars ate their plants and lost weight because of it
+# geCats$ge[geCats$ge < 0] <- 0
+# geValid <- geCats[geCats$wtChange > 0, ]
 
+# Now make a cleaner cc object where growth data is separated
 
+cc <- cc %>% dplyr::select(-dateInitialWeight, -initialWeight, -finalWeight,
+              -frassWeight, -weirdFinal)
 
 
 

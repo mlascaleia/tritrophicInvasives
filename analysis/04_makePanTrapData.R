@@ -10,7 +10,7 @@ cover <- read.csv("data/dirty/traps/trapCover.csv", fileEncoding="UTF-8-BOM")
 info <- read.csv("data/dirty/traps/trapInfo.csv", fileEncoding="UTF-8-BOM")
 clays <- read.csv("data/dirty/traps/trapClays.csv", fileEncoding="UTF-8-BOM")
 
-# clean cover
+# clean cover data
 
 cover$treeID[cover$treeID %in% "CALLA"] <- "KALLA"
 cover$treeID[cover$treeID %in% "CARXX"] <- "CARYA"
@@ -29,6 +29,8 @@ cover$trap[cover$trap %in% "TQO2B"] <- "TQ02B"
 
 # dput(unique(cover$treeID))
 
+# establish what is invasive
+
 trees <- c("PRUSE", "ELEAN", "CARCA", "BERTH", "ROSMU", "CELOR", "AMEXX", 
            "MALXX", "PARQU", "EUOAL", "LIGOB", "VIBDI", "RUBXX", "CARYA", 
            "TOXRA", "CRAXX", "VIBAC", "QUEAL", "VACCO", "ACERU", "PINST", 
@@ -45,6 +47,7 @@ treeCodes <- cbind.data.frame(treeID = trees, invasive = as.integer(!inv))
 
 cover <- merge(cover, treeCodes, by = "treeID")
 
+# get the cover of all (full), native or exotic cover
 cmat.full <- cover %>%
   filter(!cover == -99) %>%
   group_by(trap, treeID) %>%
@@ -83,6 +86,7 @@ cmat.exo <- cover %>%
   column_to_rownames("trap") %>%
   as.matrix()
 
+# get the diversity of each of the three groups
 div.full <- data.frame(div.full = vegan::diversity(cmat.full, index = "shannon")) %>%
   rownames_to_column("trap")
 div.nat <- data.frame(div.nat = vegan::diversity(cmat.nat, index = "shannon")) %>%
@@ -115,12 +119,18 @@ div.all <- div.all %>%
   mutate(across(div.full:rich.nat, \(x) ifelse(is.na(x), 0, x)))
 div.all$rich <- div.all$rich.exo + div.all$rich.nat
 
+# now I have columns of the diversity of everything, as well as the
+# diversity, richness, and total volume of native and invasive plants
+
 # now do info
 
 # fix canopy:
 miss <- 8 - str_length(as.character(info$canopy))
 front <- sapply(miss, function(x) paste0(rep(0, x), collapse = ""))
 info$canopy <- paste0(front, info$canopy)
+
+# fix the one weird error in canopy cover
+info$canopy[info$canopy %in% c("00000-99")] <- "00000099"
 
 trapDat <- info %>%
   mutate(daysOut = downDate - upDate,
@@ -139,8 +149,7 @@ trapDat <- info %>%
                names_to = "position",
                values_to = "color")
 
-
-# BRING IN THE CONTENTS
+# BRING IN THE CONTENTS (all trap meta data now done)
 
 contents <- read.csv("data/dirty/traps/trapContents.csv", fileEncoding="UTF-8-BOM")
 
@@ -223,7 +232,6 @@ td.solid <- td %>%
 
 td.solid$ratio <- (td.solid$vol.exo + 1)/
 (td.solid$vol.nat + 1)
-
 
 td.solid$ratio <- log1p(td.solid$vol.nat) - log1p(td.solid$vol.exo)
 

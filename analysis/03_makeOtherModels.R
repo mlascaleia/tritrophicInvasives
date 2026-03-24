@@ -4,68 +4,6 @@ source("analysis/02_makeGrowthModels.R")
 
 library(glmmTMB)
 
-# organize data for non-ge models ####
-
-uc <- cc %>%
-  filter(changeDir == "unchanged") %>%
-  # some cats I know we dumped...
-  filter(!(fate == "" & catSpecies %in% c("MORRCO", "HEMATH", 
-                                        "MICROX", "CROCNO",
-                                        "PAONEX", "CALLDR",
-                                        "ELAPVE", "LAMBFI",
-                                        "ZALEXX"))) %>%
-  # Others I suspect died
-  mutate(fate = ifelse(fate == "", "D", fate))
-
-# double check we didn't miss some toids?
-
-toidCheck <- read.csv("data/dirty/cat/toidCheck.csv") %>%
-  filter(!str_detect(Number, "[[:alpha:]]{2}[[:digit:]]{5}")) %>%
-  mutate(Number = gsub("T", "", Number))
-
-actuallyToided <- c("J2843", "J2539")
-uc$fate[uc$catNum %in% actuallyToided] <- "T"
-
-cc$fate[cc$fate %in% c("E", "U", "OW", "P", "P ", "PP", "LPP")] <- "pupal"
-cc$fate[cc$fate %in% c("G", "K", "MIA", "")] <- "killed"
-cc$fate[cc$fate %in% c("D")] <- "died"
-cc$fate[cc$fate %in% c("T")] <- "toided"
-
-# make some things clearer...
-uc$fate[uc$fate %in% c("E", "U", "OW", "P", "PP", "LPP")] <- "pupal"
-uc$fate[uc$fate %in% c("G", "K", "MIA")] <- "killed"
-uc$fate[uc$fate %in% c("D")] <- "died"
-uc$fate[uc$fate %in% c("T")] <- "toided"
-
-uc <- uc %>%
-  mutate(isToid = ifelse(fate == "toided", 1, 0)) %>%
-  mutate(isPupal = ifelse(fate == "pupal", 1, 0)) %>%
-  mutate(isDead = ifelse(fate == "died", 1, 0)) %>%
-  mutate(isMissing = ifelse(fate == "killed", 1, 0)) %>%
-  filter(!hostFamily %in% "InvasiveOutgroups")
-
-# get good cat species
-cats.good <- table(uc$catSpecies, uc$hostNative) %>%
-  as.data.frame() %>%
-  pivot_wider(id_cols = Var1, names_from = Var2, values_from = Freq) %>%
-  rename(catSpecies = Var1) %>%
-  filter(exotic > 0 & native > 0) 
-
-uc <- uc %>%
-  filter(catSpecies %in% cats.good$catSpecies) %>%
-  filter(!catSpecies %in% "MICROX")
-
-# make toid model
-
-toidest <- uc %>%
-  filter(fate %in% c("pupal", "toided")) %>%
-  mutate(hostFamily = factor(hostFamily),
-         hostNative = factor(hostNative)) %>%
-  mutate(jDate = scale(jDate)) %>%
-  dplyr::select(catNum, catSpecies, isToid, transect, 
-         treeSpecies, hostFamily, hostNative,
-         year, jDate)
-
 # library(lme4)
 
 m.toid <- glmmTMB(isToid ~ hostNative * hostFamily +
@@ -74,6 +12,7 @@ m.toid <- glmmTMB(isToid ~ hostNative * hostFamily +
 
 summary(m.toid)
 
+# tests whther there's an effect in each of the three families
 gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0", 
                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                    "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
@@ -86,16 +25,9 @@ m.toid2 <- glmmTMB(isToid ~ hostNative + hostFamily +
 
 summary(m.toid2)
 
-# make pupal model ####
+rm(m.toid, gl.toid)
 
-pupest <- uc %>%
-  filter(fate %in% c("died", "pupal")) %>%
-  mutate(hostFamily = factor(hostFamily),
-         hostNative = factor(hostNative)) %>%
-  mutate(jDate = scale(jDate)) %>%
-  dplyr::select(catNum, catSpecies, isPupal, transect, 
-                treeSpecies, hostFamily, hostNative,
-                year, jDate)
+# make pupal model ####
 
 m.pupal <- glmmTMB(isPupal ~ hostNative * hostFamily +
                     year + (1|transect) + (1|catSpecies), 
@@ -103,6 +35,7 @@ m.pupal <- glmmTMB(isPupal ~ hostNative * hostFamily +
 
 summary(m.pupal)
 
+# tests whther there's an effect in each of the three families
 gl.pupa <- glht(m.pupal, linfct = c("hostNativenative = 0", 
                                     "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                     "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
@@ -115,47 +48,16 @@ m.pupal2 <- glmmTMB(isPupal ~ hostNative + hostFamily +
 
 summary(m.pupal2)
 
-# organize data for pupal weight ####
-load("data/clean/catWeights21.rdata")
-pwp$hostFamily[pwp$hostFamily %in% "Roseaceae"] <- "Rosaceae"
-rm(cw)
-pwp <- pwp[!grepl("C|L", pwp$catNum), ]
-pwp <- pwp[!pwp$catSpecies %in% c("GEOMXX", "MICROX", "CERAUN"), ]
+rm(m.pupal2)
 
-
-# fix 10x issues...
-
-pwp$pWeight[pwp$catNum %in% c("K4249")] <- 
-  pwp$pWeight[pwp$catNum %in% c("K4249")]/10
-
-# remove dead pupa
-
-pwp <- pwp[!pwp$catNum %in% c("J2171", "J2173"), ]
-
-
-pwp$pWeightLog <- log(pwp$pWeight)
-
-pwp2 <- cc %>%
-  dplyr::select(catNum, transect) %>%
-  right_join(pwp) %>%
-  filter(hostFamily != "InvasiveOutgroups")
-
-pw.good <- table(pwp2$catSpecies, pwp2$hostNative) %>%
-  as.data.frame() %>%
-  pivot_wider(id_cols = Var1, names_from = Var2, values_from = Freq) %>%
-  rename(catSpecies = Var1) %>%
-  filter(exotic > 0 & native > 0) 
-
-pwp2 <- pwp2 %>%
-  filter(catSpecies %in% pw.good$catSpecies)
-
-
+# pupal weight analysis ####
 
 m.pw <- glmmTMB(pWeightLog ~ hostNative * hostFamily +
-                (1|catSpecies), 
+                  (1|transect) + (1|catSpecies), 
                 data = pwp2)
 summary(m.pw)
 
+# tests whther there's an effect in each of the three families
 gl.pw <- glht(m.pw, linfct = c("hostNativenative = 0", 
                                "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
@@ -166,13 +68,4 @@ m.pw2 <- glmmTMB(pWeightLog ~ hostNative + hostFamily +
                   (1|transect) + (1|catSpecies), 
                 data = pwp2)
 summary(m.pw2)
-
-car::Anova(m.ge)
-
-effects::Effect("hostNative", m.toid)$fit[2] - effects::Effect("hostNative", m.toid)$fit[1]
-
-car::Anova(m.pw)
-car::Anova(m.pupal)
-car::Anova(m.toid)
-
 
