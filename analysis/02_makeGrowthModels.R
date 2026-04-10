@@ -14,9 +14,12 @@ m.ge <- glmmTMB(ge ~ hostNative * hostFamily +
                 data = geCats)
 summary(m.ge)
 
+ee <- emmeans(m.ge, pairwise ~ hostNative)
+
 gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0", 
                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                    "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 summary(gl.ge, test = adjusted(type = "none"))
+
 

@@ -186,6 +186,10 @@ cc$date[cc$catNum %in% c(2224, 2225, 2228)] <- 715
 cc$dateInitialWeight[cc$catNum %in% c(2224, 2225, 2228)] <- 716
 cc$transect[cc$catNum %in% c(2224, 2225, 2228)] <- 359
 
+# two caterpillars don't have transects - that will be fixed
+cc$transect[cc$transect %in% ""] <- 145
+cc$transect[is.na(cc$transect)] <- 321
+
 # Many Zale were rechecked and IDed as Z. horribilis
 
 cc$catSpecies[cc$catSpecies %in% "ZALEXX" &

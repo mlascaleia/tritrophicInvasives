@@ -13,10 +13,7 @@ library(ggtext)
 library(ggbeeswarm)
 library(emmeans)
 
-# move these functions here 
-
-# and then just randomly make my violin function here for some reason
-# (highly likely to move)
+# make the functions I use to plot
 
 GeomSplitViolin <- ggproto("GeomSplitViolin", GeomViolin, 
                            draw_group = function(self, data, ..., draw_quantiles = NULL) {
@@ -54,44 +51,57 @@ geom_split_violin <- function(mapping = NULL, data = NULL, stat = "ydensity", po
 
 sum.ge <- summary(gl.ge, test = adjusted(type = "none"))
 pval.ge <- sum.ge$test$pvalues
-pval.ge[1] <- 0.001
+# unforunately hardcoding this because I cannot figure out how to extract from emmeans
+pval.ge <- c(0.0081, pval.ge)
 
-# way less than one...
-car::Anova(m.ge)["hostNative", "Pr(>Chisq)"]
+# compute partial residuals
+coef_names <- c("hostNativenative", 
+                "hostFamilyOleaceae", 
+                "hostFamilyRosaceae",
+                "hostNativenative:hostFamilyOleaceae",
+                "hostNativenative:hostFamilyRosaceae",
+                "year2022",
+                "log(initialWeight)")
 
-pval.ge <- c(0.001, pval.ge)
+mm <- model.matrix(m.ge)
+fe <- fixef(m.ge)$cond
+
+re <- ranef(m.ge)$cond$catSpecies[geCats$catSpecies, "(Intercept)"]
+
+geCats$ge_partial <- residuals(m.ge) - re + 
+  mm[, coef_names] %*% fe[coef_names] + 
+  fe["(Intercept)"]
 
 midi <- as.data.frame(emmeans(m.ge, specs = c("hostNative", "hostFamily"),
-        component = "response"))
+        type = "response"))
 
 midi_overall <- as.data.frame(emmeans(m.ge, specs = c("hostNative"),
-                              component = "response"))
+                              type = "response"))
 
 midi_overall$hostFamily <- "Overall"
 
 midi <- rbind(midi, midi_overall)
 
 # bold <- c("***", "", "***")
-ekal <- c(" < ", " < ", " = ", " = ")
+ekal <- c(" = ", " = ", " = ", " = ")
 # empha <- c("\\*\\*\\*", "", "\\*\\*")
 
-
-geUnchanged$hostNative <- fct_relevel(geUnchanged$hostNative, "native")
-midi$hostNative <- fct_relevel(midi$hostNative, "native")
-levels(geUnchanged$hostFamily) <- c(levels(geUnchanged$hostFamily), "Overall")
-geUnchanged$hostFamily <- fct_relevel(geUnchanged$hostFamily, "Overall")
-midi$hostFamily <- fct_relevel(midi$hostFamily, "Overall")
-
-siglab.ge <- data.frame(hostFamily = levels(factor(midi$hostFamily)),
+siglab.ge <- data.frame(hostFamily = c("Overall", "Caprifoliaceae", "Oleaceae", "Rosaceae"),
                         pValue = pval.ge) %>%
   mutate(pValue = paste0("*p*", ekal, round(pValue, 3)))
 
-geUnchanged_oov <- geUnchanged
-geUnchanged_oov$hostFamily <- "Overall"
-geUnchanged2 <- rbind(geUnchanged, geUnchanged_oov)
-geUnchanged2 <- geUnchanged2[!geUnchanged2$hostFamily %in% "InvasiveOutgroups", ]
+geCats_oov <- geCats
+geCats_oov$hostFamily <- "Overall"
+geCats2 <- rbind(geCats, geCats_oov)
 
-vio1 <- ggplot(data = geUnchanged2, aes(x = hostFamily, y = ge, fill = hostNative)) +
+geCats2$hostNative <- factor(geCats2$hostNative, levels = c("native", "exotic"))
+midi$hostNative <- factor(midi$hostNative, levels = c("native", "exotic"))
+geCats2$hostFamily <- factor(geCats2$hostFamily, 
+                             levels = c("Overall", "Caprifoliaceae", "Oleaceae", "Rosaceae"))
+midi$hostFamily <- factor(midi$hostFamily, 
+                          levels = c("Overall", "Caprifoliaceae", "Oleaceae", "Rosaceae"))
+
+vio1 <- ggplot(data = geCats2, aes(x = hostFamily, y = ge_partial, fill = hostNative)) +
   geom_errorbar(data = midi, aes(y = emmean, ymin = lower.CL, ymax = upper.CL, 
                                  x = hostFamily, group = hostNative), 
                 width = .3, linewidth = 1.2,
@@ -106,20 +116,20 @@ vio1 <- ggplot(data = geUnchanged2, aes(x = hostFamily, y = ge, fill = hostNativ
              alpha = 1, linewidth = 1.5) +
   geom_hline(aes(yintercept = 0), color = "grey20", alpha = 1) +
   geom_split_violin(drop = F, width = .9, alpha = .8) +
-  geom_point(data = geUnchanged2[geUnchanged2$hostNative == "native", ],
+  geom_point(data = geCats2[geCats2$hostNative == "native", ],
               position = position_jitternudge(width = 0.1,
                                               seed = 1234, x = -0.15,
                                               nudge.from = "jittered"),
              color = "darkgreen", alpha = .3, size = 1.2) +
-  geom_point(data = geUnchanged2[geUnchanged2$hostNative == "exotic", ],
+  geom_point(data = geCats2[geCats2$hostNative == "exotic", ],
              position = position_jitternudge(width = 0.1,
                                              seed = 1234, x = 0.15,
                                              nudge.from = "jittered"),
              color = "darkblue", alpha = .3, size = 1.2) +
   theme_tufte() +
   scale_x_discrete(position = "top") +
-  scale_y_continuous(limits = c(-.01,2)) +
-  ylab("Growth Efficiency\n") +
+  # scale_y_continuous(limits = c(-.01,2)) +
+  ylab("Growth efficiency\n") +
   xlab("\nHost Family") +
   scale_fill_manual(values = c("#9CB380", "#586A6A")) +
   geom_errorbar(data = midi, aes(y = emmean, ymin = lower.CL, ymax = upper.CL, 
@@ -146,49 +156,7 @@ vio1 <- ggplot(data = geUnchanged2, aes(x = hostFamily, y = ge, fill = hostNativ
 
 vio1
 
-# make presentation viol
-
-ggplot(data = geUnchanged, aes(x = 1, y = ge, fill = hostNative)) +
-  geom_hline(aes(yintercept = 0), color = "white", alpha = 1) +
-  geom_split_violin(drop = F, width = .9, alpha = .8, color = "white") +
-  geom_point(data = geUnchanged[geUnchanged$hostNative == "native", ],
-              position = position_jitternudge(width = 0.1,
-                                              seed = 1234, x = -0.15,
-                                              nudge.from = "jittered"),
-             color = "lightgreen", alpha = .5, size = 1.5) +
-  geom_point(data = geUnchanged[geUnchanged$hostNative == "exotic", ],
-             position = position_jitternudge(width = 0.1,
-                                             seed = 1234, x = 0.15,
-                                             nudge.from = "jittered"),
-             color = "lightblue", alpha = .5, size = 1.5) +
-  theme_tufte() +
-  scale_x_discrete(position = "top") +
-  scale_y_continuous(limits = c(-.01,2)) +
-  ylab("Growth Efficiency\n") +
-  xlab("\nHost Family") +
-  scale_fill_manual(values = c("#9CB380", "#586A6A")) +
-  geom_errorbar(data = midi[midi$hostFamily %in% "Overall", ], 
-                aes(y = emmean, ymin = lower.CL, ymax = upper.CL, x = 1,
-                                   group = hostNative, color = hostNative), 
-                width = .2, linewidth = 1.4,
-                position = position_dodge(width = .5),
-                inherit.aes = F) +
-  geom_point(data = midi[midi$hostFamily %in% "Overall", ], 
-             aes(y = emmean, group = hostNative, x = 1, color = hostNative), 
-             size = 5,
-             position = position_dodge(width = .5),
-             inherit.aes = F) +
-  scale_color_manual(values = c("darkgreen", "#170C6A")) +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 18, color = "white"),
-        plot.background = element_rect(fill = "black"),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank())
-
-
-
-
-# make pupal weight figure
+# make pupal weight figure ####
 
 sum.pw <- summary(gl.pw, test = adjusted(type = "none"))
 pval.pw <- sum.pw$test$pvalues
@@ -197,8 +165,8 @@ pwp2$hostNative <- fct_relevel(pwp2$hostNative, "native")
 
 pw.fig.init <- pwp2 %>%
   group_by(catSpecies) %>%
-  mutate(species_mean = mean(pWeightLog)) %>%
-  mutate(weight_resid = pWeightLog - species_mean) %>%
+  mutate(species_mean = mean(pWeight)) %>%
+  mutate(weight_resid = pWeight - species_mean) %>%
   ungroup()
 
 pw.fig <- pw.fig.init %>%
@@ -220,7 +188,8 @@ pw.fig_oov <- pw.fig.init %>%
 
 pw.fig <- rbind(pw.fig, pw.fig_oov)
 
-pw.poo <- car::Anova(m.pw)["hostNative", "Pr(>Chisq)"]
+# pw.poo <- car::Anova(m.pw)["hostNative", "Pr(>Chisq)"]
+pw.poo <- 0.033
 
 pw.fig.init <- pw.fig.init %>%
   mutate(hostFamily = "Overall") %>%
@@ -237,7 +206,7 @@ vio2 <- ggplot(data = pw.fig.init, aes(x = hostFamily, y = weight_resid, fill = 
   geom_hline(aes(yintercept = 0), color = "grey20", alpha = 1) +
   geom_vline(aes(xintercept = 1.5), color = "black", 
              alpha = 1, linewidth = 1.5) +
-  geom_split_violin(drop = F, width = .9, alpha = .8) +
+  geom_split_violin(drop = F, width = 1.2, alpha = .8) +
   geom_point(data = pw.fig.init[pw.fig.init$hostNative == "native", ],
              position = position_jitternudge(width = 0.1,
                                              seed = 1234, x = -0.15,
@@ -248,10 +217,10 @@ vio2 <- ggplot(data = pw.fig.init, aes(x = hostFamily, y = weight_resid, fill = 
                                              seed = 1234, x = 0.15,
                                              nudge.from = "jittered"),
              color = "darkblue", alpha = .3, size = 1.2) +
-  scale_y_continuous(breaks = c(-1.5, -1, -.5, 0, .5)) +
+  # scale_y_continuous(breaks = c(-1.5, -1, -.5, 0, .5)) +
   scale_x_discrete(position = "top") +
   theme_tufte() +
-  ylab("Log Pupal Weight (g)\n") +
+  ylab("Residual pupal weight (g)") +
   scale_fill_manual(values = c("#9CB380", "#586A6A"),
                     name = "Hostplant\norigin",
                     labels = c("Native", "Exotic")) +
@@ -266,7 +235,7 @@ vio2 <- ggplot(data = pw.fig.init, aes(x = hostFamily, y = weight_resid, fill = 
              position = position_dodge(width = .5),
              inherit.aes = F) +
   geom_richtext(data = siglab.pw,
-                aes(y = 1, x = hostFamily,
+                aes(y = .35, x = hostFamily,
                     label = pValue),
                 inherit.aes = F, label.size = NA,
                 fill = NA, family = "serif", size = 5) +
@@ -281,41 +250,41 @@ vio2 <- vio2 +
   theme(axis.text.x = element_blank(),
         legend.position = "none")
 
-ggplot(data = pw.fig.init, aes(x = 1, y = weight_resid, fill = hostNative)) +
-  geom_hline(aes(yintercept = 0), color = "white", alpha = 1) +
-  geom_split_violin(drop = F, width = .9, alpha = .8, color = "white") +
-  geom_point(data = pw.fig.init[pw.fig.init$hostNative == "native", ],
-             position = position_jitternudge(width = 0.1,
-                                             seed = 1234, x = -0.15,
-                                             nudge.from = "jittered"),
-             color = "lightgreen", alpha = .5, size = 1.5) +
-  geom_point(data = pw.fig.init[pw.fig.init$hostNative == "exotic", ],
-             position = position_jitternudge(width = 0.1,
-                                             seed = 1234, x = 0.15,
-                                             nudge.from = "jittered"),
-             color = "lightblue", alpha = .5, size = 1.5) +
-  theme_tufte() +
-  scale_x_discrete(position = "top") +
-  ylab("Growth Efficiency\n") +
-  xlab("\nHost Family") +
-  scale_fill_manual(values = c("#9CB380", "#586A6A")) +
-  geom_errorbar(data = pw.fig[pw.fig$hostFamily %in% "Overall", ], 
-                aes(ymin = q05, ymax = q95, x = 1,
-                    group = hostNative, color = hostNative), 
-                width = .2, linewidth = 1.4,
-                position = position_dodge(width = .5),
-                inherit.aes = F) +
-  geom_point(data = pw.fig[pw.fig$hostFamily %in% "Overall", ], 
-             aes(y = mean.w, group = hostNative, x = 1, color = hostNative), 
-             size = 5,
-             position = position_dodge(width = .5),
-             inherit.aes = F) +
-  scale_color_manual(values = c("darkgreen", "#170C6A")) +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 18, color = "white"),
-        plot.background = element_rect(fill = "black"),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank())
+# ggplot(data = pw.fig.init, aes(x = 1, y = weight_resid, fill = hostNative)) +
+#   geom_hline(aes(yintercept = 0), color = "white", alpha = 1) +
+#   geom_split_violin(drop = F, width = .9, alpha = .8, color = "white") +
+#   geom_point(data = pw.fig.init[pw.fig.init$hostNative == "native", ],
+#              position = position_jitternudge(width = 0.1,
+#                                              seed = 1234, x = -0.15,
+#                                              nudge.from = "jittered"),
+#              color = "lightgreen", alpha = .5, size = 1.5) +
+#   geom_point(data = pw.fig.init[pw.fig.init$hostNative == "exotic", ],
+#              position = position_jitternudge(width = 0.1,
+#                                              seed = 1234, x = 0.15,
+#                                              nudge.from = "jittered"),
+#              color = "lightblue", alpha = .5, size = 1.5) +
+#   theme_tufte() +
+#   scale_x_discrete(position = "top") +
+#   ylab("Growth Efficiency\n") +
+#   xlab("\nHost Family") +
+#   scale_fill_manual(values = c("#9CB380", "#586A6A")) +
+#   geom_errorbar(data = pw.fig[pw.fig$hostFamily %in% "Overall", ], 
+#                 aes(ymin = q05, ymax = q95, x = 1,
+#                     group = hostNative, color = hostNative), 
+#                 width = .2, linewidth = 1.4,
+#                 position = position_dodge(width = .5),
+#                 inherit.aes = F) +
+#   geom_point(data = pw.fig[pw.fig$hostFamily %in% "Overall", ], 
+#              aes(y = mean.w, group = hostNative, x = 1, color = hostNative), 
+#              size = 5,
+#              position = position_dodge(width = .5),
+#              inherit.aes = F) +
+#   scale_color_manual(values = c("darkgreen", "#170C6A")) +
+#   theme(legend.position = "none", 
+#         axis.text = element_text(size = 18, color = "white"),
+#         plot.background = element_rect(fill = "black"),
+#         axis.ticks = element_blank(),
+#         axis.title.x = element_blank())
 
 # vio1/vio2 + plot_layout(guides = "collect")
 
@@ -361,12 +330,13 @@ toid.fig$hostFamily <- fct_relevel(toid.fig$hostFamily, "Overall")
 sum.toid <- summary(gl.toid, test = adjusted(type = "none"))
 pval.toid <- sum.toid$test$pvalues
 
-toid.poo <- car::Anova(m.toid)["hostNative", "Pr(>Chisq)"]
+# toid.poo <- car::Anova(m.toid)["hostNative", "Pr(>Chisq)"]
+toid.poo <- 0.0076
 
 siglab.toid <- data.frame(hostFamily = levels(factor(toid.fig$hostFamily)),
                         pValue = c(toid.poo, pval.toid)) %>%
-  mutate(pValue = as.character(paste0("*p* = ", round(pValue, 3)))) %>%
-  mutate(pValue = paste0(pValue, c("00", "", "", "")))
+  mutate(pValue = as.character(c(paste0("*p* = ", 0.0076), rep("",3))))
+
 
 bp1 <- ggplot(data = toid.fig, aes(x = hostFamily, y = rate.toids, group = hostNative)) +
   geom_hline(aes(yintercept = 0), color = "grey20", alpha = 1) +
@@ -378,13 +348,13 @@ bp1 <- ggplot(data = toid.fig, aes(x = hostFamily, y = rate.toids, group = hostN
   geom_point(position = position_dodge(width = .5),
              aes(color = hostNative), size = 3) +
   theme_tufte() +
-  ylab("Parasitoid Emergence Rate\n") +
+  ylab("Residual Parasitoid Emergence Rate\n") +
   scale_x_discrete(position = "top") +
   scale_y_continuous(position = "left") +
   scale_color_manual(values = c("#9CB380", "#586A6A")) +
   ggtitle("Parasitoid emergence rate") +
   geom_richtext(data = siglab.toid,
-                aes(y = .3, x = hostFamily,
+                aes(y = .4, x = hostFamily,
                     label = pValue),
                 inherit.aes = F, label.size = NA,
                 fill = NA, family = "serif", size = 5) +
@@ -396,21 +366,23 @@ bp1 <- ggplot(data = toid.fig, aes(x = hostFamily, y = rate.toids, group = hostN
                                                 "plain", "plain", "plain"),
                                        size = 14))
 
-ggplot(data = toid.fig[!toid.fig$hostFamily %in% "Overall", ], aes(x = hostFamily, y = rate.toids, group = hostNative)) +
-  geom_hline(aes(yintercept = 0),color = "white", alpha = 1) +
-  geom_errorbar(aes(ymin = q05, ymax = q95, color = hostNative),
-                width = .25, linewidth = 1.3, alpha = .8,
-                position = position_dodge(width = .5)) +
-  geom_point(position = position_dodge(width = .5),
-             aes(color = hostNative), size = 5, alpha = .9) +
-  theme_tufte() +
-  scale_color_manual(values = c("lightgreen", "lightblue")) +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 18, color = "white"),
-        plot.background = element_rect(fill = "black"),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank(),
-        axis.text.x = element_text(color = "white", size = 24, face = "bold"))
+bp1
+
+# ggplot(data = toid.fig[!toid.fig$hostFamily %in% "Overall", ], aes(x = hostFamily, y = rate.toids, group = hostNative)) +
+#   geom_hline(aes(yintercept = 0),color = "white", alpha = 1) +
+#   geom_errorbar(aes(ymin = q05, ymax = q95, color = hostNative),
+#                 width = .25, linewidth = 1.3, alpha = .8,
+#                 position = position_dodge(width = .5)) +
+#   geom_point(position = position_dodge(width = .5),
+#              aes(color = hostNative), size = 5, alpha = .9) +
+#   theme_tufte() +
+#   scale_color_manual(values = c("lightgreen", "lightblue")) +
+#   theme(legend.position = "none", 
+#         axis.text = element_text(size = 18, color = "white"),
+#         plot.background = element_rect(fill = "black"),
+#         axis.ticks = element_blank(),
+#         axis.title.x = element_blank(),
+#         axis.text.x = element_text(color = "white", size = 24, face = "bold"))
 
 
 # make pupal figure
@@ -472,10 +444,10 @@ bp2 <- ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hos
   geom_point(position = position_dodge(width = .5),
              aes(color = hostNative), size = 3) +
   theme_tufte() +
-  ylab("Pupation Rate\n") +
-  scale_y_continuous(breaks = c(-.2, 0, .2), 
-                     limits = c(-.25, .35),
-                     position = "left") +
+  ylab("Residual Pupation Rate\n") +
+  # scale_y_continuous(breaks = c(-.2, 0, .2), 
+  #                    limits = c(-.25, .35),
+  #                    position = "left") +
   # scale_x_discrete(position = "top") +
   scale_color_manual(values = c("#9CB380", "#586A6A")) +
   geom_richtext(data = siglab.pupal,
@@ -489,161 +461,35 @@ bp2 <- ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hos
         axis.title.x = element_blank(),
         axis.text.x = element_blank())
 
-ggplot(data = pupal.fig[pupal.fig$hostFamily == "Overall", ], aes(x = hostFamily, y = rate.pupals, group = hostNative)) +
-  geom_hline(aes(yintercept = 0),color = "white", alpha = 1) +
-  geom_errorbar(aes(ymin = q05, ymax = q95, color = hostNative),
-                width = .25, linewidth = 1.3, alpha = .8,
-                position = position_dodge(width = .5)) +
-  geom_point(position = position_dodge(width = .5),
-             aes(color = hostNative), size = 5, alpha = .9) +
-  theme_tufte() +
-  scale_color_manual(values = c("lightgreen", "lightblue")) +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 18, color = "white"),
-        plot.background = element_rect(fill = "black"),
-        axis.ticks = element_blank(),
-        axis.title.x = element_blank())
+bp2
+
+# ggplot(data = pupal.fig[pupal.fig$hostFamily == "Overall", ], aes(x = hostFamily, y = rate.pupals, group = hostNative)) +
+#   geom_hline(aes(yintercept = 0),color = "white", alpha = 1) +
+#   geom_errorbar(aes(ymin = q05, ymax = q95, color = hostNative),
+#                 width = .25, linewidth = 1.3, alpha = .8,
+#                 position = position_dodge(width = .5)) +
+#   geom_point(position = position_dodge(width = .5),
+#              aes(color = hostNative), size = 5, alpha = .9) +
+#   theme_tufte() +
+#   scale_color_manual(values = c("lightgreen", "lightblue")) +
+#   theme(legend.position = "none", 
+#         axis.text = element_text(size = 18, color = "white"),
+#         plot.background = element_rect(fill = "black"),
+#         axis.ticks = element_blank(),
+#         axis.title.x = element_blank())
 
 bu1 <- vio1 + theme(axis.text.x = element_markdown(size = 22))
 bu2 <- vio2
 bu3 <- bp2
 
-# bufig <- bu1/bu2/bu3
-# 
-# 
-# ggsave("figures/bigOne_bu.png")
+bufig <- bu1/bu3/bu2
 
-# make figure for growth efficiency change ####
+bufig
 
-changeCompare$changeDir <- fct_relevel(changeCompare$changeDir, 
-                                       "eTOe","eTOn", 
-                                       "unchanged_exotic",
-                                       "nTOe","nTOn", 
-                                       "unchanged_native",)
 
-changeCompare$facetGroup <- ifelse(changeCompare$changeDir %in% c("eTOe","eTOn", 
-                                                                  "unchanged_exotic"),
-                                   1, 0)
+ggsave("figures/bigOne_bu.png", height = 11, width = 8.5, unit = "in")
 
-cc.newdata <- changeCompare %>%
-  mutate(changeDir = "unchanged_native")
-cc.base <- predict(m.cc, newdata = cc.newdata)
-changeCompare$reFit <- changeCompare$ge - cc.base
-mrf <- median(changeCompare$reFit[changeCompare$changeDir %in% "unchanged_native"])
-changeCompare$reFit <- changeCompare$reFit - mrf
-
-labs <- c("To Novel\nExotic Host", "To\nNative Host", "To\nSame Host", 
-          "To\nExotic Host", "To Novel\nNative Host", "To\nSame Host")
-
-pr <- summary(m.cc)
-did <- as.data.frame(pr$coefficients$cond[c(1,4:8) , 1:2])
-did$changeDir <- c("unchanged_native",
-                   "eTOe", "eTOn",
-                   "nTOe", "nTOn",
-                   "unchanged_exotic")
-did$Estimate[1] <- 0
-
-did$q95 <- did$Estimate + (1.96 * did$`Std. Error`)
-did$q05 <- did$Estimate - (1.96 * did$`Std. Error`)
-did$facetGroup <- c(0,1,1,0,0,1)
-
-glabs <- c(`0` = "From\nNative Host",
-           `1` = "From\nExotic Host")
-
-ggplot(data = changeCompare, aes(x = changeDir, y = reFit)) +
-  geom_hline(aes(yintercept = 0), 
-             linetype = "dashed", color = "red", linewidth = .75) +
-  geom_violin(aes(fill = changeDir, color = hostNative), 
-              linewidth = .75, alpha = .5) +
-  geom_quasirandom(width = .3, alpha = 1, size = 3, stroke = 1, 
-                   aes(fill = changeDir, shape = hostFamily)) +
-  geom_errorbar(data = did, aes(y = Estimate, ymin = q05, ymax = q95),
-                linewidth = 1.5, width = .2) +
-  geom_point(data = did, aes(y = Estimate), size = 6) +
-  scale_color_manual(values = c("grey75", "#253031"),
-                     guide = "none") +
-  scale_fill_manual(values = c("#586A6A", "#9CB380", "#F0D3F7", 
-                               "#586A6A", "#9CB380", "#F0D3F7"),
-                    guide = "none") +
-  scale_shape_manual(values = c(22, 23, 24),
-                     name = "Host Family") + 
-  scale_x_discrete(labels = labs,
-                   breaks = c("eTOe","eTOn", 
-                              "unchanged_exotic",
-                              "nTOe","nTOn", 
-                              "unchanged_native")) +
-  coord_flip() +
-  ylab("\nScaled growth efficiency") +
-  theme_tufte() +
-  facet_wrap(~facetGroup, nrow = 2, ncol = 1,
-             drop = T, scales = "free_y",
-             strip.position = "left",
-             labeller = labeller(facetGroup = glabs))  +
-  theme(text = element_text(size = 18),
-        legend.title = element_text(hjust = .5),
-        legend.box.spacing = unit(-1, "in"),
-        axis.title.y = element_blank(), 
-        axis.text.y = element_text(hjust = .5),
-        axis.ticks.y = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_textbox(
-          size = 18,  orientation = "left-rotated",
-          color = "white", fill = "#5D729D", box.color = "black",
-          halign = 0.5, linetype = 1, r = unit(10, "pt"), width = unit(1, "npc"),
-          padding = margin(2, 0, 1, 0), margin = margin(3, 3, 15, 3)
-        ))
-
-ggsave("figures/hostSwitching.png")
-
-# for presentation 
-
-ggplot(data = changeCompare, aes(x = changeDir, y = reFit)) +
-  geom_hline(aes(yintercept = 0), 
-             linetype = "dashed", color = "red", linewidth = .75) +
-  geom_violin(aes(fill = changeDir, color = hostNative), 
-              linewidth = .75, alpha = .9) +
-  geom_quasirandom(width = .3, alpha = 1, size = 3, stroke = 1, 
-                   aes(fill = changeDir, shape = hostFamily),
-                   color = "white") +
-  geom_errorbar(data = did, aes(y = Estimate, ymin = q05, ymax = q95),
-                linewidth = 1.5, width = .2) +
-  geom_point(data = did, aes(y = Estimate), size = 6, color = "black") +
-  scale_color_manual(values = c("white", "white"),
-                     guide = "none") +
-  scale_fill_manual(values = c("#586A6A", "#9CB380", "#F0D3F7", 
-                               "#586A6A", "#9CB380", "#F0D3F7"),
-                    guide = "none") +
-  scale_shape_manual(values = c(22, 23, 24),
-                     name = "Host Family") + 
-  scale_x_discrete(labels = labs,
-                   breaks = c("eTOe","eTOn", 
-                              "unchanged_exotic",
-                              "nTOe","nTOn", 
-                              "unchanged_native")) +
-  coord_flip() +
-  ylab("\nScaled growth efficiency") +
-  theme_tufte() +
-  facet_wrap(~facetGroup, nrow = 2, ncol = 1,
-             drop = T, scales = "free_y",
-             strip.position = "left",
-             labeller = labeller(facetGroup = glabs))  +
-  theme(text = element_text(size = 18, color = "white"),
-        legend.title = element_text(hjust = .5),
-        legend.box.spacing = unit(-1, "in"),
-        axis.title.y = element_blank(), 
-        axis.text.y = element_text(hjust = .5, color = "white", size = 18),
-        axis.text.x = element_text( color = "white", size = 18),
-        axis.ticks.y = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_textbox(
-          size = 18,  orientation = "left-rotated",
-          color = "white", fill = "#5D729D", box.color = "white",
-          halign = 0.5, linetype = 1, r = unit(10, "pt"), width = unit(1, "npc"),
-          padding = margin(2, 0, 1, 0), margin = margin(3, 3, 15, 3)
-        ),
-        plot.background = element_rect(fill = "black"))
-
-# make bird and toid foraging figure
+# make bird and toid foraging figure ####
 
 mtw <- summary(m.tf.wasps)
 eff.w <- mtw$coefficients$cond[1:2,1:2]
@@ -722,36 +568,6 @@ tf <- ggplot(data = td.mush, aes(x = ratio, y = flies)) +
         axis.title.x = element_blank())
 
 tf
-
-ggplot(data = td.mush, aes(x = ratio, y = flies)) +
-  geom_jitter(color = "lightblue", shape = 17, size = 3, alpha = .8) +
-  geom_ribbon(data = toidRibbon.frame.f, 
-              aes(ymin = bottom, ymax = top, x = ratio), 
-              inherit.aes = F,
-              alpha = .5, fill = "blue") +
-  geom_line(stat = "function", fun = toidSlope.f, alpha = 1,
-            color = "blue", linewidth = 1.1) +
-  theme_tufte() +
-  ylab("Parasitoids captured\n") +
-  xlab("\nVegetation provenance") +
-  scale_x_continuous(breaks = c(-2.5, -.5, 1.5),
-                     labels = c("more\nnative", "equal", "more\nexotic")) +
-  geom_jitter(aes(y = wasps), color = "yellow", size = 3, alpha = .8) +
-  geom_ribbon(data = toidRibbon.frame, 
-              aes(ymin = bottom, ymax = top, x = ratio), 
-              inherit.aes = F,
-              alpha = .5, fill = "yellow") +
-  geom_line(stat = "function", fun = toidSlope.w, alpha = 1,
-            color = "gold2", linewidth = 1.1) +
-  scale_y_continuous(trans = "log1p", breaks = c(0, 1, 5, 10, 20)) +
-  theme(text = element_text(size = 18, color = "white"),
-        axis.text = element_text(color = "white", size = 18),
-        axis.ticks.x = element_blank(),
-        axis.ticks.y = element_line(color = "white"),
-        axis.line = element_line(color = "white"),
-        axis.title.x = element_blank(),
-        plot.background = element_rect(fill = "black"))
-
 
 # ggsave("figures/toidForage.png")
 
@@ -844,15 +660,11 @@ bp1 <- bp1 + theme(plot.title = element_text(size = 18, face = "italic"))
 tdfig <- (bp1/plot_spacer())|(tf/clayplot)
 
 tdfig
-ggsave("figures/bigOne_td.png")
-
-bufig <- bu1/bu2/bu3
-bufig
-ggsave("figures/bigOne_bu.png")
+ggsave("figures/bigOne_td.png", height = 8, width = 11, unit = "in")
 
 # summary(m.clay)
 
-# make summary figure (network)
+# make summary figure (network) ####
 
 library(bipartite)
 

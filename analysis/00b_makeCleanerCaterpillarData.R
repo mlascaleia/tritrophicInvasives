@@ -113,11 +113,25 @@ pwp2 <- pwp %>%
 
 # I'm at a loss here. Did we really not record pupal weight in 2022??
 
+# anyway, I can't believe I have to do this but I need to establish families
+# for the summary stats section
 
+cats.good$catSpecies
+fams <- c("No", "Ac", "Ge", "Ge", "Er", "No", "Ge", "No", "Ge", "Ge", "Ge",
+          "No", "Ge", "Nt", "No", "Ge", "Er", "Ge", "Ge", "Ge", "No", "Ge",
+          "Ge", "Ge", "No", "No", "Ge", "Er", "No", "Ge", "No", "Ge", "Ge",
+          "Dr", "Er", "Nt", "Er", "Er", "He")
+cats.good$fam <- fams
 
+cats.good %>%
+  group_by(fam) %>%
+  summarise(total = sum(native) + sum(exotic)) %>%
+  mutate(prop = total/1114)
 
-
-
+cc %>% 
+  group_by(fate) %>%
+  summarise(total = n()) %>%
+  mutate(prop = total/1114)
 
 
 

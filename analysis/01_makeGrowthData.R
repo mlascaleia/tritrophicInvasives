@@ -15,8 +15,8 @@ cc$initialWeight[cc$catNum %in% c("J2033", "J2071", "J3183")] <-
 cc$finalWeight[cc$catNum %in% c("1902", "1837")] <- 
   cc$finalWeight[cc$catNum %in% c("1902", "1837")] * 10
 
-cc$frassWeight[cc$catNum %in% c("2157", "1618")] <- 
-  cc$frassWeight[cc$catNum %in% c("2157", "1618")] * 10
+cc$frassWeight[cc$catNum %in% c("2157", "1618", "1929")] <- 
+  cc$frassWeight[cc$catNum %in% c("2157", "1618", "1929")] * 10
 
 cc$weirdFinal[cc$catNum %in% c("J2016", "J3218")] <- "DEAD"
 cc$weirdFinal[cc$catNum %in% "K4230"] <- "PP"
@@ -26,6 +26,12 @@ geCats <- cc[cc$weirdFinal %in% "" & !is.na(cc$finalWeight),]
 
 # eliminate caterpillars that starved rather than eat
 geCats <- geCats[geCats$frassWeight > 0,]
+# and a few other cats that ate absurdly little 
+# (did seem to choose to starve but still had small amount of frass)
+# defining as cats that were >3 x heavier initially than total frass produced (see hist)
+# hist(geCats$initialWeight/geCats$frassWeight)
+
+geCats <- geCats[!geCats$initialWeight/geCats$frassWeight > 3,]
 
 # eliminate caterpillars that were too small to start
 geCats <- geCats[geCats$initialWeight > 0.002, ]
