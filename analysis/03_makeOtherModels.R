@@ -29,9 +29,10 @@ emmeans(m.toid, pairwise ~ hostNative)
 gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0", 
                                    "hostNativenative + hostFamilyOleaceae = 0",
                                    "hostNativenative + hostFamilyRosaceae = 0"))
+summary(m.toid)
 summary(gl.toid)
 
-summary(m.toid)
+
 
 # make pupal model ####
 
@@ -39,7 +40,7 @@ m.pupal <- glmmTMB(isPupal ~ hostNative * hostFamily +
                    year + (1|catSpecies), 
                   data = pupest, family = "binomial")
 
-summary(m.pupal)
+
 
 emmeans(m.pupal, pairwise ~ hostNative)
 
@@ -48,6 +49,7 @@ gl.pupa <- glht(m.pupal, linfct = c("hostNativenative = 0",
                                     "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
                                     "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
+summary(m.pupal)
 summary(gl.pupa, test = adjusted(type = "none"))
 
 # m.pupal2 <- glmmTMB(isPupal ~ hostNative + hostFamily +
@@ -63,7 +65,7 @@ summary(gl.pupa, test = adjusted(type = "none"))
 m.pw <- glmmTMB(pWeightLog ~ hostNative * hostFamily +
                   (1|catSpecies), 
                 data = pwp2)
-summary(m.pw)
+
 
 emmeans(m.pw, pairwise ~ hostNative)
 
@@ -73,11 +75,35 @@ gl.pw <- glht(m.pw, linfct = c("hostNativenative = 0",
                                "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
 
-
+summary(m.pw)
 summary(gl.pw, test = adjusted(type = "none"))
 # 
 # m.pw2 <- glmmTMB(pWeightLog ~ hostNative + hostFamily +
 #                   (1|transect) + (1|catSpecies), 
 #                 data = pwp2)
 # summary(m.pw2)
+
+
+
+# add death from all causes (except killed) analysis
+
+m.death <- glmmTMB(isDeceased ~ hostNative * hostFamily +
+                    year + jDate + (1|transect) + (1|catSpecies), 
+                  data = cc[cc$isMissing == 0,], family = "binomial")
+
+
+emmeans(m.death, pairwise ~ hostNative)
+
+gl.death <- glht(m.death, linfct = c("hostNativenative = 0", 
+                               "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
+                               "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
+
+summary(m.death)
+summary(gl.death, test = adjusted(type = "none"))
+
+
+
+
+
+
 

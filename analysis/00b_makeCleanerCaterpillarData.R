@@ -58,6 +58,11 @@ cc <- cc %>%
   mutate(isDead = ifelse(fate == "died", 1, 0)) %>%
   mutate(isMissing = ifelse(fate == "killed", 1, 0))
 
+# add one more for the overall death analysis
+
+cc <- cc %>%
+  mutate(isDeceased = ifelse(fate %in% c("toided", "died"), 1, 0))
+
 # make the parasitoid dataset
 toidest <- cc %>%
   # only those that pupated or were parasitoided are included
@@ -132,6 +137,7 @@ cc %>%
   group_by(fate) %>%
   summarise(total = n()) %>%
   mutate(prop = total/1114)
+
 
 
 
