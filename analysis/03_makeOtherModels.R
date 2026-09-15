@@ -26,9 +26,9 @@ m.toid <- glmmTMB(isToid ~ hostNative + hostFamily +
 
 emmeans(m.toid, pairwise ~ hostNative)
 
-gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0", 
-                                   "hostNativenative + hostFamilyOleaceae = 0",
-                                   "hostNativenative + hostFamilyRosaceae = 0"))
+# a simpler gl comparison than others due to no interactions
+# but I want to keep it to help the future code still work
+gl.toid <- glht(m.toid, linfct = c("hostNativenative = 0"))
 summary(m.toid)
 summary(gl.toid)
 
