@@ -28,7 +28,7 @@ clays$vegVolume <- clays$vol.exo + clays$vol.nat
 
 clays$strikesB <- as.integer(clays$strikes > 0)
 
-m.clay <- glmmTMB(strikesB ~ ratio + ratio:scale(vegVolume) +
+m.clay <- glmmTMB(strikesB ~ ratio*scale(vegVolume) +
                     upDate + clay +
                     (1|block/trap),
                   data = clays, family = binomial)
