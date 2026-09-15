@@ -51,8 +51,11 @@ geom_split_violin <- function(mapping = NULL, data = NULL, stat = "ydensity", po
 
 sum.ge <- summary(gl.ge, test = adjusted(type = "none"))
 pval.ge <- sum.ge$test$pvalues
-# unforunately hardcoding this because I cannot figure out how to extract from emmeans
-pval.ge <- c(0.0081, pval.ge)
+
+ee <- emmeans(m.ge, pairwise ~ hostNative)
+ovp <- as.data.frame(ee$contrasts)$p.value
+
+pval.ge <- c(ovp, pval.ge)
 
 # compute partial residuals
 coef_names <- c("hostNativenative", 
@@ -188,8 +191,8 @@ pw.fig_oov <- pw.fig.init %>%
 
 pw.fig <- rbind(pw.fig, pw.fig_oov)
 
-# pw.poo <- car::Anova(m.pw)["hostNative", "Pr(>Chisq)"]
-pw.poo <- 0.033
+ee.pw <- emmeans(m.pw, pairwise ~ hostNative)
+pw.poo <- as.data.frame(ee.pw$contrasts)$p.value
 
 pw.fig.init <- pw.fig.init %>%
   mutate(hostFamily = "Overall") %>%
@@ -330,8 +333,8 @@ toid.fig$hostFamily <- fct_relevel(toid.fig$hostFamily, "Overall")
 sum.toid <- summary(gl.toid, test = adjusted(type = "none"))
 pval.toid <- sum.toid$test$pvalues
 
-# toid.poo <- car::Anova(m.toid)["hostNative", "Pr(>Chisq)"]
-toid.poo <- 0.0076
+ee.toid <- emmeans(m.toid, pairwise ~ hostNative)
+toid.poo <- as.data.frame(ee.toid$contrasts)$p.value
 
 siglab.toid <- data.frame(hostFamily = levels(factor(toid.fig$hostFamily)),
                         pValue = c(toid.poo, pval.toid)) %>%
@@ -420,13 +423,17 @@ pupal.fig <- pupest %>%
 pupal.fig$hostNative <- fct_relevel(pupal.fig$hostNative, "native")
 pupal.fig$hostFamily <- fct_relevel(pupal.fig$hostFamily, "Overall")
 
-# pupal.poo <- car::Anova(m.pupal)["hostNative", "Pr(>Chisq)"]
-pupal.poo <- 0.001
+ee.pupal <- emmeans(m.pupal, pairwise ~ hostNative)
+pupal.poo <- as.data.frame(ee.pupal$contrasts)$p.value
+
+if(pupal.poo < 0.001)
+  pupal.poo <- 0.001
 
 sum.pupal <- summary(gl.pupa, test = adjusted(type = "none"))
 pval.pupal <- sum.pupal$test$pvalues
 
-pval.pupal[1] <- 0.001
+if(pval.pupal[1] < 0.001)
+  pval.pupal[1] <- 0.001
 
 ekal <- c(" < "," < ", " = ", " = ")
 
