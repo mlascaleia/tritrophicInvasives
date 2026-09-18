@@ -21,7 +21,7 @@ library(glmmTMB)
 # summary(gl.toid, test = adjusted(type = "none"))
 
 m.toid <- glmmTMB(isToid ~ hostNative + hostFamily +
-                    year + jDate + (1|transect) + (1|catSpecies), 
+                    year + jDate + (1|transect) + diag(hostNative|catSpecies), 
                   data = toidest, family = "binomial")
 
 emmeans(m.toid, pairwise ~ hostNative)
@@ -37,7 +37,7 @@ summary(gl.toid)
 # make pupal model ####
 
 m.pupal <- glmmTMB(isPupal ~ hostNative * hostFamily +
-                   year + (1|catSpecies), 
+                   year + (hostNative|catSpecies), 
                   data = pupest, family = "binomial")
 
 
@@ -63,7 +63,7 @@ summary(gl.pupa, test = adjusted(type = "none"))
 # pupal weight analysis ####
 
 m.pw <- glmmTMB(pWeightLog ~ hostNative * hostFamily +
-                  (1|catSpecies), 
+                  (hostNative|catSpecies), 
                 data = pwp2)
 
 
@@ -88,7 +88,7 @@ summary(gl.pw, test = adjusted(type = "none"))
 # add death from all causes (except killed) analysis
 
 m.death <- glmmTMB(isDeceased ~ hostNative * hostFamily +
-                    year + jDate + (1|transect) + (1|catSpecies), 
+                    year + jDate + (1|transect) + (hostNative|catSpecies), 
                   data = cc[cc$isMissing == 0,], family = "binomial")
 
 

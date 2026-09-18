@@ -26,4 +26,9 @@ gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0",
 
 summary(gl.ge, test = adjusted(type = "none"))
 
+mm.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
+                  year + log(initialWeight) + (hostNative|catSpecies),
+                data = geCats)
+
+summary(mm.ge)
 
