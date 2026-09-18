@@ -4,7 +4,7 @@ source("analysis/01_makeGrowthData.R")
 
 library(glmmTMB)
 library(multcomp)
-# library(emmeans)
+library(emmeans)
 
 # make growth models ####
 
@@ -18,7 +18,7 @@ m.ge <- glmmTMB(ge ~ hostNative * hostFamily +
                 data = geCats)
 summary(m.ge)
 
-# ee <- emmeans(m.ge, pairwise ~ hostNative)
+ee <- emmeans(m.ge, pairwise ~ hostNative)
 
 gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0", 
                                    "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",

@@ -220,4 +220,9 @@ cc$hostFamily <- factor(cc$hostFamily, levels = c('InvasiveOutgroups',
 
 cc$year <- factor(cc$year)
 
+# take out VIBOP, which stayed in for WAYYYY too long
+# and cant reliably be classified as native or invasive
+cc <- cc[!cc$treeSpecies %in% "VIBOP",]
+
+
 
