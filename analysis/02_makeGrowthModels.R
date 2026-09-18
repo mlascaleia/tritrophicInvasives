@@ -7,28 +7,26 @@ library(multcomp)
 library(emmeans)
 
 # make growth models ####
+# remake to be clearer and align with paper methods:
+m1 <- glmmTMB(ge ~ hostNative * hostFamily + 
+                year + log(initialWeight) + (hostNative|catSpecies),
+              data = geCats) # maximal
+m2 <- update(m1, . ~ . - hostNative:hostFamily) # additive, keep random structure
+m3 <- update(m1, . ~ . - (hostNative|catSpecies) + (1|catSpecies)) # interactive with old random structure
+m4 <- update(m2, . ~ . - (hostNative|catSpecies) + (1|catSpecies)) # addictive with old random structure
+m0 <- update(m4, . ~ . - hostNative - hostFamily)  # null
 
-# check effects of removing 2022
-# geCats <- geCats[geCats$year == 2021,]
 
-# growth efficiency
+bbmle::AICctab(m1, m2, m3, m4, m0, base = T) # m2 wins and gets the m.ge mantle
+m.ge <- m2
+rm(list = ls(pattern = "^m[[:digit:]]$"))
 
-m.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
-                     year + log(initialWeight) + (1|catSpecies),
-                data = geCats)
-summary(m.ge)
+# nothing more needs to be done since an additive model won (no interactions to explore)
 
-ee <- emmeans(m.ge, pairwise ~ hostNative)
 
-gl.ge <- glht(m.ge, linfct = c("hostNativenative = 0", 
-                                   "hostNativenative + hostNativenative:hostFamilyOleaceae = 0",
-                                   "hostNativenative + hostNativenative:hostFamilyRosaceae = 0"))
 
-summary(gl.ge, test = adjusted(type = "none"))
 
-mm.ge <- glmmTMB(ge ~ hostNative * hostFamily + 
-                  year + log(initialWeight) + (hostNative|catSpecies),
-                data = geCats)
 
-summary(mm.ge)
+
+
 
