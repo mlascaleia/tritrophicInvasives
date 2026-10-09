@@ -159,7 +159,7 @@ vio1 <- ggplot(data = geCats2, aes(x = hostFamily, y = ge_partial, fill = hostNa
 
 vio1
 
-# make pupal weight figure ####
+# make pupa weight figure ####
 
 sum.pw <- summary(gl.pw, test = adjusted(type = "none"))
 pval.pw <- sum.pw$test$pvalues
@@ -223,7 +223,7 @@ vio2 <- ggplot(data = pw.fig.init, aes(x = hostFamily, y = weight_resid, fill = 
   # scale_y_continuous(breaks = c(-1.5, -1, -.5, 0, .5)) +
   scale_x_discrete(position = "top") +
   theme_tufte() +
-  ylab("Residual pupal weight (g)") +
+  ylab("Residual pupa weight (g)") +
   scale_fill_manual(values = c("#9CB380", "#586A6A"),
                     name = "Hostplant\norigin",
                     labels = c("Native", "Exotic")) +
@@ -388,60 +388,60 @@ bp1
 #         axis.text.x = element_text(color = "white", size = 24, face = "bold"))
 
 
-# make pupal figure
+# make pupa figure
 
-pupal.fig <- pupest %>%
+pupa.fig <- pupest %>%
   group_by(catSpecies) %>%
-  mutate(species_mean = mean(isPupal)) %>%
-  mutate(pupal_resid = isPupal - species_mean) %>%
+  mutate(species_mean = mean(ispupa)) %>%
+  mutate(pupa_resid = ispupa - species_mean) %>%
   ungroup() %>%
   group_by(hostFamily, hostNative) %>%
   summarise(cats = n(), 
-            pupals = sum(pupal_resid),
-            rate.pupals = sum(pupal_resid)/n(),
-            sd.pupals = sd(pupal_resid),
-            se.pupals = sd(pupal_resid)/sqrt(n())) %>%
-  mutate(q95 = rate.pupals + (1.96 * se.pupals),
-         q05 = rate.pupals - (1.96 * se.pupals))
+            pupas = sum(pupa_resid),
+            rate.pupas = sum(pupa_resid)/n(),
+            sd.pupas = sd(pupa_resid),
+            se.pupas = sd(pupa_resid)/sqrt(n())) %>%
+  mutate(q95 = rate.pupas + (1.96 * se.pupas),
+         q05 = rate.pupas - (1.96 * se.pupas))
 
-pupal.fig <- pupest %>%
+pupa.fig <- pupest %>%
   group_by(catSpecies) %>%
-  mutate(species_mean = mean(isPupal)) %>%
-  mutate(pupal_resid = isPupal - species_mean) %>%
+  mutate(species_mean = mean(ispupa)) %>%
+  mutate(pupa_resid = ispupa - species_mean) %>%
   ungroup() %>%
   group_by(hostNative) %>%
   summarise(cats = n(), 
-            pupals = sum(pupal_resid),
-            rate.pupals = sum(pupal_resid)/n(),
-            sd.pupals = sd(pupal_resid),
-            se.pupals = sd(pupal_resid)/sqrt(n())) %>%
-  mutate(q95 = rate.pupals + (1.96 * se.pupals),
-         q05 = rate.pupals - (1.96 * se.pupals),
+            pupas = sum(pupa_resid),
+            rate.pupas = sum(pupa_resid)/n(),
+            sd.pupas = sd(pupa_resid),
+            se.pupas = sd(pupa_resid)/sqrt(n())) %>%
+  mutate(q95 = rate.pupas + (1.96 * se.pupas),
+         q05 = rate.pupas - (1.96 * se.pupas),
          hostFamily = "Overall") %>%
-  rbind(pupal.fig)
+  rbind(pupa.fig)
 
-pupal.fig$hostNative <- fct_relevel(pupal.fig$hostNative, "native")
-pupal.fig$hostFamily <- fct_relevel(pupal.fig$hostFamily, "Overall")
+pupa.fig$hostNative <- fct_relevel(pupa.fig$hostNative, "native")
+pupa.fig$hostFamily <- fct_relevel(pupa.fig$hostFamily, "Overall")
 
-ee.pupal <- emmeans(m.pupal, pairwise ~ hostNative)
-pupal.poo <- as.data.frame(ee.pupal$contrasts)$p.value
+ee.pupa <- emmeans(m.pupa, pairwise ~ hostNative)
+pupa.poo <- as.data.frame(ee.pupa$contrasts)$p.value
 
-if(pupal.poo < 0.001)
-  pupal.poo <- 0.001
+if(pupa.poo < 0.001)
+  pupa.poo <- 0.001
 
-sum.pupal <- summary(gl.pupa, test = adjusted(type = "none"))
-pval.pupal <- sum.pupal$test$pvalues
+sum.pupa <- summary(gl.pupa, test = adjusted(type = "none"))
+pval.pupa <- sum.pupa$test$pvalues
 
-if(pval.pupal[1] < 0.001)
-  pval.pupal[1] <- 0.001
+if(pval.pupa[1] < 0.001)
+  pval.pupa[1] <- 0.001
 
 ekal <- c(" < "," < ", " = ", " = ")
 
-siglab.pupal <- data.frame(hostFamily = levels(factor(pupal.fig$hostFamily)),
-                          pValue = c(pupal.poo, pval.pupal)) %>%
+siglab.pupa <- data.frame(hostFamily = levels(factor(pupa.fig$hostFamily)),
+                          pValue = c(pupa.poo, pval.pupa)) %>%
   mutate(pValue = paste0("*p*", ekal, round(pValue, 3)))
 
-bp2 <- ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hostNative)) +
+bp2 <- ggplot(data = pupa.fig, aes(x = hostFamily, y = rate.pupas, group = hostNative)) +
   geom_hline(aes(yintercept = 0),color = "grey20", alpha = 1) +
   geom_vline(aes(xintercept = 1.5), color = "black", 
              alpha = 1, linewidth = 1.5) +
@@ -457,7 +457,7 @@ bp2 <- ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hos
   #                    position = "left") +
   # scale_x_discrete(position = "top") +
   scale_color_manual(values = c("#9CB380", "#586A6A")) +
-  geom_richtext(data = siglab.pupal,
+  geom_richtext(data = siglab.pupa,
                 aes(y = .35, x = hostFamily,
                     label = pValue),
                 inherit.aes = F , label.size = NA,
@@ -470,7 +470,7 @@ bp2 <- ggplot(data = pupal.fig, aes(x = hostFamily, y = rate.pupals, group = hos
 
 bp2
 
-# ggplot(data = pupal.fig[pupal.fig$hostFamily == "Overall", ], aes(x = hostFamily, y = rate.pupals, group = hostNative)) +
+# ggplot(data = pupa.fig[pupa.fig$hostFamily == "Overall", ], aes(x = hostFamily, y = rate.pupas, group = hostNative)) +
 #   geom_hline(aes(yintercept = 0),color = "white", alpha = 1) +
 #   geom_errorbar(aes(ymin = q05, ymax = q95, color = hostNative),
 #                 width = .25, linewidth = 1.3, alpha = .8,
