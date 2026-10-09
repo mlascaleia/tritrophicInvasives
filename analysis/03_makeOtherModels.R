@@ -17,7 +17,7 @@ t3 <- update(t1, . ~ . - diag(hostNative|catSpecies) + (1|catSpecies)) # interac
 t4 <- update(t2, . ~ . - diag(hostNative|catSpecies) + (1|catSpecies)) # additive, no slope
 t0 <- update(t4, . ~ . - hostNative - hostFamily)
 
-bbmle::AICctab(t1, t2, t3, t4, t0, base = T) # additive (no slope) wins
+aic.toid <- bbmle::AICctab(t1, t2, t3, t4, t0, base = T) # additive (no slope) wins
 m.toid <- t4
 rm(list = ls(pattern = "^t[[:digit:]]$"))
 
@@ -36,7 +36,7 @@ p3 <- update(p1, . ~ . - (hostNative|catSpecies) + (1|catSpecies)) # interactive
 p4 <- update(p2, . ~ . - (hostNative|catSpecies) + (1|catSpecies)) # additive no slope
 p0 <- update(p4, . ~ . - hostNative - hostFamily)
 
-bbmle::AICctab(p1, p2, p3, p4, p0, base = T)
+aic.pupa <- bbmle::AICctab(p1, p2, p3, p4, p0, base = T)
 
 m.pupa <- p3 # set to the winner
 rm(list = ls(pattern = "^p[[:digit:]]$"))
@@ -57,7 +57,7 @@ w3 <- update(w1, . ~ . - (hostNative|catSpecies) + (1|catSpecies))
 w4 <- update(w2, . ~ . - (hostNative|catSpecies) + (1|catSpecies))
 w0 <- update(w4, . ~ . - hostNative - hostFamily)
 
-bbmle::AICctab(w1, w2, w3, w4, w0, base = TRUE)
+aic.pw <- bbmle::AICctab(w1, w2, w3, w4, w0, base = TRUE)
 
 m.pw <- w1 # set to the winner
 rm(list = ls(pattern = "^w[[:digit:]]$"))
@@ -78,7 +78,7 @@ d3 <- update(d1, . ~ . - (hostNative|catSpecies) + (1|catSpecies))
 d4 <- update(d2, . ~ . - (hostNative|catSpecies) + (1|catSpecies))
 d0 <- update(d4, . ~ . - hostNative - hostFamily)
 
-bbmle::AICctab(d1, d2, d3, d4, d0 , base = TRUE)
+aic.death <- bbmle::AICctab(d1, d2, d3, d4, d0 , base = TRUE)
 m.death <- d1 # set to the winner
 rm(list = ls(pattern = "^d[[:digit:]]$"))
 

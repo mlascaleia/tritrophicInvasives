@@ -9,12 +9,14 @@ td.mush <- td.mush %>%
   rename(flies = Tachinidae)
 
 m.tf.wasps <- glmmTMB(wasps ~ ratio*scale(vegVolume) +
+                canoCover +
                 upDate +
                 scale(fail_amount) +
                 offset(log(daysOut)) + (1|block),
               data = td.mush, family = nbinom2)
 
 m.tf.flies <- glmmTMB(flies ~ ratio*scale(vegVolume) +
+                        canoCover +
                         upDate +
                         scale(fail_amount) +
                         offset(log(daysOut)) + (1|block),
@@ -29,7 +31,7 @@ clays$vegVolume <- clays$vol.exo + clays$vol.nat
 clays$strikesB <- as.integer(clays$strikes > 0)
 
 m.clay <- glmmTMB(strikesB ~ ratio*scale(vegVolume) +
-                    upDate + clay +
+                    upDate + clay + canoCover +
                     (1|block/trap),
                   data = clays, family = binomial)
 

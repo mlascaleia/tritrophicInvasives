@@ -17,7 +17,7 @@ m4 <- update(m2, . ~ . - (hostNative|catSpecies) + (1|catSpecies)) # addictive w
 m0 <- update(m4, . ~ . - hostNative - hostFamily)  # null
 
 
-bbmle::AICctab(m1, m2, m3, m4, m0, base = T) # m2 wins and gets the m.ge mantle
+aic.ge <- bbmle::AICctab(m1, m2, m3, m4, m0, base = T) # m2 wins and gets the m.ge mantle
 m.ge <- m2
 rm(list = ls(pattern = "^m[[:digit:]]$"))
 
