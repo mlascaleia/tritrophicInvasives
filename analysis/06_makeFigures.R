@@ -307,9 +307,7 @@ bp1 <- plot_fig(fd.toid, "Residual Parasitoid Emergence Rate\n") +
 
 bp1
 
-# pan traps (wasps + flies on one panel) ####
-# curves: expected catch for a trap out the average number of days,
-# other predictors at their means; ribbons are 95% CIs
+# pan traps ####
 
 rat <- seq(min(td.mush$ratio), max(td.mush$ratio), by = 0.01)
 off.days <- log(mean(td.mush$daysOut))
@@ -321,7 +319,7 @@ curve.f <- curve_fit(m.tf.flies, rat, offset = off.days) %>%
   mutate(across(c(fit, lwr, upr), exp))
 
 tf <- ggplot(data = td.mush, aes(x = ratio, y = flies)) +
-  geom_jitter(color = "darkblue", shape = 19) +
+  geom_jitter(color = "darkblue", shape = 19, seed = 2367221301) +
   geom_ribbon(data = curve.f,
               aes(ymin = lwr, ymax = upr, x = ratio),
               inherit.aes = F,
@@ -353,10 +351,6 @@ tf <- ggplot(data = td.mush, aes(x = ratio, y = flies)) +
 tf
 
 # clay decoys ####
-# points: each trap's share of decoy checks with any strike (same response
-# as m.clay), sized by number of checks. line: m.clay prediction with
-# date and canopy at their means, averaged over clay color; ribbon 95% CI
-
 clay.fig <- clays %>%
   mutate(ratio = as.numeric(ratio)) %>%
   group_by(block, trap) %>%
