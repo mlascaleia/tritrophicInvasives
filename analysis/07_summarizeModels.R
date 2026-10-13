@@ -3,7 +3,7 @@
 # this is all in preparation for the great code freeze of 2026
 
 # 07_extractOutputs.R
-# For each model: AIC table, summary of the best model, and emmeans / family
+# For each model: AIC table, summary of the best model, and emmeans/family
 # contrasts where the interaction won. Prints everything and writes it to md.
 
 rm(list = ls())
@@ -65,3 +65,4 @@ for (s in names(outputs)) {
 
 cat(md, sep = "\n")       # to console
 writeLines(md, out.file)  # to file
+

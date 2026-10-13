@@ -16,8 +16,7 @@ m1 351.7   4.0 12
 
 ```
  Family: gaussian  ( identity )
-Formula:          
-ge ~ hostNative + hostFamily + year + log(initialWeight) + (hostNative |  
+Formula:          ge ~ hostNative + hostFamily + year + log(initialWeight) + (hostNative |  
     catSpecies)
 Data: geCats
 
@@ -162,14 +161,14 @@ Fit: glmmTMB(formula = isPupal ~ hostNative * hostFamily + year +
     ziformula = ~0, dispformula = ~1)
 
 Linear Hypotheses:
-                                                            Estimate Std. Error z value
-hostNativenative == 0                                         1.3833     0.3840   3.603
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0   0.9706     0.5330   1.821
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0   0.1661     0.1924   0.863
-                                                            Pr(>|z|)    
-hostNativenative == 0                                       0.000315 ***
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0 0.068583 .  
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0 0.388079    
+                                                            Estimate Std. Error z value Pr(>|z|)
+hostNativenative == 0                                         1.3833     0.3840   3.603 0.000315
+hostNativenative + hostNativenative:hostFamilyOleaceae == 0   0.9706     0.5330   1.821 0.068583
+hostNativenative + hostNativenative:hostFamilyRosaceae == 0   0.1661     0.1924   0.863 0.388079
+                                                               
+hostNativenative == 0                                       ***
+hostNativenative + hostNativenative:hostFamilyOleaceae == 0 .  
+hostNativenative + hostNativenative:hostFamilyRosaceae == 0    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- none method)
@@ -248,14 +247,10 @@ Fit: glmmTMB(formula = pWeightLog ~ hostNative * hostFamily + (hostNative |
     catSpecies), data = pwp2, ziformula = ~0, dispformula = ~1)
 
 Linear Hypotheses:
-                                                            Estimate Std. Error z value
-hostNativenative == 0                                        0.41441    0.15694   2.641
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0 -0.12120    0.18291  -0.663
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0  0.21083    0.08264   2.551
-                                                            Pr(>|z|)   
-hostNativenative == 0                                        0.00828 **
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0  0.50757   
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0  0.01073 * 
+                                                            Estimate Std. Error z value Pr(>|z|)   
+hostNativenative == 0                                        0.41441    0.15694   2.641  0.00828 **
+hostNativenative + hostNativenative:hostFamilyOleaceae == 0 -0.12120    0.18291  -0.663  0.50757   
+hostNativenative + hostNativenative:hostFamilyRosaceae == 0  0.21083    0.08264   2.551  0.01073 * 
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- none method)
@@ -276,8 +271,7 @@ d2 1446.8    4.0 10
 
 ```
  Family: binomial  ( logit )
-Formula:          
-isDeceased ~ hostNative * hostFamily + year + jDate + (1 | transect) +  
+Formula:          isDeceased ~ hostNative * hostFamily + year + jDate + (1 | transect) +  
     (hostNative | catSpecies)
 Data: cc[cc$isMissing == 0, ]
 
@@ -339,14 +333,14 @@ Fit: glmmTMB(formula = isDeceased ~ hostNative * hostFamily + year +
     0, ], family = "binomial", ziformula = ~0, dispformula = ~1)
 
 Linear Hypotheses:
-                                                            Estimate Std. Error z value
-hostNativenative == 0                                        -1.2531     0.3506  -3.574
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0  -0.9812     0.4975  -1.972
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0  -0.2287     0.1782  -1.283
-                                                            Pr(>|z|)    
-hostNativenative == 0                                       0.000351 ***
-hostNativenative + hostNativenative:hostFamilyOleaceae == 0 0.048593 *  
-hostNativenative + hostNativenative:hostFamilyRosaceae == 0 0.199339    
+                                                            Estimate Std. Error z value Pr(>|z|)
+hostNativenative == 0                                        -1.2531     0.3506  -3.574 0.000351
+hostNativenative + hostNativenative:hostFamilyOleaceae == 0  -0.9812     0.4975  -1.972 0.048593
+hostNativenative + hostNativenative:hostFamilyRosaceae == 0  -0.2287     0.1782  -1.283 0.199339
+                                                               
+hostNativenative == 0                                       ***
+hostNativenative + hostNativenative:hostFamilyOleaceae == 0 *  
+hostNativenative + hostNativenative:hostFamilyRosaceae == 0    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 (Adjusted p values reported -- none method)
@@ -359,8 +353,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 ```
  Family: nbinom2  ( log )
-Formula:          
-wasps ~ ratio * scale(vegVolume) + canoCover + upDate + scale(fail_amount) +  
+Formula:          wasps ~ ratio * scale(vegVolume) + canoCover + upDate + scale(fail_amount) +  
     offset(log(daysOut)) + (1 | block)
 Data: td.mush
 
@@ -395,8 +388,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 ```
  Family: nbinom2  ( log )
-Formula:          
-flies ~ ratio * scale(vegVolume) + canoCover + upDate + scale(fail_amount) +  
+Formula:          flies ~ ratio * scale(vegVolume) + canoCover + upDate + scale(fail_amount) +  
     offset(log(daysOut)) + (1 | block)
 Data: td.mush
 
