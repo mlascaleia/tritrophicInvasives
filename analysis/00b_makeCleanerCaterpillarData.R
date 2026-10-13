@@ -84,8 +84,9 @@ load("data/clean/catWeights21.rdata")
 pwp$hostFamily[pwp$hostFamily %in% "Roseaceae"] <- "Rosaceae"
 rm(cw)
 pwp <- pwp[!grepl("C|L", pwp$catNum), ]
+treesDropped <- c("BERTH", "CELOR", "EUOAL", "RHOSC", "SAMCA")
 pwp <- pwp[pwp$catSpecies %in% cats.good$catSpecies, ] %>%
-  filter(!treeSpecies %in% c("BERTH", "CELOR", "EUOAL", "RHOSC", "SAMCA"))
+  filter(!treeSpecies %in% treesDropped)
 
 
 # fix 10x issues...

@@ -34,7 +34,7 @@ c21 <- cwbb %>%
   # select useful columns
   dplyr::select(catNum, date = date.x, catSpecies, fate, fateDate,
          dateInitialWeight, initialWeight, finalWeight, frassWeight,
-         weirdFinal, transect, treeSpecies, hostFamily, hostNative) %>%
+         weirdFinal, transect, treeSpecies, hostFamily, hostNative, bid) %>%
   # select only rows that contain caterpillars
   filter(!is.na(catNum)) %>%
   # add columns that identify year and set-up host-switching experiment
@@ -56,7 +56,17 @@ c22 <- cats %>%
          hostFamily = "Rosaceae",
          newHostNative = "native",
          newHostFamily = "Rosaceae",
-         dateInitialWeight = date + 1)
+         dateInitialWeight = date + 1,
+         bid = NA)
+
+branches21 <- cwbb %>%
+  group_by(bid) %>%
+  summarise(treeSpecies = first(treeSpecies), transect = first(transect),
+            hostFamily = first(hostFamily), hostNative = first(hostNative),
+            branchNum = first(branchNum), lfCount = first(lfCount),
+            catCount = first(catCount),
+            nNumbered = sum(!is.na(catNum)), .groups = "drop")
+  
 
 rm(cats, cwbb)
 

@@ -2,7 +2,7 @@
 
 # rm(list = ls())
 
-source("analysis/03_makeOtherModels.R")
+source("analysis/0203_makeCatModels.R")
 
 library(vegan)
 
