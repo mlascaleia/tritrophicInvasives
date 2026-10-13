@@ -319,14 +319,16 @@ curve.f <- curve_fit(m.tf.flies, rat, offset = off.days) %>%
   mutate(across(c(fit, lwr, upr), exp))
 
 tf <- ggplot(data = td.mush, aes(x = ratio, y = flies)) +
-  geom_jitter(color = "darkblue", shape = 19, seed = 2367221301) +
+  geom_jitter(color = "darkblue", shape = 19, 
+              position = position_jitter(seed = 2367221301)) +
   geom_ribbon(data = curve.f,
               aes(ymin = lwr, ymax = upr, x = ratio),
               inherit.aes = F,
               alpha = .1, fill = "blue") +
   geom_line(data = curve.f, aes(x = ratio, y = fit), inherit.aes = F,
             color = "darkblue", linewidth = 1.1) +
-  geom_jitter(aes(y = wasps), color = "gold3") +
+  geom_jitter(aes(y = wasps), color = "gold3", 
+              position = position_jitter(seed = 2367221301)) +
   geom_ribbon(data = curve.w,
               aes(ymin = lwr, ymax = upr, x = ratio),
               inherit.aes = F,
